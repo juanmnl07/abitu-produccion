@@ -131,7 +131,7 @@ jQuery( document ).ajaxStop(function() {
 				  		type_apartment = "type-c";
 				  	}
 
-			  	apartamentos = apartamentos + "<div class=\"apartamento estado-"+data[i].estado+"\" id=\"apartamento"+(i+1)+"\"><a class=\"openinfo\" href=\"#\">"+num_edificio+"-"+piso+""+0+""+(data[i].numero)+data[i].name+"</a><div class=\"info-piso\"><a class=\"closeinfo\" href=\"javascript:void(0);\">X</a><h4>APARTAMENTO "+piso+""+0+""+(data[i].numero)+data[i].name+"</h4><div class=\"estado\">"+estado+"</div><div class=\"habitaciones\">habitaciones "+data[i].habitaciones+"</div><div class=\"precio\">precio: $"+data[i].precio+"</div><div class=\"enlaces\"><a href=\"#\" class=\"detalle\" type-apartment=\""+type_apartment+"\">+ DETALLE</a>"+solicitar_cita+"</div><div class=\"flecha\"></div></div></div>";
+			  	apartamentos = apartamentos + "<div class=\"apartamento estado-"+data[i].estado+"\" id=\"apartamento"+(i+1)+"\"><a class=\"openinfo\" href=\"#\">"+num_edificio+"-"+piso+""+0+""+(data[i].numero)+data[i].name+"</a><div class=\"info-piso\"><a class=\"closeinfo\" href=\"javascript:void(0);\">X</a><h4>APARTAMENTO "+piso+""+0+""+(data[i].numero)+data[i].name+"</h4><div class=\"estado\">"+estado+"</div><div class=\"habitaciones\">habitaciones "+data[i].habitaciones+"</div><!--<div class=\"precio\">precio: $"+data[i].precio+"</div>--><div class=\"enlaces\"><a href=\"#\" class=\"detalle\" type-apartment=\""+type_apartment+"\">+ DETALLE</a>"+solicitar_cita+"</div><div class=\"flecha\"></div></div></div>";
 			  };
 			  $("#apartamentos").addClass("edificio-"+num_edificio);
 			  $("#apartamentos").html(apartamentos);

@@ -529,7 +529,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, 
 .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption {background-image: url('../images/fondo-caption-gimansio.png'); background-repeat: no-repeat;   background-position: 70px 0px; bottom: 13px;}
 .caption-image { bottom: 0;}
-.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption {  background-position: 72px 0px; bottom: 12px;}
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption {  background-position: 68px 1px; bottom: 12px;}
 
 .caption-image,
 .page-vida-bosque-urbano .field-name-field-image .field-items .caption h4,
@@ -715,7 +715,8 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
   .page-contactenos .islas{
     margin-bottom: 40px;
   }
-  .page-contactenos .islas h3{
+  .page-contactenos .islas h3,
+  .page-contactenos .mapa h3{
     font-family: ProximaNovaRegular, sans-serif;
     font-weight: normal;
     font-size:  25px; 
@@ -723,6 +724,9 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
     text-transform: uppercase;   
     color: #3FAE29;
     margin: 0px; margin-bottom:  30px;
+  }
+  .page-contactenos .mapa h3{
+	  margin-top: 30px;
   }
   
   .encabezado-contacto .isla{

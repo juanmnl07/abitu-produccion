@@ -31,7 +31,7 @@ $slides ="";
 		}
 
 		$caption = $detalle_testimonio."<img id='imagen-testimonio' src='".$testimonio_imagen."'/>"."<div id='titulo-cargo'>".$cargo."</div>";
-		$slides .= "<li><img src='".$url."' /><div class='caption-image'>BUSINESS</div><div class='flex-caption'>".$caption."</div></li>";
+		$slides .= "<li><img src='".$url."' /><div class='caption-image'>BUSINESS CENTER</div><div class='flex-caption'>".$caption."</div></li>";
 
 } ?>
 <div class="flexslider flexslider-bussines">
