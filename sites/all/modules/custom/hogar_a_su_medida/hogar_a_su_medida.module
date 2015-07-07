@@ -1,0 +1,287 @@
+<?php
+/**
+* Implements hook_block_info().
+*/
+function hogar_a_su_medida_block_info() {
+  $blocks = array();
+  $blocks['plano_maestro'] = array(
+    'info' => t('Select a building'),
+  );
+  return $blocks;
+}
+/**
+* Implements hook_block_view().
+*/
+function hogar_a_su_medida_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'plano_maestro':
+      $block['subject'] = '';
+      $block['content'] =  _plano_maestro_content();
+      break;
+  }
+  return $block;
+}
+
+/* retornar el bloque principal del plano maestro*/
+function _plano_maestro_content() {
+  //$output = t('Hello world');
+  global $base_path;
+
+  //obetener todos los edificios
+  $query = new EntityFieldQuery();
+  $result = $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'edificio')
+    //->propertyCondition('nid', 20)
+    ->execute();
+  $nodes_edificios = node_load_multiple(array_keys($result['node']));
+
+  $edificios_markup = "";
+  $floors2 = array();
+  $estado = 0;  
+
+  foreach ($nodes_edificios as $edificio) {
+    /*if($edificio->field_numero_edificio['und'][0]['value'] == 2){
+      $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\">".$edificio->title."</a></div>";
+    } else {
+  	$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
+    }*/
+    
+
+if($edificio->field_numero_edificio['und'][0]['value'] == 2){
+
+$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" build-edit-path=\"/edificios/".$edificio->vid."\">No disponible</a></div>";
+    
+}else{
+
+    $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
+   
+}
+
+    /*foreach ($edificio->field_pisos['und'] as $key => $value) {
+     
+      $query_floor = new EntityFieldQuery();
+      $result_floor = $query_floor->entityCondition('entity_type', 'node')
+        ->entityCondition('bundle', 'piso')
+        ->propertyCondition('nid', $value['target_id'])
+        ->execute();
+
+      if (!empty($result_floor['node'])) {
+
+        $nodes_pisos = node_load_multiple(array_keys($result_floor['node']));
+
+        foreach ($nodes_pisos as $piso) {
+          for ($i=0; $i < count($piso->field_apartamento['und']); $i++) { 
+            
+           //dpm($piso);
+
+            $tid = $piso->field_apartamento['und'][$i]['field_tipo_apartamento']['und'][0]['tid'];
+
+            $query_tipo_apartamento = new EntityFieldQuery();
+            $result_tipo_apartamento = $query_tipo_apartamento->entityCondition('entity_type', 'taxonomy_term')
+              ->propertyCondition('tid', $tid)
+              ->execute();
+
+            //dpm($result_tipo_apartamento);
+
+            if (!empty($result_tipo_apartamento['taxonomy_term'])) {
+              $tipo_apartamento = taxonomy_term_load_multiple(array_keys($result_tipo_apartamento['taxonomy_term']));
+
+              foreach ($tipo_apartamento as $apartamento) {
+                dpm($apartamento);
+              }
+
+            }
+          }
+          $floors2[] = array("nombre"=>$piso->title);
+        }
+      }
+    }*/
+  }
+
+  //cargar los id de los terminos del vocabulario (apartamento)
+  $apartamentos_content ="";
+  $query_apartamentos = new EntityFieldQuery();
+  $result_apartamentos = $query_apartamentos->entityCondition('entity_type', 'taxonomy_term')
+    ->entityCondition('bundle', 'apartamentos')
+    ->execute();
+
+  if (!empty($result_apartamentos['taxonomy_term'])) {
+    $apartamentos = taxonomy_term_load_multiple(array_keys($result_apartamentos['taxonomy_term']));
+    $contador_content = 3;
+    foreach ($apartamentos as $apartamento) {
+      $elements = taxonomy_term_view($apartamento);
+      $apartamentos_content .= "<div id=\"tab-content".$contador_content."\" class=\"tipo-apartamento-a tab-content\">
+                                  <div class=\"fondo\">
+                                    <div class=\"container\">
+                                      <div class=\"rosa-vientos\"></div>
+                                      <div class=\"encabezado\"><h2></h2></div>
+                                      <div class=\"tipo_apartamento\">".drupal_render($elements)."</div>
+                                    </div>
+                                  </div>      
+                                </div>";
+      $contador_content++;
+    }
+  }
+
+  $markup = "<div class=\"tabs\">
+  				<ul class=\"tabs-list\">
+  					<li class=\"tab\" id=\"tab-plan-maestro\"><a href=\"#\" class=\"active\" content-target=\"1\">Plan Maestro</a></li>
+  					<li class=\"tab\" id=\"tab-edificios\"><a href=\"#\" content-target=\"2\" build-edit-path=\"/edificios/21\">Edificios</a></li>
+  					<li class=\"tab\" id=\"tab-modelo1\"><a href=\"#\" content-target=\"3\">Modelo: <br>1 habitación</a></li>
+  					<li class=\"tab\" id=\"tab-modelo2\"><a href=\"#\" content-target=\"4\">Modelo: <br>2 habitaciones</a></li>
+  					<li class=\"tab\" id=\"tab-modelo3\"><a href=\"#\" content-target=\"5\">Modelo: <br>3 habitaciones</a></li>
+  				</ul>
+  			</div>
+  			<div class=\"tabs-content\"><div class=\"ajaxloader\"></div>
+  				<div id=\"tab-content1\" class=\"tab-content active\">
+		  			<div class=\"fondo\">
+              <img src=\"".$base_path."sites/default/files/edicicios/fondo_plano_maestro.jpg\">
+              <div class=\"container\">
+    					  <div class=\"rosa-vientos\"></div>
+    					  <div class=\"encabezado\"><h2>Elija Un edificio</h2></div>
+    				  	<div class=\"punto\" id=\"punto-pet-park\"><span></span><label>Pet Park</label></div>
+    				  	<div class=\"punto\" id=\"punto-senderos\"><span></span><label>Senderos</label></div>
+    				  	<div class=\"punto\" id=\"punto-casa-club\"><span></span><label>Casa Club</label></div>
+    				  	<div class=\"punto\" id=\"punto-lobby\"><span></span><label>Lobby</label></div>
+    				  	<div class=\"punto\" id=\"punto-estacionamiento\"><span></span><label>Estacionamiento</label></div>
+    				  	<div class=\"punto\" id=\"punto-acceso\"><span></span><label>Acceso</label></div>
+    					  <div id=\"edificios\">".$edificios_markup."</div>
+              </div>
+				 	  </div>
+				  </div>
+  				<div id=\"tab-content2\" class=\"tab-content\">
+            <div id=\"tab-content2-1\" class=\"sub-tab-content active\">
+  					  <div class=\"fondo\">
+                <img src=\"".$base_path."sites/default/files/edicicios/edificio2.jpg\">
+    					  <div class=\"container\">
+      					  <div class=\"rosa-vientos\"></div>
+      					  <div class=\"encabezado\"><h2>Elija Un edificio</h2></div>
+      					  <div id=\"pisos\"></div>
+                </div>
+              </div>
+            </div>
+            <div id=\"tab-content2-2\" class=\"sub-tab-content\">
+              <div class=\"fondo\">
+			    <img src=\"".$base_path."sites/default/files/edicicios/apartamentos.jpg\">
+                <div class=\"container\">
+                  <div class=\"rosa-vientos\"></div>
+                  <div class=\"encabezado\"><h2>Elija Un apartamento</h2></div>
+                  <div class=\"indicadores\">
+                    <div class=\"indicador\" id=\"vendido\">Vendido</div>
+                    <!--<div class=\"indicador\" id=\"alquilado\">Alquilado</div>-->
+                    <div class=\"indicador\" id=\"disponible\">Disponible</div>
+                  </div>
+                  <div id=\"apartamentos\"></div>
+                </div>
+              </div>
+  				  </div>        
+          </div>".$apartamentos_content."
+			  </div>";
+  return $markup;
+}
+
+/**
+* Implements hook_block_view().
+*/
+
+function hogar_a_su_medida_menu() {
+    $items['edificios/%'] = array(
+      'page callback' => 'hogar_a_su_medida_edificios_view',
+      'access arguments' => array('access content'),
+      'page arguments' => array(1),
+      'delivery callback' => 'drupal_json_output',
+      'type' => MENU_CALLBACK,
+    );
+    $items['piso/%'] = array(
+      'page callback' => 'hogar_a_su_medida_piso_view',
+      'access arguments' => array('access content'),
+      'page arguments' => array(1),
+      'delivery callback' => 'drupal_json_output',
+      'type' => MENU_CALLBACK,
+    );
+    return $items;
+  }
+
+/* callback view*/
+  function hogar_a_su_medida_edificios_view($nid) {
+
+    //buscar en la base de datos los pisos relacionados con el nodo(edificio)
+    //obetener todos los edificios
+
+    $floors = array();
+
+    $query = new EntityFieldQuery();
+    $result = $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'edificio')
+      ->propertyCondition('nid', $nid)
+      ->execute();
+    $nodes_edificios = node_load_multiple(array_keys($result['node']));
+
+    foreach ($nodes_edificios as $edificio) {
+      foreach ($edificio->field_pisos['und'] as $key => $value) {
+      //obtener todos los pisos relacionados con el actual edificio
+
+        $query_floor = new EntityFieldQuery();
+        $result_floor = $query_floor->entityCondition('entity_type', 'node')
+          ->entityCondition('bundle', 'piso')
+          ->propertyCondition('nid', $value['target_id'])
+          ->execute();
+
+        if (!empty($result_floor['node'])) {
+
+          $nodes_pisos = node_load_multiple(array_keys($result_floor['node']));
+
+          foreach ($nodes_pisos as $piso) {
+            //llenar el array con los datos del piso (title)
+            $floors[] = array("nombre"=>$piso->title, "nid"=>$piso->nid);
+          }
+        }
+      }
+    }
+
+    return $floors;
+  }
+
+/* callback view*/
+  function hogar_a_su_medida_piso_view($nid) {
+    $floor_info = array();
+
+    //obtener toda la informacion del piso seleccionado (apartamentos)
+
+    $apartamento = "";
+
+    $query_floor = new EntityFieldQuery();
+    $result_floor = $query_floor->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'piso')
+      ->propertyCondition('nid', $nid)
+      ->execute();
+
+    if (!empty($result_floor['node'])) {
+
+      $nodes_pisos = node_load_multiple(array_keys($result_floor['node']));
+
+      foreach ($nodes_pisos as $piso) {
+        //llenar el array con los datos del piso (tipo apartamento)
+        for ($i=0; $i < count($piso->field_apartamento['und']); $i++) { 
+          $tid = $piso->field_apartamento['und'][$i]['field_tipo_apartamento']['und'][0]['tid'];
+          $estado = $piso->field_apartamento['und'][$i]['field_estado_apartamento']['und'][0]['value'];
+		  $num_apartamento = $piso->field_apartamento['und'][$i]['field_n_mero_apartamento']['und'][0]['value'];
+		  if($num_apartamento == NULL){ $num_apartamento = 'N'; }
+            $query_tipo_apartamento = new EntityFieldQuery();
+            $result_tipo_apartamento = $query_tipo_apartamento->entityCondition('entity_type', 'taxonomy_term')
+              ->propertyCondition('tid', $tid)
+              ->execute();
+
+          if (!empty($result_tipo_apartamento['taxonomy_term'])) {
+            $tipo_apartamento = taxonomy_term_load_multiple(array_keys($result_tipo_apartamento['taxonomy_term']));
+
+            foreach ($tipo_apartamento as $apartamento) {
+              $floor_info[] = array("name"=>$apartamento->name, "estado"=>$estado, "numero"=>$num_apartamento, "precio"=>$apartamento->field_precio['und'][0]['value'], "habitaciones"=>$apartamento->field_habitaciones['und'][0]['value']);
+            }
+          }
+        }
+      }
+    }
+    return $floor_info;
+  }

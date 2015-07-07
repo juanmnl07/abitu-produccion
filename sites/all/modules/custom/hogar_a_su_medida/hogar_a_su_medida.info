@@ -1,0 +1,4 @@
+name = hogar a su medida
+description = Allow to select a building in order to determine the status of apartments.
+package = Custom Blocks
+core = 7.x

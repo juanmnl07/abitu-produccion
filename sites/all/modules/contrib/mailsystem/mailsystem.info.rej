@@ -1,0 +1,7 @@
+--- mailsystem.info
++++ mailsystem.info
+@@ -5,3 +5,4 @@
+ core = 7.x
+ configure = admin/config/system/mailsystem
+ dependencies[] = filter
++files[] = includes/HTMLMailSystem__SmtpMailSystem.mail.inc

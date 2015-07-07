@@ -1,0 +1,1982 @@
+/*
+  =BASE
+--------------------------------------------- */
+html {
+  border: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+a{
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;	
+}
+/*
+  =LAYOUT
+--------------------------------------------- */
+.header {
+  background: #632C4F;
+  padding: 10px 0;
+}
+.header .grid,
+.footer .grid, .above-content .inner{max-width: 1000px;margin: 0 auto;overflow: hidden;}
+.header .inner, .footer .inner {max-width: 1280px; margin: 0 auto; overflow: hidden;}
+.footer .inner {max-width: 1423px; margin: 0 auto; overflow: hidden;}
+
+.main-conten{
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.one-sidebar .main {
+  width: 60%;
+  padding: 0 0.875em;
+}
+.one-sidebar #sidebar-first {
+  width: 40%;
+  padding: 0 0.875em;
+}
+.sidebar-first .main {
+  float: left;
+}
+.sidebar-first #sidebar-first {
+  float: right;
+}
+
+/* Imports */
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url('../fonts/Proxima Nova Bold.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaRegularItalic;
+    src: url('../fonts/Proxima Nova Regular Italic.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url('../fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaSemibold;
+    src: url('../fonts/Proxima Nova Semibold.otf');
+}
+
+@font-face {
+    font-family: OswaldRegular;
+    src: url('../fonts/Oswald-regular.ttf');
+}
+
+@font-face {
+    font-family: OswaldLight;
+    src: url('../fonts/Oswald-Light.ttf');
+}
+
+/* Master page */
+
+/* header */
+.header nav ul li a {font-size:14px; font-weight: bold; font-family: ProximaNovaBold, sans-serif;}
+.header .inner{background-image: url('../images/fondo-header.png'); background-repeat: no-repeat; background-position: right;}
+.header #logo, .header nav#block-system-main-menu, .header nav ul li{float: left;}
+.header nav ul li a{text-align: center; border-bottom: none; line-height: 20px; color: #fff; display: block; padding:8px 16px;}
+.header nav ul li a:hover{color: #ddd;}
+.header nav ul li {list-style: none; margin: 0 0 0 25px; padding: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease; 
+}
+
+.easy-breadcrumb span,
+.easy-breadcrumb a{
+	text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    font-weight: 500;
+    font-size:  12px;
+}
+
+.header nav ul li:hover,
+.header nav ul li.active-trail{
+	border-bottom: 2px solid #FFF;
+}
+.header nav ul li.last {border: 2px solid #ddd;}
+.header nav ul li.last:hover a{
+	background-color: #401C33;
+}
+.header nav#block-system-main-menu{margin:40px 0 0 0px; float: right;}
+
+/* footer */
+.footer .inner{background-image: url('../images/fondo-footer.png'); background-repeat: no-repeat; padding-bottom: 100px; padding-top: 30px; }
+.footer {background-color: #58595B;}
+
+.footer #block-menu-block-1 ul.menu li{list-style-image: none; list-style-type: none; margin-bottom: 17px;}
+.footer #block-menu-block-1 ul.menu li.last a{padding: 11px 7px; border: 3px solid #ddd; display: block; text-align: center;}
+.footer #block-menu-block-1 ul.menu li.last a:hover{
+	background-color: #401C33;
+}
+.footer #block-menu-block-1 ul.menu li.last {width: 82%;}
+
+.footer #block-block-2 {padding-left: 0;}
+.footer #block-block-2 a, .footer #block-menu-block-1 ul.menu li a{border-bottom: none; font-family: ProximaNovaRegular, sans-serif; font-size: 14px; font-size: 13px\9; font-weight: normal; color: #fff; line-height: 15px;}
+
+.footer #block-webform-client-block-1, .footer #block-menu-block-1{margin-right: 50px;}
+.footer #block-webform-client-block-1 h2, .footer #block-block-1 h2 {margin: 0 0 15px 0; text-transform: uppercase; color: #37B34A; line-height: 22px; font-family: ProximaNovaSemibold, sans-serif; font-size: 17px;}
+.footer #block-webform-client-block-1 form input {width: 100%; padding: 10px 15px; background-color: #414042; color: #BCBEC0; border:none;}
+.footer #block-webform-client-block-1 form input.form-submit {float: right; width: 55px; text-transform: uppercase; background:none; border-bottom: 4px solid #939598; border-top: none; border-right: none; border-left: none; text-align: center; cursor: pointer; padding: 3px 0;}
+.footer #block-webform-client-block-1 .encabezado-boletin p {line-height: 20px; font-family: ProximaNovaRegular, sans-serif; font-size: 14px; color: #fff;}
+
+.footer .social-media, .footer .bloque-contacto-footer, .footer .bloque-contacto-footer .izq, .footer .bloque-contacto-footer .der, .footer ul.social-media li {float: left;}
+.footer .bloque-contacto-footer .der p{margin: 0;}
+.footer .bloque-contacto-footer .izq {width: 19%;}
+.footer .bloque-contacto-footer .der {width: 75%;}
+.footer ul.social-media {padding: 0; margin-top: 5px;}
+.footer ul.social-media li {list-style: none;}
+.footer ul.social-media li .logo {width: 30px; height: 30px; margin-right: 11px;}
+.footer ul.social-media .youtube .logo{margin-right: 0;}
+.footer ul.social-media li .logo a{padding: 7px 15px; border-bottom: none;}
+.footer .bloque-contacto-footer .der p, .footer .bloque-contacto-footer .der a {font-family: ProximaNovaRegular, sans-serif; font-size: 14px; color: #fff; border-bottom: none;}
+.footer .bloque-contacto-footer .der a:hover {border-bottom: 1px solid #fff;}
+
+.footer .bloque-contacto-footer .contenedor, .footer .bloque-contacto-footer .correo, .footer .bloque-contacto-footer .ubicacion {width: 100%; float: left; margin-bottom: 25px;}
+.footer #block-block-1 {padding-right: 0;}
+.footer #block-block-1 .ubicacion {margin-bottom: 0px;}
+
+/* logos */
+.footer #logo-telefono {background-image: url('../images/footer-phone.png'); background-repeat: no-repeat; height: 50px; background-position: 0 10px;}
+.footer #logo-correo {background-image: url('../images/footer-mail.png'); background-repeat: no-repeat; height: 23px; background-position: 0px 0px;}
+.footer #logo-ubicacion {background-image: url('../images/footer-location.png'); background-repeat: no-repeat; height: 80px; background-position: 0px 10px;}
+.footer .social-media li .logo{background-repeat: no-repeat;}
+.footer .social-media .facebook .logo {background-image: url('../images/footer-facebook.png');}
+.footer .social-media .linkedin .logo{background-image: url('../images/footer-linkedin.png');}
+.footer .social-media .pinterest .logo{background-image: url('../images/footer-pinterest.png');}
+.footer .social-media .twitter .logo{background-image: url('../images/footer-twitter.png');}
+.footer .social-media .instagram .logo{background-image: url('../images/footer-instagram.png');}
+.footer .social-media .youtube .logo{background-image: url('../images/footer-youtube.png');}
+
+/* End master page*/
+
+.above-content .inner {position: relative;}
+
+/* banner */
+.node-type-blog .banner {display: block; height: 570px; overflow: hidden; }
+
+/* breadcrumb */
+#block-easy-breadcrumb-easy-breadcrumb {margin: 25px 0 0 0;   width: 92.5%; float: left;}
+#block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb a, #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb span {color: #fff;}
+
+.page-contactenos #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb span,
+.page-contactenos #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb a,
+.page-hogar-a-su-medida #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb span, .page-hogar-a-su-medida #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb a, .page-historias #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb a, .page-historias #block-easy-breadcrumb-easy-breadcrumb .easy-breadcrumb span {color: #58595B;}
+/* end breadcrumb */
+
+#block-sharethis-sharethis-block {position: absolute; top: 45px; right: 0px;}
+#block-sharethis-sharethis-block .stLarge {background-image: url('../images/sharethis-logo.png') !important;}
+.page-historias #block-sharethis-sharethis-block .stLarge, .page-hogar-a-su-medida #block-sharethis-sharethis-block .stLarge {background-image: url('../images/sharethis-logo-gris.png') !important;}
+/* header title*/
+#block-block-4 .content h2{font-size: 34px; font-family: ProximaNovaBold, sans-serif; color: #fff; text-transform: uppercase; margin: 0 0 13px 0;}
+.page-contactenos #block-block-4 .content h2, .page-historias #block-block-4 .content h2, .page-hogar-a-su-medida #block-block-4 .content h2{color: #632C4F;}
+/* end header title*/
+
+/*above content*/
+section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; background-image: url('../images/fondo-flex-caption.png');}
+.page-contactenos section.above-content, .page-historias section.above-content, .page-hogar-a-su-medida section.above-content{top: 133px; background-image: url('../images/lineatop.png'); background-repeat:repeat-x; background-position: 0px 10px; background-color: #F1F2F2;}
+.node-type-blog section.above-content{top: 133px;}
+
+/* chat */
+#chat {position: fixed; right: 0px; background-image: url('../images/chat-fondo.png'); background-repeat: no-repeat; height: 97px;  z-index: 2;} 
+#chat .descripcion {float: left; padding: 0 20px;}
+#chat .descripcion a {border-bottom: none;}
+#chat .logo {background-image: url('../images/chat.png'); background-repeat: no-repeat; float: left; height: inherit; width: 60px; background-position: 22px 31px;}
+/* end chat */
+
+/* home */
+.not-front .flex-caption {/*top: 270px; left: 420px;*/   top: 50%; left: 32%; background-image: url('../images/fondo-caption-not-front.png');}
+.not-front .flex-caption h3 {color: #414042;}
+.flexslider {border: none; max-width: 1374px; margin: 0 auto; }
+.page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav { width: 13px; position: absolute; top: 253px; text-align: center; z-index: 2; right: 136px; }
+.page-contactenos .flexslider .flex-control-nav li, .flexslider .flex-control-nav li {margin: 10px 0px; display: block;}
+.page-contactenos .flexslider .flex-control-paging li a, .flexslider .flex-control-paging li a {background-color: rgba(255,255,255,0.5); width: 15px; height: 15px;}
+.node-type-blog .flexslider .flex-control-paging li a {background-color: rgba(0,0,0,0.5);}
+.node-type-blog .flex-control-paging li a.flex-active, .page-contactenos .flex-control-paging li a.flex-active, .flex-control-paging li a.flex-active {background-color: rgba(63,174,41,0.5);}
+.page-contactenos .flex-caption, .flex-caption {position: absolute; top: 27%; /*left: 320px;*/ left: 25%; background-image: url('../images/fondo-flex-caption.png'); padding: 25px 45px; max-height: 55%}
+.page-contactenos .flex-caption h3, .flex-caption h3 {margin: 0; color: #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 29.85px; text-transform: uppercase; text-align: center;}
+.page-contactenos .flex-caption p, .flex-caption p {text-align: center; color: #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 19px; margin-top: 10px; line-height: 27px; letter-spacing: -0.4px;}
+.page-contactenos .flex-caption .enlace, .flex-caption .enlace {  margin: 0 auto; border: 2px solid #fff; width: 55%;  text-align: center; line-height: 25px;}
+.page-contactenos .flex-caption .enlace a, .flex-caption .enlace a{color: #fff; border-bottom: none; font-size: 16px; text-transform: uppercase; ProximaNovaRegular, sans-serif; font-size: 16px;  background-image: url('../images/icono-enlace-banner.png'); background-position: 300px 10px; background-repeat: no-repeat; padding: 5px 105px 5px 10px;  display: block;}
+
+.page-contactenos .flex-caption .enlace a:hover, .flex-caption .enlace a:hover{
+	background-color: #401C33;
+}
+
+.page-contactenos .flex-caption {/*top: 270px;*/top: 30%; max-width: 52%;}
+/* cintillo reserva  - llamado a la accion */
+.bloque-cintillo-reserva .preventa-reserva {padding-right: 0;}
+.bloque-cintillo-reserva .preventa-reserva ul {margin-bottom: 10px; margin-top: 20px;}
+.bloque-cintillo-reserva .preventa-reserva ul, .bloque-cintillo-reserva .preventa-reserva {padding-left: 0; color: #fff;}
+.bloque-cintillo-reserva .preventa-reserva ul li label {margin-right: 15px; line-height: 25px; font-family: OswaldLight, sans-serif; font-size: 24px;}
+.bloque-cintillo-reserva .preventa-reserva ul li span, .bloque-cintillo-reserva .preventa-reserva ul li label {float: left;}
+.bloque-cintillo-reserva .preventa-reserva ul li span { font-family: OswaldRegular, sans-serif; font-size: 51px;   margin-top: 10px;}
+.bloque-cintillo-reserva .preventa-reserva ul li.preventa {padding-right: 10px; border-right: 1px solid #fff;}
+.bloque-cintillo-reserva .preventa-reserva ul li.reserva {padding-left: 10px;}
+.bloque-cintillo-reserva .preventa-reserva ul li {display: inline-block;list-style: none; padding: 15px 0;}
+.fila.cintillo {background-image: url('../images/fondo-cintillo.png'); background-repeat:repeat; padding: 0; padding-bottom: 14px; }
+.fila.gris {background-color: #F1F2F2; padding-bottom: 20px;}
+.bloque-cintillo-reserva .boton-reserva {margin-top: 30px; padding-left: 57px; padding-right: 0px;}
+.bloque-cintillo-reserva .boton-reserva a.reservar {padding: 13px 7px; border: 2px solid #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 16px; font-size: 14px\9; color: #fff; text-transform: uppercase; display: block; clear:both; text-align:center; }
+
+.bloque-cintillo-reserva .boton-reserva a.reservar:hover{
+	background-color: #FFF;
+	color: #632C4F;
+}
+
+.bloque-cintillo-reserva .boton-reserva a.chat {padding: 5px 41px; font-family: ProximaNovaRegularItalic, sans-serif; font-size: 15px; color: #fff;  border-bottom: none; display: block; clear:both;}
+.bloque-cintillo-reserva .boton-reserva span {line-height: 22px;}
+
+/* blog */
+.page-contactenos .main-content{ padding-top: 121px; }
+.page-historias .main-content {padding-top: 180px;}
+.view-display-id-block_historias_home .encabezado h2 {font-family: ProximaNovaBold, sans-serif; text-transform: uppercase; font-size: 30px; color: #632C4F; text-align: center; margin: 30px 0 10px 0;}
+.view-display-id-block_historias_home .encabezado p {text-align: center; margin-bottom: 40px;} 
+.view-display-id-block_historias_home .encabezado p .separador{ background-image: url('../images/separador-blog.png');  padding: 9px 24px; background-repeat: no-repeat;}
+.ds-2col.node.node-blog.node-teaser .group-fecha-comment h3 {display: none;}
+.view-display-id-block_historias_home .view-content{  margin: 0 auto; float: none; width: 920px;}
+.view-display-id-block_listado_blog .views-row { float: left; margin-bottom: 35px;}
+.view-display-id-block_listado_blog .views-row-odd {margin-right: 35px;}
+.ds-2col.node.node-blog.node-teaser {margin: 0 auto;}
+.ds-2col.node.node-blog.node-teaser .group-left {width: 49%; margin-right: 10px;}
+.ds-2col.node.node-blog.node-teaser .group-right{border: 1px solid #ddd; padding: 20px; position: relative; min-height: 290px; width: 48%; margin-left: 15px;}
+.ds-2col.node.node-blog.node-teaser .group-right h3{margin: 0;   line-height: 32px;}
+.fecha-envio2, .coment-count {float: right;}
+.fecha-envio2 .logo {background-image: url('../images/reloj.png'); background-repeat: no-repeat; background-position: left 1px; margin-right: 10px;}
+.coment-count .logo {background-image: url('../images/comment.png'); background-repeat: no-repeat; background-position: left 1px; margin-right: 10px;}
+.field-name-post-date {background-image: url('../images/reloj.png'); background-repeat: no-repeat; background-position: 198px 1px; margin-right: 10px;}
+.fecha-envio2 .logo{padding: 5px 10px;}
+.coment-count .logo{padding: 5px 15px;}
+.group-fecha-comment2 {padding: 10px 25px 0 5px;}
+.group-fecha-comment { padding: 10px 0px 10px 0px; width: 98.8%; float: left; margin-top: -9px; border: 1px solid #ddd; }
+.ds-1col.node.node-blog.view-mode-listado_blog .group-fecha-comment {  padding: 15px 0px 15px 0px; width: 100%;   margin-top: 0px;}
+.ds-1col.node.node-blog.view-mode-listado_blog .field-name-post-date, .ds-2col.node.node-blog.node-teaser .group-left .field-name-post-date { width: 80%; text-align: right; float: left; }
+.ds-1col.node.node-blog.view-mode-listado_blog .field-name-conteo-comentarios, .ds-2col.node.node-blog.node-teaser .group-left .field-name-conteo-comentarios{ width: 15%; float: left; }
+.ds-1col.node.node-blog.view-mode-listado_blog .field-name-conteo-comentarios .coment-count .logo, .ds-2col.node.node-blog.node-teaser .group-left .field-name-conteo-comentarios .coment-count .logo {float: left; height: 28px;}
+.ds-1col.node.node-blog.view-mode-listado_blog .field-name-conteo-comentarios .coment-count p, .ds-2col.node.node-blog.node-teaser .group-left .field-name-conteo-comentarios .coment-count p { float: left; margin: 0; }
+
+/* page hogar a su medida */
+.page-hogar-a-su-medida .main-content {margin-top: 126px;} /*180*/
+.page-hogar-a-su-medida #page-title {display: none;}
+
+/* Detalle del blog */
+#detalle-blog {text-align: center;}
+#detalle-blog .title {font-family: ProximaNovaRegular, sans-serif; font-size: 30px;text-transform: uppercase; color: #085C42; font-style: normal;}
+#detalle-blog .categoria {
+  margin-right: 20px;
+  font-family: ProximaNovaRegularItalic, sans-serif; font-size: 16; color: #58595B;
+}
+#detalle-blog .categoria, #detalle-blog .fecha-comentario {
+  float: left;
+  width: 48%;
+  text-align: right;
+  padding: 5px 0;
+}
+
+#detalle-blog .fecha-comentario {
+  text-align: left;
+  padding-left: 5px;
+  border-left: 1px solid #000;
+}
+
+#detalle-blog .fecha-comentario .fecha, #detalle-blog .fecha-comentario .comentario{
+  float: left;
+  padding-left: 50px;
+}
+
+#detalle-blog .fecha-comentario .comentario {
+  background-image: url('../images/comment.png'); 
+  background-repeat: no-repeat; 
+  background-position: 10px 0px;
+  margin-left: 10px;
+}
+
+#detalle-blog .fecha-comentario .fecha {
+  background-image: url('../images/reloj.png'); 
+  background-repeat: no-repeat; 
+  background-position: 10px 0px;
+}
+
+#detalle-blog .body {
+  float: left;
+  margin-bottom: 50px;
+}
+
+.separador-pagina {
+  float: left;
+  width: 100%;
+  margin: 35px 0 15px 0;
+  background-image: url('../images/separador-blog.png');
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  height: 35px;
+}
+
+/* comments */
+.pane-node-comments .pane-title {
+  font-family: ProximaNovaBold, sans-serif; 
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #58595B;
+}
+
+.pane-content .comment {
+  margin-bottom: 15px;
+  background-color: #F2F2F2;
+  padding: 20px 30px;
+}
+
+.pane-content .comment p, .pane-node-comment-form .form-item input, .pane-node-comment-form .form-item textarea, #detalle-blog .body p{
+  margin: 0;
+  font-family: ProximaNovaRegular, sans-serif; 
+  font-size: 16px;
+  color: #58595B;
+  text-align: left;
+}
+
+.pane-content .comment .username {
+  font-family: ProximaNovaRegularItalic, sans-serif; 
+  font-size: 14px;
+}
+
+.pane-node-comment-form .pane-title {
+ font-family: ProximaNovaBold, sans-serif; 
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #58595B; 
+}
+
+.pane-node-comment-form {
+  margin-top: 50px;
+}
+
+
+.pane-node-comment-form .form-item input, .pane-node-comment-form .form-item textarea{
+  border:1px solid #F2F2F2;
+  padding: 20px 25px;
+  width: 100%;
+
+}
+
+.shartethis-blog {float: left; width: 100%; padding: 25px 0 35px; text-align: center; border-bottom: 2px solid #ddd; border-top: 2px solid #ddd; margin-bottom: 20px;}
+
+.comment-form .group-nombre-correo {float: left; width: 100%}
+.comment-form .group-nombre-correo .form-item-name {margin-right: 37px;}
+.comment-form .group-nombre-correo .form-item-name, .comment-form .group-nombre-correo .field-name-field-correo-electronico {width: 48%; float: left;}
+.comment-form .form-actions {text-align: center;}
+.comment-form .form-actions .form-submit {
+  padding: 10px 35px; font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #632C4F; border: 2px solid #632C4F; background-color: #fff; cursor: pointer;letter-spacing: -1px;
+}
+
+.gd-infinite-scroll-load-more {padding: 10px 5px; background: no-repeat; border: 3px solid #632C4F; color: #632C4F; font-family: MyriadPro, sans-serif; font-size: 14px; min-width: 150px; margin-bottom: 50px; cursor: pointer; margin-top: 50px; clear: both; width: 150px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.gd-infinite-scroll-load-more:hover{
+	background-color: #401C33;
+	color: #FFF;
+}
+.view-display-id-block_listado_blog .view-content {float: left; margin-bottom: 30px;}
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle {position: relative; height: 440px; overflow: hidden;}
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle:hover .group-slide-up{top: 0; }
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up {position: absolute; top: 440px; padding: 25px 30px 0 20px; background-image: url('../images/fondo-roll-over-blog-listado.png'); height: 440px; -webkit-transition: all 500ms ease; transition: all 500ms ease;  } 
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up .field-name-title h3 {margin-top: 5px; margin-bottom: 25px; padding-bottom: 20px; background-image: url('../images/fondo-titulo-listado-blog.png'); background-repeat: no-repeat; background-position: bottom left;}
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up .field-name-title h3 a{font-family: ProximaNovaBold, sans-serif; font-size: 30px;text-transform: uppercase; color: #fff;}
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up .field-name-field-categoria a {font-family: ProximaNovaRegularItalic, sans-serif; font-size: 16px; color: #fff;}
+.ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up .field-name-body p {font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #fff; line-height: 25px;}
+
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-fecha-de-envio2 {width: 80%; float: left;}
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-title {font-family: ProximaNovaBold, sans-serif; font-size: 30px;text-transform: uppercase;}
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-body p{font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #58595B; margin-top: 10px;   line-height: 23px;}
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-field-categoria a {font-family: ProximaNovaRegularItalic, sans-serif; font-size: 16px; color: #58595B;}
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-title a {  color: #632C4F; }
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-conteo-comentarios2 {width: 20%; float: left;}
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-fecha-de-envio2 p, .ds-2col.node.node-blog.node-teaser .group-right .field-name-conteo-comentarios2 p {margin: 0;}
+.ds-2col.node.node-blog.node-teaser .group-right .group-fecha-comment2 {  width: 100%; position: absolute; left: 0; bottom: 0; border-top: 1px solid #ddd;}
+.ds-2col.node.node-blog.node-teaser .group-right .field-name-fecha-de-envio2 .logo,.ds-2col.node.node-blog.node-teaser .group-right .field-name-fecha-de-envio2 p,.ds-2col.node.node-blog.node-teaser .group-right .field-name-conteo-comentarios2 .logo,.ds-2col.node.node-blog.node-teaser .group-right .field-name-conteo-comentarios2 p {float: left;}
+.pane-block-8 .bloque-cintillo-reserva h3  {margin: 0; font-family: ProximaNovaSemibold, sans-serif; font-size: 29px; margin-top: 30px; line-height: 30px; text-transform: uppercase;}
+.field-name-post-date, .field-name-fecha-de-envio2 p {font-family: ProximaNovaRegular, sans-serif; font-size: 16px; }
+.view-footer {text-align: center; margin: 47px 0 58px 0;}
+.view-footer .pie a {padding: 10px 30px; font-family: ProximaNovaRegular, sans-serif; font-size: 19px; color: #632C4F; border: 2px solid #632C4F;   line-height: 57px;}
+.view-footer .pie a:hover{
+  background-color: #401C33; color: #FFF;
+}  
+
+/* end home */
+
+/* page vida bosque urbano */
+.page-vida-bosque-urbano #page-title, .page-historias #page-title, .node-type-blog #page-title, .comment-form .form-item-subject, .comment-form .field-name-comment-body .filter-wrapper, .form-required {display: none;}
+.view-mode-bosque_sendero_estaciones .group-left {margin-right: 10px; width:63%; padding-top: 25px; position: relative;}
+.view-mode-bosque_sendero_estaciones .group-left .field-name-field-detalle {  position: absolute; width: 235px; padding: 39px 0 0 15px; top: 345px; margin-left: 33px} 
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades .field-name-field-detalle-parque-mascotas h3, .panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-detalle-lobby h3, .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption h3, .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina h3, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga h3, .view-mode-bosque_sendero_estaciones .group-left .field-name-field-detalle h3, .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos h3 {font-family: ProximaNovaRegular, sans-serif; font-size: 25px; color: #3FAE29;}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina h3 {margin-left: 200px; line-height: 30px; text-transform: uppercase;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades .field-name-field-detalle-parque-mascotas p, .panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-detalle-lobby p, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga p, .view-mode-bosque_sendero_estaciones .group-left .field-name-field-detalle p, .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos p {font-family: ProximaNovaRegular, sans-serif; font-size: 14px; color: #000;}
+.view-mode-bosque_sendero_estaciones .group-right {width: 35%;}
+.view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos {text-align: right;    margin-top: -65px; padding-top: 71px; background-position: 233px 0px;}
+.view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos h3, .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos p {margin: 0;}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina {position: absolute; bottom: -60px; margin-bottom: 25px; width: 330px; left: 122px;   padding-top: 110px}
+.view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos p {line-height: 10px;}
+.view-mode-bosque_sendero_estaciones .group-footer {float: right; width: 70%; margin-top: 30px;}
+
+.panel-pane.pane-node .view-mode-piscina_recreacion_gimnasio{padding: 35px 0 55px 0; position: relative; min-height: 650px;}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{position: absolute; width: 365px;}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle {left: 0px;}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle {left: 279px;}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field {position: absolute; background-position: 0px 25px;}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga {  left: 247px; z-index: 2; width: 398px; padding-left: 20px; padding-bottom: 50px;   top: -32px;}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga h3 {margin-top: 0px;}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-imagen-yoga {top: 15px;}
+.view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio {right: 0px;}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio {top: 150px;}
+
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines {margin-top: 25px;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .caption-image{width: 76%;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .slides li {height: 320px;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .slides li img {width: 76%;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption {position: relative; width: 308px; z-index: 4; top: -339px; left: 600px; background: none;  padding:60px 0 0 140px;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption h3 {text-align: left; margin-bottom: 10px;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption p{font-family: ProximaNovaRegular, sans-serif; font-size: 14px; color: #000; line-height: 20px; text-align: left;}
+.panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-control-nav {  left: 20px; top: 153px;}
+#imagen-testimonio {width: 50%; float: left;}
+#titulo-cargo {  font-family: ProximaNovaRegularItalic, sans-serif; font-size: 13px; color: #939598; line-height: 15px; margin-top: 30px; padding-left: 10px; float: left; width: 50%;} 
+.group-footer .flexslider.flexslider-home .flex-control-nav {  top: 143px; right: 36px;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge, 
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion,
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades{
+  float: left;
+}
+
+.panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge { margin-top: 300px; margin-right: 20px; position: relative;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion { position: relative; margin-bottom: 10px;   margin-top: 50px;   width: 67%;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-detalle-lobby{   position: absolute; top: 0; text-align: right; left: -340px; padding: 30px 80px 0 0; width: 400px; }
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-detalle-lobby h3 {margin: 20px 0 0 0;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades { width: 368px; position: relative; margin-right: 20px;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades .field-name-field-detalle-parque-mascotas {  position: absolute; top: 130px; left: -270px; text-align: right; width: 350px; padding: 25px 100px 0 0;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo{float: left; width: 233px; margin-top: 77px;}
+.panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo .flex-control-nav {  top: 153px; right: 25px;}
+
+#block-block-5 {position: relative; margin: 0 auto; max-width: 1483px;}
+#block-block-5 .descripcion {position: absolute; padding: 20px 65px; text-align: center; /*left:250px; top: 163px;*/ left:17%; top: 25%; background-image: url('../images/fondo-caption-not-front.png');   max-width: 73%;}
+#block-block-5 .descripcion .detalle p {font-family: ProximaNovaRegular, sans-serif; font-size: 20px; color: #231F20; line-height: 25px;   margin-top: 10px;}
+#block-block-5 .descripcion .enlace a {font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #231F20; text-transform: uppercase; padding: 15px 20px; border:3px solid #231F20;}
+#block-block-5 .descripcion .enlace{ margin: 25px;}
+#block-block-5 .imagen {margin-bottom: -8px;}
+
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
+    height: 25px !important;
+}
+
+.stButton .stButton_gradient {
+    height: 22px !important;
+}
+
+.panels-flexible-row.fila .region{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  float: none;
+}
+
+/* hogar a su medida */
+.tabs-content{
+	position: relative;
+}
+.tabs-content .tab-content, .tabs-content .tab-content .sub-tab-content, .info-piso, #popup{display: none;}
+.field-name-field-detalle, .field-name-field-detalle-piscina, .field-name-field-detalle-parque-mascotas, .field-name-field-detalle-yoga, .field-name-field-detalle-lobby, .field-name-field-detalle-senderos {visibility: hidden;}
+.tabs-content .tab-content.active, .tabs-content .tab-content .sub-tab-content.active {display: block;}
+
+/*ajustar anchos a 920px;*/
+.page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid,
+.page-contactenos .panels-flexible-row.fila .region{max-width: 925px;}
+.page-hogar-a-su-medida .panels-flexible-row.fila .encabezado.region {max-width: 100%;}
+
+/*
+
+/* ajustar el ancho a 100px */
+.front .panels-flexible-row.fila .encabezado.region, .page-contactenos .panels-flexible-row.fila .encabezado.region{
+  max-width: 1000px;
+}
+
+.field-name-field-detalle-senderos {background-image: url('../images/linea-background.png'); background-repeat: no-repeat;}
+.field-name-field-detalle{background-image: url('../images/linea2-background.png'); background-repeat: no-repeat;}
+.field-name-field-detalle-yoga {background-image: url('../images/linea3-background.png'); background-repeat: no-repeat;}
+.field-name-field-detalle-lobby {background-image: url('../images/linea6-background.png'); background-repeat: no-repeat;   background-position: 196px 30px;}
+.field-name-field-detalle-parque-mascotas {background-image: url('../images/linea6-background.png'); background-repeat: no-repeat;   background-position: 127px 30px;;}
+.field-name-field-detalle-piscina {background-image: url('../images/linea4-background.png'); background-repeat: no-repeat; background-position: 180px 0px;}
+.flexslider.flexslider-bussines .flex-caption {background-image: url('../images/linea5-background.png') !important; background-repeat: no-repeat !important; background-position: 28px 50px !important;}
+.page-vida-bosque-urbano .field-name-field-image .field-items, .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items {position: relative;}
+.caption-image,
+.page-vida-bosque-urbano .field-name-field-image .field-items .caption, 
+.page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, 
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-lounge .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{position: absolute; width: 100%; bottom: 9px; background-image: url('../images/fondo-roll-over-blog-listado.png');}
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption {background-image: url('../images/fondo-caption-senderos.png'); background-repeat: no-repeat;   background-position: 42px 0px;}
+.page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, 
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption {background-image: url('../images/fondo-caption-gimansio.png'); background-repeat: no-repeat;   background-position: 70px 0px; bottom: 13px;}
+.caption-image { bottom: 0;}
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption {  background-position: 72px 0px; bottom: 12px;}
+
+.caption-image,
+.page-vida-bosque-urbano .field-name-field-image .field-items .caption h4,
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption h4,
+.page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption h4, 
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption h4,
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption h4,
+.page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption h4,
+.page-vida-bosque-urbano .field-name-field-lounge .field-items .caption h4,
+.page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption h4{
+  margin: 0;
+  text-align: center;
+  padding: 14px;
+  font-family: ProximaNovaRegular, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption h4 {padding: 18px;}
+.page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption h4, 
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption h4, 
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption h4  {padding: 32px 0 61px 0;}
+/*
+====================================
+      INICIO ANDREY 
+====================================
+
+*/
+
+/* ***** HOGAR + NATURALEZA ***** */
+
+  .home-encabezado-titulo {
+    margin-top: 25px;
+  }
+
+  .home-encabezado-titulo h2{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  30px;
+    color: #085C42;
+    text-align: center;
+    text-transform: uppercase;
+    background-image:  url('../images/separador-blog.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom:  40px;
+    margin: 0px;
+	letter-spacing: -1px;
+  }
+  .home-encabezado-titulo .detalle{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  16px; 
+    text-align: center; 
+    line-height:  22px;
+    padding: 0px 30px; 
+    color: #58595B;
+    margin: 20px 0px 60px;
+  }
+  .front .islas .isla{
+    width: 333px;
+    height: 261px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .front .islas .isla:hover .descripcion,
+  .front .islas .isla .descripcion:hover{
+    top: 0px;
+  }
+  #isla3-encabezado-home,
+  #isla6-encabezado-home{
+    margin-right:  0px;
+  }
+  .front .islas .isla .descripcion{
+    position: absolute;
+    top: 270px;
+    background: rgba(8, 92, 66, 0.8);
+    box-sizing: border-box;
+    padding: 35px 25px 0px 25px;
+    height: 100%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;    
+  }
+  .front .islas .isla .descripcion h4{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: bold;
+    font-size:  22px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;     
+
+  }
+  .front .islas .isla .descripcion p{
+    font-family: Open Sans, sans-serif;
+    font-weight: normal;
+    font-size:  13px;
+    color: #FFF;
+    line-height: 16px;
+    text-align: center;
+
+  }  
+  .front .islas .isla .descripcion a.enlace{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: bold;
+    font-size:  15px;
+    padding: 8px 0px;
+    color: #FFF;
+    text-transform: uppercase; 
+    border-bottom:  4px solid #FFF;
+    cursor: pointer;
+  }
+  .amenidades{
+    clear: both;
+    padding: 50px 0px 35px 0px;
+  }
+  .amenidades .amenidades-enlace{
+    border: 3px solid #632C4F;
+    display: block;
+    border-radius: 3px;
+    width:  183px;
+    height: 47px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  19px;     
+    color: #632C4F;
+    text-align: center;
+    line-height:  47px;
+    text-transform: uppercase;
+    margin:  0 auto;
+
+  }
+  .amenidades .amenidades-enlace:hover{
+	  background-color: #401C33; color: #FFF;
+  }  
+
+/* ********** CONTACTO *********** */
+  
+  .page-contactenos h1#page-title{
+    display: none;
+  }
+
+  .page-contactenos .flexslider{
+    /*margin-bottom: 30px;*/
+  }
+  
+  .page-contactenos #chat{
+    position: static;
+    background-image: url('../images/chat-fondo-contacto.png');
+    height:  120px;
+    margin-top: 40px;
+  }
+  .page-contactenos #chat .logo{
+    background-position: 20px 45px;
+  }
+  .page-contactenos #chat .descripcion p{
+    line-height: 25px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size: 19px;
+    margin-top: 36px;
+    margin-bottom: 0px;
+    padding-left: 5px;   
+  }
+
+  .encabezado-contacto .detalle{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  16px; 
+    text-align: center; 
+    line-height:  21px;
+    padding: 0px 100px; 
+    color: #58595B;
+    margin: 20px 0px 15px;
+    background-image:  url('../images/separador-blog.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom:  25px;    
+  }
+  .page-contactenos .islas{
+    margin-bottom: 40px;
+  }
+  .page-contactenos .islas h3{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  25px; 
+    text-align: center;
+    text-transform: uppercase;   
+    color: #3FAE29;
+    margin: 0px; margin-bottom:  30px;
+  }
+  
+  .encabezado-contacto .isla{
+    display: inline-block;
+    width: 215px;
+    height:  215px;
+    position: relative;
+    margin-right:  40px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .encabezado-contacto .isla#isla4{
+    margin-right: 0px;
+  }
+
+  .encabezado-contacto .isla .descripcion{
+    position: absolute;
+    width: 211px;
+    height:  211px;    
+    top: 3px;
+    left: 3px;
+    display: table;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: rgba(99, 44, 79, 0);
+    border-radius: 50%;
+  }
+
+  .encabezado-contacto .isla:hover .descripcion{
+    background: rgba(99, 44, 79, 0.9);
+    background-image: url('../images/bghovercontact.png')\9;
+    background-repeat: no-repeat\9;
+    background-position: center\9;
+  }
+
+  .encabezado-contacto .isla .descripcion p{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  18px; 
+    text-align: center; 
+    line-height:  21px;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 20px;
+    display: table-cell; vertical-align: middle;
+  }
+
+
+
+  .pane-webform-client-block-2{
+    float: left;
+	width: 560px;
+	margin-right: 35px;
+  }
+  .page-contactenos .pane-2{
+    float: left;
+    width: 328px;
+  }
+
+  .webform-client-form-2{
+
+  }
+  .webform-client-form-2 .webform-component--encabezado---contacto{
+
+  }
+  .webform-client-form-2 .webform-component--encabezado---contacto h3{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  31px; 
+    line-height: 30px;
+    text-transform: uppercase;   
+    color: #085C42;
+    margin: 0px;    
+  }
+  .webform-client-form-2 .webform-component--encabezado---contacto p{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  16px;   
+    color: #58595B;
+    margin: 0px;
+
+  }
+  .webform-client-form-2 input[type="image"]{
+    display: none !important;
+  }
+  .webform-client-form-2 input[type="text"],
+  .webform-client-form-2 input[type="email"],
+  .webform-client-form-2 select{
+    width: 100%;
+    height: 55px;
+    background-color:  #FFF;
+    border: none;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  16px;
+    padding-left:  15px;
+    color: #58595B;
+  }
+  .webform-client-form-2 select{
+    width: auto;
+    width: 91px\9;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-image: url('../images/icon_select.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-position:100px\9;
+    padding-right:  35px;
+    padding-right:  0px\9;
+    padding-left:  10px;
+    max-width: 86px;
+  }
+
+  
+  .webform-client-form-2 fieldset{
+    border: none;
+  }
+  .webform-client-form-2 fieldset .fieldset-wrapper > div{
+    display: inline-block;
+
+  }
+  .webform-client-form-2 fieldset label{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  15px;
+    color:  #58595B;
+	margin-right: 5px;
+  }
+
+
+ select::-ms-expand{
+  display:none;
+ }
+
+  .webform-client-form-2 .form-submit{
+    border: 3px solid #632C4F;
+    display: block;
+    border-radius: 3px;
+    width:  186px;
+    height: 47px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  18px;     
+    color: #632C4F;
+    text-align: center;
+    line-height:  42px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+	float:right;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .webform-client-form-2 .form-submit:hover{
+	  background-color: #401C33;
+	  color: #FFF;
+  }
+
+
+  .islas-sidebar{
+
+  }
+  .islas-sidebar #oficina-ventas{
+    width:  328px;
+    height:  154px;
+    background-image: url('../images/bgofi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    padding:  8px 10px 10px 120px;
+    margin-bottom:  30px;
+  }
+  .islas-sidebar #telefono-correo{    
+    width:  328px;
+    height:  154px;
+    background-image: url('../images/bgtel.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    padding:  8px 10px 10px 120px;  
+  }
+
+  .islas-sidebar .descripcion h4{
+    font-family: ProximaNovaSemibold, sans-serif;
+    font-weight: 500;
+    font-size:  18px;
+    text-transform: uppercase;    
+    color: #FFF;
+    margin: 0px; margin-bottom: 6px; margin-top: 8px;
+
+  }
+  .islas-sidebar .isla .descripcion p{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  15px;
+    line-height:  19px;  
+    color: #FFF;
+    margin: 0px;
+  }
+  .islas-sidebar #telefono-correo .descripcion p{
+    font-size:  14px;
+    line-height:  19px; 
+  }
+  .islas-sidebar .isla .descripcion p a{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  14px;
+    line-height:  16px;  
+    color: #FFF;
+  }
+  .islas-sidebar .descripcion{
+
+  }
+  .mapa{
+    max-width: 1280px;
+    /*height: 489px;*/
+    height: auto;
+    margin:  0 auto;
+    margin-top: 4px;
+  }
+
+
+/*  HOGAR A SU MEDIDA */
+
+.page-hogar-a-su-medida{
+}
+
+.page-hogar-a-su-medida .fondo{
+	height: 570px;
+	position:relative !important;
+	text-align: center;
+}
+.page-hogar-a-su-medida .fondo img{
+	margin: 0 auto;
+}
+.tabs{
+	height: 100px;
+	background-color: #085C42;
+}
+.tabs .tabs-list{
+	max-width: 1009px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tabs .tabs-list li.tab{
+	display: table;
+	float:left;
+	
+}
+.tabs .tabs-list li.tab a{
+	display:table-cell;
+	vertical-align:middle;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  17px;  
+    color: #FFF;
+	text-transform: uppercase;
+	line-height: 17px;
+	text-align:center;
+	width: 190px;
+	height: 100px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;  	
+}
+.tabs .tabs-list li.tab a.active,
+.tabs .tabs-list li.tab a:hover{
+	background-color: #004E37;
+}
+
+
+.tabs-content .container{
+	position: absolute;
+	top: 0px;
+	width: 930px;
+	max-width: 930px;
+	margin: 0 auto;
+	left: 0px; right: 0px;	
+}
+
+.rosa-vientos{
+	width: 114px;
+	height: 73px;
+	background-image: url('../images/rosavientos.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	float:left;
+	margin-right: 25px;
+}
+.tabs-content .encabezado{
+	width: 215px;
+	height: 73px;
+	background-image: url('../images/bgb.png');
+	background-repeat:repeat;
+	float:left;
+}
+.tabs-content .encabezado h2{
+    font-family: ProximaNovaSemibold, sans-serif;
+    font-weight: 400;
+    font-size:  21px;  
+    color: #FFF;
+	text-transform: uppercase;
+	text-align:center;
+	/*line-height: 73px;*/
+}
+.tabs-content .punto{
+	width: auto;
+	height: 30px;
+	border: solid 1px rgba(255, 255, 255, 0.5);
+	background-image: url('../images/bgb.png');
+	background-repeat:repeat;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+	text-align:center;
+	float:left;
+	padding: 0px 15px;
+    font-size:  12px;
+    color: #FFF;
+	position:relative;		
+}
+.tabs-content .punto#punto-pet-park{
+	top: 25px;
+	left: 55px;
+}
+.tabs-content .punto#punto-senderos{
+	top: 300px;
+	left: -463px;	
+}
+.tabs-content .punto#punto-casa-club{
+	top: 233px;
+	left: -17px;
+}
+.tabs-content .punto#punto-lobby{
+	top: 302px;
+	left: 147px;	
+}
+.tabs-content .punto#punto-estacionamiento{
+	top: 230px;
+	left: 222px;	
+}
+.tabs-content .punto#punto-acceso{
+	top: 421px;
+	left: 155px;
+}
+.tabs-content .punto span{
+	display:block;
+	width: 35px;
+	height: 48px;
+	background-image: url('../images/isotipo_hogarsumedida.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	position:absolute;
+	left: -25px; top: -12px;
+}
+
+#edificios{
+}
+#edificios .edificio{
+}
+
+#edificios .edificio a{
+	display:block;
+	height: 60px;
+	background-image: url('../images/bgm.png');
+	background-repeat: repeat;
+	border: solid 2px rgba(255, 255, 255, 0.7);
+	float:left;
+	padding: 0px 35px;
+    font-family: ProximaNovaSemibold, sans-serif;
+    font-size:  22px;  
+    color: #FFF;
+	text-transform: uppercase;
+	line-height: 60px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#edificios .edificio a:hover{
+	background-color: #F05323;
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+}
+#edificios .edificio#edificio2 a:hover{
+	background: none;
+        background-image: url('../images/bgm.png');
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+#edificios .edificio a span{
+	display:block;
+	font-size: 14px;
+	clear:both;
+}
+#edificios .edificio#edificio1 a{
+	line-height: 20px;
+	padding-top: 10px;
+}
+
+#edificios .edificio#edificio2{
+	position: absolute;
+	display: block;
+	padding: 0px 24px 12px 0px;
+	background-image: url('../images/linea_edificio_1.png');
+	background-repeat: no-repeat;
+	background-position: 100% 27px;
+	top: 360px;
+	left: 363px;
+	float: left;
+}
+#edificios .edificio#edificio1{
+	position: absolute;
+	display: block;
+	padding: 0px 0px 38px 28px;
+	background-image: url('../images/linea_edificio_2.png');
+	background-repeat: no-repeat;
+	background-position: 0px 25px;
+	top: 127px;
+	left: 639px;
+	float: left;
+}
+#edificios .edificio#edificio2 a{
+	padding: 0px 25px;
+}
+
+/*PISOS*/
+
+#tab-content2 .rosa-vientos{
+	margin-right: 10px;
+}
+
+#pisos{
+	position:absolute;
+	right: 12px;
+	top: 42px;
+	background-image: url('../images/linea_pisos.png');
+	background-repeat: no-repeat;
+	background-position: left 26%;
+	padding-left: 33px;	
+}
+#pisos .piso{
+	float:left;
+	clear:both;
+	/*overflow:hidden;*/
+	margin-bottom: 20px;	
+}
+#pisos .piso a{
+	display:block;
+	width: 130px;
+	height: 36px;
+	overflow:hidden;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  17px;
+	line-height: 18px;
+    color: #FFF;
+	text-transform: uppercase;
+	text-align:center;
+	background-image: url('../images/bgm.png');
+	background-repeat: repeat;
+	border: solid 2px rgba(255, 255, 255, 0.7);
+	padding: 8px 15px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#pisos .piso a:hover{
+	background-color: #F05323;
+	transform: translateX(10px);
+	-webkit-transform: translateX(10px);
+}
+
+/*APARTAMENTOS*/
+.page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo{
+	height: 760px;
+}
+#tab-content2 .rosa-vientos{
+	margin-right: 10px;
+}
+.indicadores{
+  width: auto;
+  height: 73px;
+  background-image: url('../images/bgb.png');
+  background-repeat: repeat;
+  float: left;
+  margin-left: 10px;
+  padding: 0px 15px;	
+}
+.indicadores .indicador{
+	display:inline-block;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  13px;
+	text-transform: uppercase;
+	color: #FFF;
+	line-height: 73px;
+	padding: 0px 10px 0px 5px;	
+}
+.indicadores .indicador:before{
+	content: '';
+	float:left;
+	display:block;
+	width: 23px;
+	height: 23px;
+	
+	background-color:#3FAE29;
+	border-radius: 4px;
+	margin-top: 23px;
+	margin-right: 17px;
+}
+
+.indicadores .indicador#vendido:before{
+	background-color:#A7AAAC;
+}
+.indicadores .indicador#alquilado:before{
+	background-color:#632C4F;
+}
+
+#tab-content2-2 .encabezado h2{
+	line-height: 19px;
+}
+
+
+
+
+#apartamentos .apartamento{
+    -webkit-transform: rotate(-83deg);
+    -moz-transform: rotate(-83deg);
+    -ms-transform: rotate(-83deg);
+    -o-transform: rotate(-83deg);
+    transform: rotate(-83deg); 
+}
+#apartamentos{
+	/*float:left; margin-top: 70px; position:relative; margin-left: -10px\9;*/ /* antes de pasar a absoluto*/
+  float: none;
+  position: absolute;
+  margin-top: 70px;
+  left: 752px;
+  margin-left: -10px\9;	
+}
+#apartamentos .apartamento{
+	position:absolute;
+}
+#apartamentos .apartamento#apartamento1{
+	top: 336px;
+	left: -138px;	
+}
+#apartamentos .apartamento#apartamento2{
+	top: 225px;
+	left: -124px;	
+}
+#apartamentos .apartamento#apartamento3{
+	top: 114px;
+	left: -111px;	
+}
+#apartamentos .apartamento#apartamento4{
+	top: 3px;
+	left: -97px;	
+}
+#apartamentos .apartamento#apartamento5{
+	top: 349px;
+	left: -43px;	
+}
+#apartamentos .apartamento#apartamento6{
+	top: 238px;
+	left: -29px;
+}
+#apartamentos .apartamento#apartamento7{
+	top: 127px;
+	left: -15px;
+}
+#apartamentos .apartamento#apartamento8{
+	top: 16px;
+	left: -1px;
+}
+
+#apartamentos .apartamento > a{
+	width: 110px;
+	height: 90px;
+	line-height: 90px;
+	float:left;
+	background: rgba(99, 44, 79, 0.5);
+	font-family: ProximaNovaBold, sans-serif;
+	font-weight: bold;
+	font-size: 28px; /**/
+	text-transform: uppercase;
+	color: #FFF;
+}
+#apartamentos .apartamento > a:hover,
+#apartamentos .apartamento > a.active{
+	transform:translate(-5px, -10px);
+	-webkit-box-shadow: 0px 10px 0px 0px #403148;
+	-moz-box-shadow: 0px 10px 0px 0px #403148;
+	box-shadow: 0px 10px 0px 0px #403148;
+	border: solid 1px #999;
+
+}
+#apartamentos .apartamento.estado-1 > a{
+	background: #A7AAAC;
+	background: rgba(167, 170, 172, 0.5);	
+}
+#apartamentos .apartamento.estado-2 > a{
+	background: #632C4F;
+	background: rgba(99, 44, 79, 0.5);	
+}
+#apartamentos .apartamento.estado-3 > a{
+	background: #3FAE29;
+	background: rgba(63, 174, 41, 0.5);	
+}
+
+
+#apartamentos .apartamento .info-piso{
+	position: absolute;
+	width: 277px;
+	height: 225px;
+	background-image: url('../images/bginfo.png');
+	background-repeat:repeat;
+	border-radius: 5px;
+	box-sizing:border-box;
+	padding: 20px;
+
+    -webkit-transform: rotate(83deg);
+    -moz-transform: rotate(83deg);
+    -ms-transform: rotate(83deg);
+    -o-transform: rotate(83deg);
+    transform: rotate(83deg);
+	z-index: 99999999999; 
+  top: -265px;
+  left: -30px;	
+}
+#apartamentos .apartamento .info-piso h4{
+	margin: 0px;
+}
+#apartamentos .apartamento .info-piso .estado{
+	margin-bottom: 15px;
+}
+#apartamentos .apartamento .info-piso,
+#apartamentos .apartamento .info-piso a{
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  19px;
+	font-size:  19px\9;
+	text-transform: uppercase;
+	text-align:center;
+	color: #FFF;	
+}
+#apartamentos .apartamento .info-piso .enlaces{
+	width: 213px;
+	margin: 0 auto;
+	margin-top: 15px;
+	text-align:center;
+}
+#apartamentos .apartamento .info-piso .enlaces a{
+	display: inline-block;
+	/*float:left;*/
+	width: 100px;
+	height: 45px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+    font-size:  13px;
+	line-height: 45px;
+	text-transform: uppercase;
+	text-align:center;
+	color: #FFF;
+	border: 2px solid #FFF;
+	border-radius: 3px;
+}
+#apartamentos .apartamento .info-piso .enlaces a.solicitar-cita{
+	background: #632C4F;
+	line-height: 14px;
+	margin-left: 10px;
+	padding-top: 7px;
+	float:right;
+}
+
+#apartamentos .apartamento .info-piso .enlaces a:hover,
+#apartamentos .apartamento .info-piso .enlaces a.solicitar-cita:hover{
+	transform:translateY(-8px);
+	-webkit-transform:translateY(-8px);
+}
+
+.apartamento .info-piso a.closeinfo{
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  /*color: white;
+  font-weight: bold;*/
+  font-size: 15px !important;
+  line-height: 19px;
+  border-radius: 50%;
+  width: 20px;
+  border: 1px solid #FFF;
+  height: 20px;
+  background-color: #000;	
+}
+
+#apartamentos .apartamento .info-piso .flecha{
+	position: absolute;
+	background-image: url('../images/flechainfo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 17px;
+	height: 20px;
+	right: -16px;
+	bottom: 20px;
+}
+
+/* EDIFICIO 2*/
+#apartamentos.edificio-2 .apartamento{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#apartamentos.edificio-2 .apartamento > a {
+	width: 116px;
+  height: 85px;
+  line-height: 85px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento1{
+  top: 564px;
+  left: -119px;	
+}
+#apartamentos.edificio-2 .apartamento#apartamento2{
+  top: 565px;
+  left: -237px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento3{
+  top: 565px;
+  left: -355px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento4{
+  top: 565px;
+  left: -473px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento5{
+  top: 565px;
+  left: -591px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento6{
+  top: 565px;
+  left: -709px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento7{
+  top: 467px;
+  left: -710px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento8{
+  top: 467px;
+  left: -592px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento9{
+  top: 467px;
+  left: -474px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento10{
+  top: 467px;
+  left: -356px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento11{
+  top: 467px;
+  left: -238px; 
+}
+#apartamentos.edificio-2 .apartamento#apartamento11 > a{
+	width: 90px;
+	font-size: 22px;
+}
+
+#apartamentos.edificio-2 .apartamento .info-piso{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	z-index: 99999999999999;
+	padding: 18px;
+  left: -150px;
+  top: -234px;	
+}
+#apartamentos.edificio-2 .apartamento .info-piso .flecha{
+	background-image: url('../images/flechainfo2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20px;
+	height: 17px;
+	right: 16px;
+	bottom: -17px;
+}
+
+/* MODELO DE HABITACIONES */
+
+.page-hogar-a-su-medida #tab-content5 .fondo,
+.page-hogar-a-su-medida #tab-content4 .fondo,
+.page-hogar-a-su-medida #tab-content3 .fondo{
+	height: 760px;
+}
+.page-hogar-a-su-medida #tab-content5 .tipo_apartamento,
+.page-hogar-a-su-medida #tab-content4 .tipo_apartamento,
+.page-hogar-a-su-medida #tab-content3 .tipo_apartamento,
+
+.page-hogar-a-su-medida #tab-content5 .container,
+.page-hogar-a-su-medida #tab-content4 .container,
+.page-hogar-a-su-medida #tab-content3 .container
+{
+	/*position: static;*/
+}
+
+#tab-content4 .rosa-vientos,
+#tab-content4 .encabezado{
+	display: none;
+}
+
+ul#puntos{
+	position: absolute;
+	list-style: none;
+	padding: 0px; margin: 0px;
+	z-index: 999;
+}
+ul#puntos li{
+}
+ul#puntos li a{
+	display: block;
+	width: 45px; height: 45px;
+	background-image: url('../images/verimg_off.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	position:absolute;	
+}
+ul#puntos li a:hover,
+ul#puntos li a.active{
+	width: 45px; height: 45px;
+	background-image: url('../images/verimg_on.png');	
+}
+.imagen_punto{
+  position: absolute;
+  top: 160px; /*198*/
+  left: 250px; /*497*/
+  left: 250px\9;
+  background-repeat: no-repeat;
+  height: 490px;
+  width: 430px;
+  display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+ .imagen_punto{
+   left: 250px;
+  }
+}
+
+@-moz-document url-prefix() { 
+  .imagen_punto{
+     left: 250px; /*458*/
+  }
+}
+.imagen_punto img{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* TAB 3*/
+
+ul#puntos li a#cocina{
+  top: 58px;
+  left: 364px;
+}
+ul#puntos li a#comedor{
+  top: 138px;
+  left: 339px;
+}
+ul#puntos li a#sala{
+  top: 167px;
+  left: 499px;
+}
+ul#puntos li a#cama{
+  top: 282px;
+  left: 245px;
+}
+
+.imagen_punto.content_cocina{
+	background-image: url('../images/linea_detalle_4.png');
+	background-position: 40% 7%;
+}
+.imagen_punto.content_comedor{
+	background-image: url('../images/linea_detalle_2.png');
+	background-position: 34% 26%;
+}
+.imagen_punto.content_sala{
+	background-image: url('../images/linea_detalle_5.png');
+	background-position: 57% 33%;
+}
+.imagen_punto.content_cama{
+	background-image: url('../images/linea_detalle_3.png');
+	background-position: 2% 37%;
+}
+
+/* TAB 4*/
+#tab-content4 .imagen_punto{
+	top: 195px; /*232*/
+	height: 520px;
+}
+#tab-content4 ul#puntos li a#cocina{
+  top: 79px;
+  left: 338px;
+}
+#tab-content4 ul#puntos li a#comedor{
+  top: 146px;
+  left: 347px;
+}
+#tab-content4 ul#puntos li a#sala{
+  top: 226px;
+  left: 232px;
+}
+#tab-content4 ul#puntos li a#cama{
+  top: 282px;
+  left: 362px;
+}
+
+#tab-content4 .imagen_punto.content_cocina{
+	background-image: url('../images/linea_b1.png');
+	background-position: 34% 0%;
+}
+#tab-content4 .imagen_punto.content_comedor{
+	background-image: url('../images/linea_b2.png');
+	background-position: 34% 19%;
+}
+#tab-content4 .imagen_punto.content_sala{
+	background-image: url('../images/linea_b3.png');
+	background-position: -5% 33%;
+}
+#tab-content4 .imagen_punto.content_cama{
+	background-image: url('../images/linea_b4.png');
+	background-position: 36% 39%;
+}
+
+/* TAB 5*/
+#tab-content5 .imagen_punto{
+  top: 198px; /*237*/
+  height: 520px;
+}
+#tab-content5 ul#puntos li a#cocina{
+  top: 99px;
+  left: 380px;
+}
+#tab-content5 ul#puntos li a#comedor{
+  top: 143px;
+  left: 322px;
+}
+#tab-content5 ul#puntos li a#sala{
+  top: 226px;
+  left: 294px;
+}
+#tab-content5 ul#puntos li a#cama{
+  top: 263px;
+  left: 398px;
+}
+
+#tab-content5 .imagen_punto.content_cocina{
+	background-image: url('../images/linea_c1.png');
+	background-position: 39% 3%;
+}
+#tab-content5 .imagen_punto.content_comedor{
+	background-image: url('../images/linea_c2.png');
+	background-position: 28% 16%;
+}
+#tab-content5 .imagen_punto.content_sala{
+	background-image: url('../images/linea_c3.png');
+	background-position: 21% 33%;
+}
+#tab-content5 .imagen_punto.content_cama{
+	background-image: url('../images/linea_c4.png');
+	background-position: 44% 38%;
+}
+
+/*************/
+
+.volver-edificios a{
+	display:block;
+	width: 232px;
+	height: 62px;
+	background-image: url('../images/flechatras.png');
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	background-color: #BCBEC0;
+	font-family: ProximaNovaSemibold, sans-serif;
+	font-size:  14px;
+	text-transform: uppercase;
+	color: #FFF;
+	line-height: 15px;
+	text-align:left;
+	padding-left: 38px;
+	padding-top: 16px;
+	box-sizing:border-box;
+	position: absolute;
+	bottom: 0px;	
+}
+
+
+
+.page-hogar-a-su-medida .panels-flexible-tres_filas .panels-flexible-row-tres_filas-main-row{
+	padding: 0px;
+}
+
+.imagen_segundo_plano.disabled{
+	display: none;
+}
+.imagen_segundo_plano.active{
+	display:block;
+}
+
+.ajaxloader{
+	display: none;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.5);
+	z-index: 1;
+	background-image: url('../images/ajax.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.view-display-id-block_historias_home .view-content{
+	overflow:hidden;
+}
+.view-display-id-block_historias_home .view-content .views-row{
+  width: 48%;
+  margin-right: 10px;
+  float: left;
+}
+
+.view-display-id-block_historias_home .view-content .views-row .field-type-image img{
+	position: absolute;
+	top: -40%;	
+}
+
+.view-display-id-block_historias_home .view-content .views-row .ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle{
+	height: 250px;
+}
+.view-display-id-block_historias_home .view-content .ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up .field-name-body p{
+	line-height: 19px;
+}
+/*
+
+====================================
+      FIN ANDREY 
+====================================
+
+*/
+
+
+/*A���adido por Keylor Mora*/
+
+#tab-content3 .rosa-vientos,
+#tab-content3 .encabezado,
+#tab-content5 .rosa-vientos,
+#tab-content5 .encabezado{
+  display: none;
+}
+
+.tipo_apartamento .field-name-indicacion-imagenes-area{
+  height: 55px;
+    /*left: 0;*/
+    position: absolute;
+   /* top: 0;*/
+    width: 240px;
+
+}
+
+.tipo_apartamento .field-name-indicacion-imagenes-area .logo{
+  width: 55px;
+  float: left;
+  height: 55px;
+background-repeat: no-repeat;
+  background-image: url(../images/mano-seleccion-punto-habitaciones.png);
+  background-position: center;
+  background-color: transparent;
+}
+
+.tipo_apartamento .field-name-indicacion-imagenes-area .detalle{
+  font-family: ProximaNovaSemibold, sans-serif;
+  font-size:  13px;
+  text-transform: uppercase;
+  line-height: 15px;
+  color: #6D6E71;  
+  float: left;
+  width: 175px;
+  height: 55px;
+  text-align:left;
+  padding-left: 15px;
+  padding-top: 5px
+}
+
+#tab-content3 .container,
+#tab-content4 .container,
+#tab-content5 .container{
+  padding-top: 40px;
+}
+
+
+.tipo_apartamento .group-imagenes{
+  float: left;
+    padding-top: 100px;
+    width: 688px;
+  background-repeat: no-repeat;
+  background-position: right 12px;
+  background-color: transparent;
+  background-image: url(../images/linea-bg-habitacion.png);
+} 
+
+
+.tipo_apartamento .group-info-izq{
+  float: right;
+  width: 232px;
+} 
+
+.tipo_apartamento {
+    position: relative;
+    height: 720px;
+}
+
+
+.tipo_apartamento .field-name-field-imagen-primer-plano{
+	text-align: left;
+}
+.tipo_apartamento .field-name-field-imagen-primer-plano img{
+	/*position:absolute;
+	z-index: -1;*/
+}
+.tipo_apartamento .imagen_segundo_plano {
+	position:absolute;
+	z-index: 99;
+  float:left;
+  margin-top: -50px;
+  margin-left: 30px;
+}
+
+.tipo_apartamento .field-name-title-custom h2{
+    color: #632c4f;
+    font-family: ProximaNovaRegular,sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.tipo_apartamento .field-name-area-total .area-total{
+  font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #3FAE29;
+   margin-bottom: 15px;
+}
+
+.tipo_apartamento .field-name-area-total .area-total span{
+  font-family: ProximaNovaSemibold, sans-serif;
+}
+
+.tipo_apartamento .field-type-list-integer{
+    width: 100%;
+    height: 52px;
+    background-color: #E6E7E8;
+    padding: 0 20px;
+    margin-bottom: 4px
+}
+
+.tipo_apartamento .field-type-list-integer .field-item {
+    line-height: 52px;
+    color: #632C4F;
+     font-family: ProximaNovaRegular, sans-serif;
+    font-weight: normal;
+  font-size: 21px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tipo_apartamento .field-type-list-integer.field-name-field-parqueo{
+  margin-bottom: 12px;
+}
+
+.tipo_apartamento .field-name-financiamiento-disponible{
+  width: 100%;
+  height: 62px;
+  background-color: #3FAE29;
+  background-image: url(../images/financiamiento-disponible-bg.png);
+  background-repeat: no-repeat;
+  background-position: 14px center
+}
+
+.tipo_apartamento .field-name-financiamiento-disponible .financiamiento-disponible{
+  text-align: center;
+}
+
+.tipo_apartamento .field-name-financiamiento-disponible .financiamiento-disponible a{
+    color: #fff;
+    display: block;
+    font-family: ProximaNovaSemibold,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 62px;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* POPUP */
+
+#cboxClose{
+	top: 0px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/close.png');
+	background-position: center;
+}
+#cboxClose:hover{
+	background-position: center;
+}
+
+/*
+  =MEDIA QUERIES
+--------------------------------------------- */
+@media only screen and (min-width: 30em) { /* > 480 */
+
+}
+
+@media only screen and (min-width: 30em) and (max-width: 35em) {
+
+}
+
+@media only screen and (min-width: 35em) { /* > 560 */
+
+}
+
+@media only screen and (min-width: 40em) { /* > 640 */
+
+}
+
+@media only screen and (min-width: 45em) { /* > 720 */
+
+
+}
+
+@media only screen and (min-width: 55em) { /* > 880 */
+
+}
+
+@media only screen and (min-width: 60em) { /* > 960 */
+
+
+}
