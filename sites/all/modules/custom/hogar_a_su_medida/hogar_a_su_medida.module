@@ -235,7 +235,9 @@ function hogar_a_su_medida_menu() {
 
           foreach ($nodes_pisos as $piso) {
             //llenar el array con los datos del piso (title)
-            $floors[] = array("nombre"=>$piso->title, "nid"=>$piso->nid);
+            $floor_name = substr($piso->title, 3);
+            //exit(var_dump($apartment_name));
+            $floors[] = array("nombre"=>$floor_name, "nid"=>$piso->nid);
           }
         }
       }
