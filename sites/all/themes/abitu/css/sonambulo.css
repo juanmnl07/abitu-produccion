@@ -1061,8 +1061,8 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	left: -17px;
 }
 .tabs-content .punto#punto-lobby{
-	top: 302px;
-	left: 147px;	
+	top: 333px;
+	left: 146px;	
 }
 .tabs-content .punto#punto-estacionamiento{
 	top: 230px;
@@ -1081,11 +1081,6 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	background-position: center;
 	position:absolute;
 	left: -25px; top: -12px;
-}
-
-#edificios{
-}
-#edificios .edificio{
 }
 
 #edificios .edificio a{
@@ -1109,13 +1104,13 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	transform: translateY(-10px);
 	-webkit-transform: translateY(-10px);
 }
-#edificios .edificio#edificio2 a:hover
+/*#edificios .edificio#edificio2 a:hover
 {
   background: none;
         background-image: url('../images/bgm.png');
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
-}
+}*/
 
 #edificios .edificio a span{
 	display:block;
@@ -1322,8 +1317,12 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	-moz-box-shadow: 0px 10px 0px 0px #403148;
 	box-shadow: 0px 10px 0px 0px #403148;
 	border: solid 1px #999;
-
 }
+#apartamentos.edificio-2 .apartamento > a:hover,
+#apartamentos.edificio-2 .apartamento > a.active{
+	transform:translate(0px, -10px);
+}
+
 #apartamentos .apartamento.estado-1 > a{
 	background: #A7AAAC;
 	background: rgba(167, 170, 172, 0.5);	
@@ -1447,7 +1446,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
   height: 85px;
   line-height: 85px;
 }
-#apartamentos.edificio-2 .apartamento#apartamento1{
+/*#apartamentos.edificio-2 .apartamento#apartamento1{
   top: 564px;
   left: -119px;	
 }
@@ -1490,8 +1489,57 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 #apartamentos.edificio-2 .apartamento#apartamento11{
   top: 467px;
   left: -238px; 
+}*/
+
+#apartamentos.edificio-2 .apartamento#apartamento11{
+  top: 564px;
+  left: -119px;	
 }
-#apartamentos.edificio-2 .apartamento#apartamento11 > a{
+#apartamentos.edificio-2 .apartamento#apartamento10{
+  top: 565px;
+  left: -237px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento9{
+  top: 565px;
+  left: -355px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento8{
+  top: 565px;
+  left: -473px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento7{
+  top: 565px;
+  left: -591px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento6{
+  top: 565px;
+  left: -709px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento1{
+  top: 467px;
+  left: -710px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento2{
+  /*top: 467px;
+  left: -592px;*/
+  /* TIENE LA POSICIÓN DE LA HABITACIÓN 6 POR QUE SOLO SE AGREGARON DOS HABITACIONES, LAS DE TIPO C. CUANDO SE AGREGUEN LAS OTRAS SE TIENE QUE COMENTAR LAS POSICIONES TOP, LEFT, Y DESCOMENTAR LAS DE ARRIBA*/
+  top: 565px;
+  left: -709px;  
+}
+#apartamentos.edificio-2 .apartamento#apartamento3{
+  top: 467px;
+  left: -474px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento4{
+  top: 467px;
+  left: -356px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento5{
+  top: 467px;
+  left: -238px; 
+}
+
+#apartamentos.edificio-2 .apartamento#apartamento5 > a{
 	width: 90px;
 	font-size: 22px;
 }
@@ -1504,8 +1552,10 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	transform: rotate(0deg);
 	z-index: 99999999999999;
 	padding: 18px;
-  left: -150px;
-  top: -234px;	
+	/*left: -150px;
+	top: -234px;*/
+	left: -189px;
+	top: -236px;  	
 }
 #apartamentos.edificio-2 .apartamento .info-piso .flecha{
 	background-image: url('../images/flechainfo2.png');
