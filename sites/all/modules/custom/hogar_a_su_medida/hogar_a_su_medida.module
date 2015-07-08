@@ -285,6 +285,7 @@ function hogar_a_su_medida_menu() {
           }
         }
       }
+      
     }
     return $floor_info;
   }
