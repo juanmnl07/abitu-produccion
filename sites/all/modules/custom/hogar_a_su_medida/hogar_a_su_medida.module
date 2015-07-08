@@ -48,7 +48,7 @@ function _plano_maestro_content() {
     }*/
     
 
-if($edificio->field_numero_edificio['und'][0]['value'] == 2){
+/*if($edificio->field_numero_edificio['und'][0]['value'] == 2){
 
 $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" build-edit-path=\"/edificios/".$edificio->vid."\">No disponible</a></div>";
     
@@ -56,7 +56,8 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
 
     $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
    
-}
+}*/
+$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
 
     /*foreach ($edificio->field_pisos['und'] as $key => $value) {
      

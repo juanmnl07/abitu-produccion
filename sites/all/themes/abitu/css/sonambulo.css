@@ -1109,12 +1109,14 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	transform: translateY(-10px);
 	-webkit-transform: translateY(-10px);
 }
-#edificios .edificio#edificio2 a:hover{
-	background: none;
+#edificios .edificio#edificio2 a:hover
+{
+  background: none;
         background-image: url('../images/bgm.png');
-	transform: translateY(0px);
-	-webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
 }
+
 #edificios .edificio a span{
 	display:block;
 	font-size: 14px;
