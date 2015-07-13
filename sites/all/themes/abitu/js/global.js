@@ -9,9 +9,29 @@ jQuery( document ).ajaxStop(function() {
 });
 /*jQuery( document ).ajaxComplete(function() {  
 });*/
+
 (function( $ ){
 	$(document).ready(function(){
 		
+		var hasBeenClicked = false;
+		var target = window.location.hash;
+		$( window ).load(function() {
+			if(target!=''){
+				$(target+"_").click();	
+			}
+		});
+		$(window).on('hashchange',function(e){
+			e.preventDefault();
+			if (!hasBeenClicked) {
+				target = window.location.hash;
+				if(target == ''){
+					target = "#plano";
+				}
+				$(target+"_").click();				
+			}
+			hasBeenClicked = false;
+		});	
+			
 		//zopim
 		/*$zopim(function() {
 		    $zopim.livechat.window.toggle();
@@ -38,6 +58,8 @@ jQuery( document ).ajaxStop(function() {
 		
 		$('#block-hogar-a-su-medida-plano-maestro a[href^="#"]').on('click', function (e) {
 			e.preventDefault();
+			var hsh = this.hash;
+			window.location.hash = hsh;
 
 		});	
 
@@ -61,17 +83,21 @@ jQuery( document ).ajaxStop(function() {
 			$(".content_"+id).addClass("animated fadeIn");
 			$('.imagen_punto').css({display: 'none'});
 			$('.content_'+id).css({display: 'block'});
-		});			 
+		});
+					 
 	  	/* calculate the height of the screen*/
 		var height_screen = screen.height;
 		var height_screen_mid = (height_screen * 0.38);
 		$("#chat").css("top",height_screen_mid);
 
 		//clic en el edificio
-		$(".edificio a").on("click", function(){
+		var clic_e = false;
+		$(".edificio a").on("click", function(e){
+			e.preventDefault();
+			clic_e = true;
 			var url = $(this).attr("build-edit-path");
 			var num_edificio = $(this).attr("num_dificio");
-			//console.log(url);
+
 			//if (num_edificio == 1){
 				$.ajax({
 				  url: url,
@@ -80,17 +106,17 @@ jQuery( document ).ajaxStop(function() {
 				  for (var i = data.length - 1; i >= 0; i--) {
 				  	pisos = pisos + "<div class=\"piso\" id=\"piso"+(i+1)+"\"><a num_dificio=\""+num_edificio+"\" href=\"#\" numb-floor=\""+data[i].nid+"\" floor=\""+(i+1)+"\" >"+data[i].nombre+"</a></div>";
 				  };
-				  $("#pisos").addClass("edificio-"+num_edificio);
-				  $("#pisos").html(pisos);
+				  $("#lista_pisos").addClass("edificio-"+num_edificio);
+				  $("#lista_pisos").html(pisos);
 				  //call the click function
-				  $("#tab-edificios a").trigger("click");
+				  $("#tab-pisos a").trigger("click");
 
 				});		
 			//}
 		});
 
 		//clic en el piso del edificio
-		$(document).on("click", "#pisos .piso a",function(){
+		$(document).on("click", "#lista_pisos .piso a",function(){
 			var nid_piso = $(this).attr("numb-floor");
 			var piso = $(this).attr("floor");
 			var num_edificio = $(this).attr("num_dificio");
@@ -146,12 +172,19 @@ jQuery( document ).ajaxStop(function() {
 
 		//catch the click on the tab link
 		$(document).on("click",".tabs-list .tab a", function(){
-
+			var content_target = $(this).attr("content-target");
+			if(clic_e == false && content_target == 2){
+				$("#plano_").trigger("click");
+				alert('Seleccione primero un edificio');
+				return false;
+			}
+			hasBeenClicked = true;
+			
 			$('.imagen_punto').css({display: 'none'});
 			$('#puntos li a').removeClass('active');
 
 			//set the default building floors
-			var path_building = $(this).attr("build-edit-path");
+			/*var path_building = $(this).attr("build-edit-path");
 			if((path_building != "") && ($("#pisos .piso").length == 0)){
 				$.ajax({
 				  url: path_building,
@@ -162,9 +195,9 @@ jQuery( document ).ajaxStop(function() {
 				  };
 				  $("#pisos").html(pisos);
 				});
-			}
+			}*/
 
-			var content_target = $(this).attr("content-target");
+			
 			//remove the class active to the previous tab
 			$(".tabs-list .tab a").removeClass("active");
 			//assign to the tab selected the class active

@@ -426,8 +426,9 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos h3, .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos p {margin: 0;}
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina {position: absolute; bottom: -60px; margin-bottom: 25px; width: 330px; left: 122px;   padding-top: 110px}
 .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos p {line-height: 10px;}
-.view-mode-bosque_sendero_estaciones .group-footer {float: right; width: 70%; margin-top: 30px;}
-
+.view-mode-bosque_sendero_estaciones .group-footer {float: right; width: 70%; margin-top: 30px; margin-bottom: 25px;}
+.panels-flexible-row-cuatro_filas-2-inside{ padding-bottom: 25px; }
+.panels-flexible-row-cuatro_filas-2-inside .slides li img{ height: inherit; }
 .panel-pane.pane-node .view-mode-piscina_recreacion_gimnasio{padding: 35px 0 55px 0; position: relative; min-height: 650px;}
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{position: absolute; width: 365px;}
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle {left: 0px;}
@@ -469,6 +470,10 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 #block-block-5 .descripcion {position: absolute; padding: 20px 65px; text-align: center; /*left:250px; top: 163px;*/ left:17%; top: 25%; background-image: url('../images/fondo-caption-not-front.png');   max-width: 73%;}
 #block-block-5 .descripcion .detalle p {font-family: ProximaNovaRegular, sans-serif; font-size: 20px; color: #231F20; line-height: 25px;   margin-top: 10px;}
 #block-block-5 .descripcion .enlace a {font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #231F20; text-transform: uppercase; padding: 15px 20px; border:3px solid #231F20;}
+#block-block-5 .descripcion .enlace a:hover{
+	color: #FFF;
+	background-color: #231F20;
+}
 #block-block-5 .descripcion .enlace{ margin: 25px;}
 #block-block-5 .imagen {margin-bottom: -8px;}
 
@@ -523,13 +528,16 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-lounge .field-items .caption,
-.page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{position: absolute; width: 100%; bottom: 9px; background-image: url('../images/fondo-roll-over-blog-listado.png');}
+.page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{position: absolute; width: 100%; bottom: 8px; background-image: url('../images/fondo-roll-over-blog-listado.png');}
 .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption {background-image: url('../images/fondo-caption-senderos.png'); background-repeat: no-repeat;   background-position: 42px 0px;}
 .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, 
-.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption {background-image: url('../images/fondo-caption-gimansio.png'); background-repeat: no-repeat;   background-position: 70px 0px; bottom: 13px;}
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption {background-image: url('../images/fondo-caption-gimansio.png'); background-repeat: no-repeat; background-position: 70px -2px; bottom: 12px;}
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption{
+	background-position: 69px 0px; bottom: 13px;	
+}
 .caption-image { bottom: 0;}
-.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption {  background-position: 68px 1px; bottom: 12px;}
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption {  background-position: 69px 0px; bottom: 10px;}
 
 .caption-image,
 .page-vida-bosque-urbano .field-name-field-image .field-items .caption h4,
@@ -718,7 +726,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
   .page-contactenos .islas h3,
   .page-contactenos .mapa h3{
     font-family: ProximaNovaRegular, sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size:  25px; 
     text-align: center;
     text-transform: uppercase;   
@@ -1062,7 +1070,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 }
 .tabs-content .punto#punto-lobby{
 	top: 333px;
-	left: 146px;	
+	left: 100px;	
 }
 .tabs-content .punto#punto-estacionamiento{
 	top: 230px;
@@ -1154,7 +1162,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	margin-right: 10px;
 }
 
-#pisos{
+#lista_pisos{
 	position:absolute;
 	right: 12px;
 	top: 42px;
@@ -1163,13 +1171,13 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	background-position: left 26%;
 	padding-left: 33px;	
 }
-#pisos .piso{
+#lista_pisos .piso{
 	float:left;
 	clear:both;
 	/*overflow:hidden;*/
 	margin-bottom: 20px;	
 }
-#pisos .piso a{
+#lista_pisos .piso a{
 	display:block;
 	width: 130px;
 	height: 36px;
@@ -1188,7 +1196,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
-#pisos .piso a:hover{
+#lista_pisos .piso a:hover{
 	background-color: #F05323;
 	transform: translateX(10px);
 	-webkit-transform: translateX(10px);
@@ -1775,7 +1783,7 @@ ul#puntos li a#cama{
 	padding-top: 16px;
 	box-sizing:border-box;
 	position: absolute;
-	bottom: 0px;	
+	bottom: 102px;	
 }
 
 
@@ -1833,7 +1841,7 @@ ul#puntos li a#cama{
 */
 
 
-/*A���adido por Keylor Mora*/
+/*Añadido por Keylor Mora*/
 
 #tab-content3 .rosa-vientos,
 #tab-content3 .encabezado,
@@ -1995,6 +2003,7 @@ background-repeat: no-repeat;
 
 #cboxClose{
 	top: 0px;
+	right: 25px;
 	width: 30px;
 	height: 30px;
 	background-image: url('../images/close.png');

@@ -57,7 +57,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
     $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
    
 }*/
-$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
+$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"javascript:voiud(0);\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
 
     /*foreach ($edificio->field_pisos['und'] as $key => $value) {
      
@@ -127,11 +127,11 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
 
   $markup = "<div class=\"tabs\">
   				<ul class=\"tabs-list\">
-  					<li class=\"tab\" id=\"tab-plan-maestro\"><a href=\"#\" class=\"active\" content-target=\"1\">Plan Maestro</a></li>
-  					<li class=\"tab\" id=\"tab-edificios\"><a href=\"#\" content-target=\"2\" build-edit-path=\"/edificios/21\">Edificios</a></li>
-  					<li class=\"tab\" id=\"tab-modelo1\"><a href=\"#\" content-target=\"3\">Modelo: <br>1 habitación</a></li>
-  					<li class=\"tab\" id=\"tab-modelo2\"><a href=\"#\" content-target=\"4\">Modelo: <br>2 habitaciones</a></li>
-  					<li class=\"tab\" id=\"tab-modelo3\"><a href=\"#\" content-target=\"5\">Modelo: <br>3 habitaciones</a></li>
+  					<li class=\"tab\" id=\"tab-plano-maestro\"><a id=\"plano_\" href=\"#plano\" class=\"active\" content-target=\"1\">Plano Maestro</a></li>
+  					<li class=\"tab\" id=\"tab-pisos\"><a id=\"pisos_\" href=\"#pisos\" content-target=\"2\" build-edit-path=\"/edificios/21\">Pisos</a></li>
+  					<li class=\"tab\" id=\"tab-modelo1\"><a id=\"habitacion1_\" href=\"#habitacion1\" content-target=\"3\">Modelo: <br>1 habitación</a></li>
+  					<li class=\"tab\" id=\"tab-modelo2\"><a id=\"habitacion2_\" href=\"#habitacion2\" content-target=\"4\">Modelo: <br>2 habitaciones</a></li>
+  					<li class=\"tab\" id=\"tab-modelo3\"><a id=\"habitacion3_\" href=\"#habitacion3\" content-target=\"5\">Modelo: <br>3 habitaciones</a></li>
   				</ul>
   			</div>
   			<div class=\"tabs-content\"><div class=\"ajaxloader\"></div>
@@ -140,7 +140,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
               <img src=\"".$base_path."sites/default/files/edicicios/fondo_plano_maestro.jpg\">
               <div class=\"container\">
     					  <div class=\"rosa-vientos\"></div>
-    					  <div class=\"encabezado\"><h2>Elija Un edificio</h2></div>
+    					  <div class=\"encabezado\"><h2>Elija un edificio</h2></div>
     				  	<div class=\"punto\" id=\"punto-pet-park\"><span></span><label>Pet Park</label></div>
     				  	<div class=\"punto\" id=\"punto-senderos\"><span></span><label>Senderos</label></div>
     				  	<div class=\"punto\" id=\"punto-casa-club\"><span></span><label>Casa Club</label></div>
@@ -157,8 +157,8 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                 <img src=\"".$base_path."sites/default/files/edicicios/edificio2.jpg\">
     					  <div class=\"container\">
       					  <div class=\"rosa-vientos\"></div>
-      					  <div class=\"encabezado\"><h2>Elija Un edificio</h2></div>
-      					  <div id=\"pisos\"></div>
+      					  <div class=\"encabezado\"><h2>Elija un piso</h2></div>
+      					  <div id=\"lista_pisos\"></div>
                 </div>
               </div>
             </div>
