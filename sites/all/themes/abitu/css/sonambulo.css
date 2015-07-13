@@ -448,7 +448,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption h3 {text-align: left; margin-bottom: 10px;}
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption p{font-family: ProximaNovaRegular, sans-serif; font-size: 14px; color: #000; line-height: 20px; text-align: left;}
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-control-nav {  left: 20px; top: 153px;}
-#imagen-testimonio {width: 50%; float: left;}
+#imagen-testimonio {width: 50%; float: left; display: none}/*Se oculta imagen testimonio*/
 #titulo-cargo {  font-family: ProximaNovaRegularItalic, sans-serif; font-size: 13px; color: #939598; line-height: 15px; margin-top: 30px; padding-left: 10px; float: left; width: 50%;} 
 .group-footer .flexslider.flexslider-home .flex-control-nav {  top: 143px; right: 36px;}
 .panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge, 
