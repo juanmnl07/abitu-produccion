@@ -53,9 +53,4 @@ stylesheets[all][] = css/sonambulo.css
 
 
 
-; Information added by drupal.org packaging script on 2013-10-01
-version = "7.x-2.x-dev"
-core = "7.x"
-project = "Sonambulo"
-datestamp = "1380636979"
 

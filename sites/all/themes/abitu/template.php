@@ -84,8 +84,9 @@ function abitu_preprocess_html(&$variables) {
     drupal_add_html_head($html5shim, 'abitu_html5shim');
   }
 
-  drupal_add_js($base_url.'/sites/all/themes/abitu/js/global.js');
-
+ 
+  drupal_add_js($base_url.'/sites/all/themes/abitu/js/global.js', array('group' => JS_LIBRARY, 'weight' => -100));
+  
   // Use Respond.js.
   if (theme_get_setting('respond_js')) {
     drupal_add_js(drupal_get_path('theme', 'abitu') . '/js/respond.min.js', array('group' => JS_LIBRARY, 'weight' => -100));

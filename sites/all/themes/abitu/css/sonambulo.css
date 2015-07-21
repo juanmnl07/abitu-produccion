@@ -271,6 +271,9 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 
 /* Detalle del blog */
 #detalle-blog {text-align: center;}
+
+#detalle-blog .body ol li,
+#detalle-blog .body ul li, #detalle-blog .body h3, #detalle-blog .body h4, #detalle-blog .body h5, #detalle-blog .body h6{text-align: left !important;}
 #detalle-blog .title {font-family: ProximaNovaRegular, sans-serif; font-size: 30px;text-transform: uppercase; color: #085C42; font-style: normal;}
 #detalle-blog .categoria {
   margin-right: 20px;

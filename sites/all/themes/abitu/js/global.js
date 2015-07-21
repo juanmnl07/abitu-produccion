@@ -11,7 +11,16 @@ jQuery( document ).ajaxStop(function() {
 });*/
 
 (function( $ ){
+	
 	$(document).ready(function(){
+
+		/*$('.flexslider.flexslider-home').flexslider({
+			    animation: "fade",
+			    animationLoop: true,
+			    pauseOnHover: false,
+			    controlsContainer: ".container-nav",
+			    directionNav: false
+		  	});	*/
 		
 		var hasBeenClicked = false;
 		var target = window.location.hash;
@@ -113,6 +122,9 @@ jQuery( document ).ajaxStop(function() {
 
 				});		
 			//}
+
+
+			
 		});
 
 		//clic en el piso del edificio
@@ -167,7 +179,11 @@ jQuery( document ).ajaxStop(function() {
 			  $("#tab-content2-1").removeClass("active");
 			  $("#tab-content2-2").addClass("active");
 
-			});		
+			});
+
+
+
+
 		});
 
 		//catch the click on the tab link

@@ -402,7 +402,7 @@ function flexslider_add($id = NULL, $optionset = NULL) {
     drupal_add_js(array('flexslider' => $js_settings), 'setting');
   }
   // Loader JavaScript
-  drupal_add_js(drupal_get_path('module', 'flexslider') . '/assets/js/flexslider.load.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js(drupal_get_path('module', 'flexslider') . '/assets/js/flexslider.load.js', array('type' => 'file', /*'scope' => 'footer',*/ 'weight' => -100));
 }
 
 /**

@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/abitu-produccion/sites/all/libraries/ckeditor/';
