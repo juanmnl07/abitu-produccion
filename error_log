@@ -1,0 +1,8 @@
+[16-Jul-2015 09:01:04 America/Costa_Rica] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/abitucr/public_html/includes/cache.inc on line 438
+[16-Jul-2015 09:01:07 America/Costa_Rica] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/abitucr/public_html/includes/cache.inc on line 438
+[16-Jul-2015 09:01:09 America/Costa_Rica] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/abitucr/public_html/includes/cache.inc on line 438
+[16-Jul-2015 15:14:35 America/Costa_Rica] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in /home/abitucr/public_html/sites/all/themes/abitu/templates/system/html.tpl.php on line 88
+[16-Jul-2015 15:14:37 America/Costa_Rica] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in /home/abitucr/public_html/sites/all/themes/abitu/templates/system/html.tpl.php on line 88
+[16-Jul-2015 15:14:48 America/Costa_Rica] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in /home/abitucr/public_html/sites/all/themes/abitu/templates/system/html.tpl.php on line 88
+[16-Jul-2015 15:14:50 America/Costa_Rica] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in /home/abitucr/public_html/sites/all/themes/abitu/templates/system/html.tpl.php on line 88
+[16-Jul-2015 15:14:51 America/Costa_Rica] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in /home/abitucr/public_html/sites/all/themes/abitu/templates/system/html.tpl.php on line 88

@@ -1,3 +1,6 @@
+var urlactual = document.URL.replace( /#.*/, "");
+urlactual = urlactual.replace( /\?.*/, "");
+
 jQuery( document ).ajaxStart(function() {
 	jQuery('.ajaxloader').css({display: 'block'});
 });
@@ -14,6 +17,33 @@ jQuery( document ).ajaxStop(function() {
 	
 	$(document).ready(function(){
 
+
+<!--Google Analytics Evento Scroll-->
+var times = 0;
+$(window).scroll(function(){
+    var bottom = $(window).height() + $(window).scrollTop();
+    var height = $(document).height();
+    var percentage = Math.round(100*bottom/height);
+    if(percentage > 50 && times==0){
+        times=times + 1;
+        ga('send', 'event', 'Scroll', '50%', urlactual);
+    }
+});
+
+<!--Google Analytics Evento Segundos-->
+setTimeout(function(){ga('send', 'event', 'T>30s', 'Tiempo mayor a 30 segundos', urlactual);},30000);
+
+<!--Google Analytics Evento Clic-->
+$(".menu-487, .reservar").on('click',function(){
+	ga('send', 'event', 'Click', 'Reserve una cita',urlactual);
+});
+$(".financiamiento-disponible a").on('click',function(){
+	ga('send', 'event', 'Click', 'Financiamiento disponible',urlactual);
+});
+$("#btncita").on('click',function(){
+	ga('send', 'event', 'Click', 'Haga su cita hoy',urlactual);
+});	
+						
 		/*$('.flexslider.flexslider-home').flexslider({
 			    animation: "fade",
 			    animationLoop: true,
@@ -22,7 +52,7 @@ jQuery( document ).ajaxStop(function() {
 			    directionNav: false
 		  	});	*/
 		
-		var hasBeenClicked = false;
+		var hasBeenClicked = false; var tipovista = false;
 		var target = window.location.hash;
 		$( window ).load(function() {
 			if(target!=''){
@@ -31,14 +61,17 @@ jQuery( document ).ajaxStop(function() {
 		});
 		$(window).on('hashchange',function(e){
 			e.preventDefault();
-			if (!hasBeenClicked) {
+			
+			if (!hasBeenClicked && !tipovista) {
 				target = window.location.hash;
 				if(target == ''){
 					target = "#plano";
 				}
 				$(target+"_").click();				
 			}
-			hasBeenClicked = false;
+			
+			hasBeenClicked = false; tipovista = false;
+			
 		});	
 			
 		//zopim
@@ -46,8 +79,9 @@ jQuery( document ).ajaxStop(function() {
 		    $zopim.livechat.window.toggle();
 		 });*/
 
-		$(".tipovistas").on('click', function(){
-			
+		$(".tipovistas").on('click', function(e){
+			e.preventDefault();
+			tipovista = true;
 			$('.imagen_punto').css({display: 'none'});
 			$('#puntos li a').removeClass('active');
 			
@@ -68,8 +102,9 @@ jQuery( document ).ajaxStop(function() {
 		$('#block-hogar-a-su-medida-plano-maestro a[href^="#"]').on('click', function (e) {
 			e.preventDefault();
 			var hsh = this.hash;
-			window.location.hash = hsh;
-
+			if(hsh != ''){
+				window.location.hash = hsh;
+			}
 		});	
 
 		$(document).mouseup(function (e)
@@ -150,7 +185,7 @@ jQuery( document ).ajaxStop(function() {
 				  	switch(data[i].estado){
 				  		case '3':
 				  			estado = "Disponible";
-				  			solicitar_cita = "<a href=\"contactenos\" class=\"solicitar-cita\">solicitar <br>cita</a>";
+				  			solicitar_cita = "<a href=\"contactenos\" onclick=\"javascript:ga('send', 'event', 'Click', 'Solicitar cita ("+num_edificio+"-"+piso+""+0+""+(data[i].numero)+data[i].name+")',urlactual);\" class=\"solicitar-cita\">solicitar <br>cita</a>";
 				  		break;
 				  		case '2':
 				  			estado = "Ocupado";
@@ -224,6 +259,7 @@ jQuery( document ).ajaxStop(function() {
 
 			//get the actual active content
 			var actived_content = $(".tab-content.active").attr("id");
+
 			if(actived_content != "tab-content"+content_target){
 				//disable the actual content enabled
 				$(".tab-content.active").removeClass("active");

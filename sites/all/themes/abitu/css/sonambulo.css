@@ -1826,14 +1826,14 @@ ul#puntos li a#cama{
 
 .view-display-id-block_historias_home .view-content .views-row .field-type-image img{
 	position: absolute;
-	top: -40%;	
+	/*top: -40%;	*/
 }
 
 .view-display-id-block_historias_home .view-content .views-row .ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle{
-	height: 250px;
+	/*height: 250px;*/
 }
 .view-display-id-block_historias_home .view-content .ds-1col.node.node-blog.view-mode-listado_blog .group-imagen-detalle .group-slide-up .field-name-body p{
-	line-height: 19px;
+        line-height: 19px;
 }
 /*
 
@@ -2016,6 +2016,50 @@ background-repeat: no-repeat;
 	background-position: center;
 }
 
+
+/*Añadido por Keylor para formulario de contacto */
+
+.webform-confirmation p{
+  font-family: ProximaNovaRegular,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0 6px;
+}
+
+.webform-component-radios label{
+  font-family: ProximaNovaRegular,sans-serif;
+    font-size: 16px;
+    color: #58595b;
+}
+
+.webform-component-radios .form-type-radio label{
+  font-family: ProximaNovaRegular,sans-serif;
+  font-weight: normal;
+}
+
+.webform-component-textarea textarea {
+
+  height: 150px !important;
+    max-height: 150px;
+    max-width: 560px;
+    min-height: 150px;
+    min-width: 560px;
+    width: 560px !important;
+    background-color: #fff;
+    border: medium none;
+    color: #58595b;
+    font-family: ProximaNovaRegular,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+#webform-ajax-wrapper-2 .links a{
+  color: #58595b;
+    font-family: ProximaNovaRegular,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
 /*
   =MEDIA QUERIES
 --------------------------------------------- */
