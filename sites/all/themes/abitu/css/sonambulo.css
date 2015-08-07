@@ -81,6 +81,13 @@ a{
 
 /* Master page */
 
+  #vmobil{
+    display: none;
+  }
+  #vweb{
+    display: block;
+  } 
+
 /* header */
 .header nav ul li a {font-size:14px; font-weight: bold; font-family: ProximaNovaBold, sans-serif;}
 .header .inner{background-image: url('../images/fondo-header.png'); background-repeat: no-repeat; background-position: right;}
@@ -736,7 +743,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
     font-size:  16px; 
     text-align: center; 
     line-height:  21px;
-    padding: 0px 100px; 
+    /* padding: 0px 100px; */ 
     color: #58595B;
     margin: 20px 0px 15px;
     background-image:  url('../images/separador-blog.png');
@@ -828,7 +835,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
   .webform-client-form-2 .webform-component--encabezado---contacto h3{
     font-family: ProximaNovaRegular, sans-serif;
     font-weight: normal;
-    font-size:  31px; 
+    font-size: 31px; 
     line-height: 30px;
     text-transform: uppercase;   
     color: #085C42;

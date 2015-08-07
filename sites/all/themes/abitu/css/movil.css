@@ -1,5 +1,18 @@
 @media (max-width: 479px) {
-	
+.page-contactenos .mapa h3 {
+    line-height: 25px
+}
+.encabezado-contacto .detalle{
+	padding: 0px;
+	padding-bottom: 25px;
+}
+.page-contactenos .islas{
+	width: 100%;
+	text-align: center;
+}
+.encabezado-contacto .isla{
+	margin: 0 auto;
+}
 .bloque-cintillo-reserva .preventa-reserva ul li label{
     font-size: 13px;
     font-weight: normal;

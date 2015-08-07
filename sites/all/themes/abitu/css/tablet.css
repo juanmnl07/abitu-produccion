@@ -2,6 +2,12 @@
 
 @media (max-width: 991px) {
 
+#vmobil{
+	display: block;
+}
+#vweb{
+	display: none;
+}	
 .encabezado-contacto .isla#isla2,
 .encabezado-contacto .isla#isla4{
 	margin-right: 0px;
@@ -67,6 +73,28 @@
 
 
 @media (max-width: 767px) {
+
+.pane-webform-client-block-2 {
+    width: 95%;
+    margin: 0 auto;
+    float: none;
+}
+.webform-client-form-2 .form-submit{
+	float: none;
+	margin: 0 auto;
+}
+.page-contactenos .pane-2{
+	float: none;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.webform-client-form-2 fieldset label{
+	display: block;
+	width: 100%;
+}
+.page-contactenos #chat{
+	display: none;
+}
 .bloque-cintillo-reserva .preventa-reserva ul li span{
 	font-size: 40px;
 }
