@@ -1,0 +1,83 @@
+.panels-flexible-tres_filas .panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-tres_filas .panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-tres_filas .panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-tres_filas .panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-tres_filas-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-tres_filas-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-tres_filas {
+  width: auto;
+}
+
+.panels-flexible-region-tres_filas-center {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-tres_filas-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-tres_filas-centrado {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-tres_filas-1-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-tres_filas-pie {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-tres_filas-2-inside {
+  padding-right: 0px;
+}
+

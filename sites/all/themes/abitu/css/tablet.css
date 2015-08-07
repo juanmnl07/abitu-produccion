@@ -1,0 +1,110 @@
+/* CSS Document */
+
+@media (max-width: 991px) {
+
+.encabezado-contacto .isla#isla2,
+.encabezado-contacto .isla#isla4{
+	margin-right: 0px;
+
+}
+
+#block-block-4 .content h2{
+	text-align: center;
+}
+#block-easy-breadcrumb-easy-breadcrumb{
+	display: none;
+}	
+.pane-webform-client-block-2{
+	width:  52%;
+}
+.page-contactenos .islas{
+    width: 475px;
+    margin: 0 auto;
+}
+.fila.cintillo{
+	padding-bottom: 0px;
+}	
+.bloque-cintillo-reserva .preventa-reserva ul, .bloque-cintillo-reserva .preventa-reserva{
+	width: 100%;
+	text-align:center;
+}
+.bloque-cintillo-reserva .boton-reserva{
+	width: 100%;
+	padding: 0px;
+}
+.bloque-cintillo-reserva .boton-reserva a.reservar{
+	background-image: url(../images/icon_btn.png);
+	background-repeat: no-repeat;
+	background-position: 85% 50%;
+	background-color: #632C4F;
+	font-weight: bold;
+	border: none;
+}
+.bloque-cintillo-reserva .boton-reserva span{
+	display: none;
+}
+.page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
+	max-width: 100%;	
+}
+
+.page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
+	
+	width: 100%;
+}
+	
+.footer #block-webform-client-block-1, .footer #block-menu-block-1{
+	margin-right: 20px;
+}
+.front .islas{
+	width: 670px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.front .islas .isla .box_titulo{
+	display: block;
+}	
+}
+
+
+@media (max-width: 767px) {
+.bloque-cintillo-reserva .preventa-reserva ul li span{
+	font-size: 40px;
+}
+.bloque-cintillo-reserva .boton-reserva{
+	margin-top: 0px;
+}
+.front .islas .isla .box_titulo{
+	font-size: 24px; letter-spacing: -1px;
+}
+.front .islas{
+	width: 100%;
+}	
+.front .islas .isla{
+	width: 50%;
+	height: auto;
+}
+.front .islas .isla .descripcion{
+    padding: 20px 20px 0px 20px;	
+}
+.front .islas .isla .descripcion h4{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.front .islas .isla .descripcion p,
+.front .islas .isla .descripcion p span{
+	line-height: 15px !important;
+	margin-bottom: 0px !important;
+}
+	
+	
+	
+.header .inner{
+	background: none;
+}
+.footer .inner{
+	background: none;
+	padding-bottom: 0px;
+}
+	
+	
+}

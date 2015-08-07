@@ -48,6 +48,9 @@ stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/theme.css
 stylesheets[all][] = animate/animate.css
 stylesheets[all][] = css/sonambulo.css
+stylesheets[all][] = css/desktop.css
+stylesheets[all][] = css/tablet.css
+stylesheets[all][] = css/movil.css
 
 ;-------------- JS -------------
 
