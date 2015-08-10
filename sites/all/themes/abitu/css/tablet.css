@@ -80,6 +80,8 @@
 
 #block-block-4 .content h2{
 	text-align: center;
+	font-size: 30px;
+	margin: 0px;
 }
 #block-easy-breadcrumb-easy-breadcrumb{
 	display: none;
@@ -119,7 +121,7 @@
 
 .page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
 	
-	width: 100%;
+	width: 97%;
 }
 	
 .footer #block-webform-client-block-1, .footer #block-menu-block-1{
@@ -132,17 +134,48 @@
 }
 .front .islas .isla .box_titulo{
 	display: block;
-}	
+}
+
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption{
+    background-size: 78%;
+	
+    background-position: 50% 67%;
+}
+
 }
 
 
 @media (max-width: 767px) {
+.view-mode-bosque_sendero_estaciones .group-right .field-name-field-imagen-sendero .even{
+	text-align: center;
+}	
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption{
+    background-size: initial;
+	
+    bottom: 67px !important;
+    background-position: center !important;
+}
+.view-mode-bosque_sendero_estaciones .group-right img{
+	width 326px;
+	float: none;
+	width: 326px;
+	margin: 0 auto;
 
+}	
+.home-encabezado-titulo .detalle{
+    margin-bottom: 0px;
+	
+}	
+.view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos{
+	display: none;
+}	
+.page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption{
+    top: -125px;
+}
 .panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge{
     width: 100%;
 	
 }
-
 
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption h3{
 	text-align: center;
@@ -181,7 +214,10 @@
 }	
 .caption-image, .page-vida-bosque-urbano .field-name-field-image .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption, .page-vida-bosque-urbano .field-name-field-lounge .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{
     position: relative;
-    top: -125px;
+    /* top: -125px; */
+    /* background-size: initial; */
+    background-position: 50% 40%;
+    bottom: 56px;
 }	
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-imagen-yoga{
     position: static;
@@ -215,7 +251,7 @@
 	overflow: hidden;
 }
 .view-mode-bosque_sendero_estaciones .group-right{
-	width: 40%;
+	width: 100%;
 	clear: both;
 	float: left;
 }

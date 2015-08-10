@@ -1,4 +1,33 @@
 @media (max-width: 479px) {
+.page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
+	width: 100%;
+}	
+.header nav#block-system-main-menu{
+    float: none;
+    margin-top: 10px;
+}	
+.tinynav-wrapper{
+	width: 100%;
+	text-align: center;
+	background-color: #311627;
+	padding: 10px 0px;
+}	
+.not-front .flex-caption{
+    top: 44%;	
+}
+.page-contactenos .flex-caption h3, .flex-caption h3{
+	font-size: 13px;
+}	
+#block-block-4 .content h2{
+    font-size: 20px;
+    line-height: 42px;
+}	
+section.above-content{
+    top: 194px;
+}	
+#chat{
+	display: none;
+}	
 .page-contactenos .mapa h3 {
     line-height: 25px
 }

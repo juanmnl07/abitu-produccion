@@ -14,6 +14,22 @@ a{
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;	
 }
+
+.tinynav{
+	width: 290px;
+	height: 30px;
+	border: none;
+    
+	margin: 0 auto;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../images/select.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;	
+
+}
+
 /*
   =LAYOUT
 --------------------------------------------- */
@@ -539,7 +555,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-lounge .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{position: absolute; width: 100%; bottom: 8px; background-image: url('../images/fondo-roll-over-blog-listado.png');}
-.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption {background-image: url('../images/fondo-caption-senderos.png'); background-repeat: no-repeat;   background-position: 42px 0px;}
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption {background-image: url('../images/fondo-caption-senderos.png'); background-repeat: no-repeat;   background-position: 50% 0px;}
 .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, 
 .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption {background-image: url('../images/fondo-caption-gimansio.png'); background-repeat: no-repeat; background-position: 70px -2px; bottom: 12px;}
