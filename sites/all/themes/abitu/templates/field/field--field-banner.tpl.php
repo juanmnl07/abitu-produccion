@@ -1,5 +1,6 @@
-
 <?php
+require_once libraries_get_path('Mobile_Detect').'/Mobile_Detect.php';
+
 if ($items){
 
 $slides ="";
@@ -14,7 +15,29 @@ $slides ="";
 	$enlace = "";
 
 		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
-			$url = '/sites/default/files/slider/'.str_replace("public://slider/","",$items[$i]['field_image']['#items'][0]['uri']);
+			$detect = new Mobile_Detect();
+            
+            if($detect->isMobile()){
+            	if($detect->isTablet()){
+
+	            	$style_movil = "slider_tablet";
+	            }else{
+	            	$style_movil = "slider_movil";
+	            }
+				
+            	$url_movil = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
+
+				if (file_exists($url_movil)){
+					$url = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
+				}else{
+					image_style_create_derivative($style_movil, $items[$i]['field_image']['#items'][0]['uri'], $url_movil);
+					$url = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
+				}	
+	                        	
+            }else{
+            	$url = '/sites/default/files/slider/'.str_replace("public://slider/","",$items[$i]['field_image']['#items'][0]['uri']);
+            }					
+			
 		}
 
 		if (isset($items[$i]['field_detalle']['#items'][0]['value'])){
