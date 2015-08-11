@@ -159,14 +159,45 @@
 
 
 @media (max-width: 767px) {
-
+.page-contactenos .flexslider .flex-control-nav li, .flexslider .flex-control-nav li{
+    float: left;
+	
+    margin-right: 10px;
+}	
+.page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
+    top: auto;
+	
+    bottom: 0px;
+    width: 16%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+}
+.front .flexslider-home .flex-caption h3{
+    font-size: 27px;
+	
+    line-height: 24px;
+}	
+.page-contactenos .flex-caption .enlace, .flex-caption .enlace{
+    width: 83%;
+    margin-top: 18px;
+}	
+.page-contactenos .flex-caption .enlace a, .flex-caption .enlace a{
+	padding: 12px 5px;
+	line-height: 17px;
+	width: 100%;
+	text-align: left;
+	background-position: 97% 50%;
+}
 .page-contactenos .flex-caption p, .flex-caption p{
     font-size: 16px;
 	
     line-height: 16px;
+    display: none;
 }
 .page-contactenos .flex-caption, .flex-caption{
     width: 90%;	
+    top: 6%;
 }
 
 .comment-form .group-nombre-correo .form-item-name, .comment-form .group-nombre-correo .field-name-field-correo-electronico{
@@ -222,7 +253,7 @@
 
 }	
 .home-encabezado-titulo .detalle{
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 	
 }	
 .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos{
