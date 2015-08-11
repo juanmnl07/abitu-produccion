@@ -226,7 +226,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-contactenos .flexslider .flex-control-paging li a, .flexslider .flex-control-paging li a {background-color: rgba(255,255,255,0.5); width: 15px; height: 15px;}
 .node-type-blog .flexslider .flex-control-paging li a {background-color: rgba(0,0,0,0.5);}
 .node-type-blog .flex-control-paging li a.flex-active, .page-contactenos .flex-control-paging li a.flex-active, .flex-control-paging li a.flex-active {background-color: rgba(63,174,41,0.5);}
-.page-contactenos .flex-caption, .flex-caption {position: absolute; top: 27%; /*left: 320px;*/ left: 25%; background-image: url('../images/fondo-flex-caption.png'); padding: 25px 45px; max-height: 55%}
+.page-contactenos .flex-caption, .flex-caption {position: absolute; top: 27%; width: 800px;margin: 0 auto;/*left: 320px;*/ left: 0px; right: 0px;background-image: url('../images/fondo-flex-caption.png'); padding: 25px 45px; max-height: 55%}
 .page-contactenos .flex-caption h3, .flex-caption h3 {margin: 0; color: #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 29.85px; text-transform: uppercase; text-align: center;}
 .page-contactenos .flex-caption p, .flex-caption p {text-align: center; color: #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 19px; margin-top: 10px; line-height: 27px; letter-spacing: -0.4px;}
 .page-contactenos .flex-caption .enlace, .flex-caption .enlace {  margin: 0 auto; border: 2px solid #fff; width: 55%;  text-align: center; line-height: 25px;}
@@ -293,7 +293,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-hogar-a-su-medida #page-title {display: none;}
 
 /* Detalle del blog */
-#detalle-blog {text-align: center;}
+#detalle-blog {text-align: center;clear: both;overflow: hidden;}
 
 #detalle-blog .body ol li,
 #detalle-blog .body ul li, #detalle-blog .body h3, #detalle-blog .body h4, #detalle-blog .body h5, #detalle-blog .body h6{text-align: left !important;}
@@ -492,16 +492,24 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo{float: left; width: 233px; margin-top: 77px;}
 .panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo .flex-control-nav {  top: 153px; right: 25px;}
 
-#block-block-5 {position: relative; margin: 0 auto; max-width: 1483px;}
-#block-block-5 .descripcion {position: absolute; padding: 20px 65px; text-align: center; /*left:250px; top: 163px;*/ left:17%; top: 25%; background-image: url('../images/fondo-caption-not-front.png');   max-width: 73%;}
-#block-block-5 .descripcion .detalle p {font-family: ProximaNovaRegular, sans-serif; font-size: 20px; color: #231F20; line-height: 25px;   margin-top: 10px;}
-#block-block-5 .descripcion .enlace a {font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #231F20; text-transform: uppercase; padding: 15px 20px; border:3px solid #231F20;}
-#block-block-5 .descripcion .enlace a:hover{
+.bloque-area-d .imagen{
+  width: 100%;
+  height: 510px;
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.bloque-area-d {position: relative; margin: 0 auto; max-width: 1483px;}
+.bloque-area-d .descripcion {position: absolute; padding: 20px 65px; text-align: center; /*left:250px; top: 163px;*/ left:17%; top: 25%; background-image: url('../images/fondo-caption-not-front.png');   max-width: 73%;}
+.bloque-area-d .descripcion .detalle p {font-family: ProximaNovaRegular, sans-serif; font-size: 20px; color: #231F20; line-height: 25px;   margin-top: 10px;}
+.bloque-area-d .descripcion .enlace a {font-family: ProximaNovaRegular, sans-serif; font-size: 16px; color: #231F20; text-transform: uppercase; padding: 15px 20px; border:3px solid #231F20;}
+.bloque-area-d .descripcion .enlace a:hover{
 	color: #FFF;
 	background-color: #231F20;
 }
-#block-block-5 .descripcion .enlace{ margin: 25px;}
-#block-block-5 .imagen {margin-bottom: -8px;}
+.bloque-area-d .descripcion .enlace{ margin: 25px;}
+.bloque-area-d .imagen {/*margin-bottom: -8px;*/}
 
 .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
     height: 25px !important;

@@ -1,4 +1,88 @@
 @media (max-width: 479px) {
+.node-type-blog section.above-content{
+    top: 183px;	
+}
+.node-type-blog section.above-content #block-block-4 h2{
+    font-size: 16px;
+	
+    line-height: 21px;
+    font-family: ProximaNovaRegular, sans-serif;
+}
+#detalle-blog .categoria, #detalle-blog .fecha-comentario{
+    width: 45%;
+	
+}	
+#detalle-blog .body h2{
+    line-height: 22px;
+}	
+.pane-block-8 .bloque-cintillo-reserva .preventa-reserva h3{
+    margin-top: 22px;
+	
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}	
+.bloque-area-d .descripcion{
+    max-width: 80%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    top: 17%;
+    padding: 17px 10px;
+}
+.bloque-area-d .descripcion .detalle p{
+    font-size: 15px;
+    line-height: 20px;
+}
+.bloque-area-d .descripcion .enlace a{
+    padding: 10px 7px;
+	
+    font-size: 14px;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades{
+    width: 100%;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo{
+    width: 100%;	
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge{
+	width:  100%;
+	margin-bottom: 15px;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion{
+	width: 100%;
+}
+
+
+
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{
+    clear: both;
+    position: static;
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga{
+    width: 100%;
+	
+    left: 0px;
+    text-align: center;
+    top: 30px;
+}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle{
+	margin-top: 130px;
+}
+
+
+
+
+.caption-image, .page-vida-bosque-urbano .field-name-field-image .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption, .page-vida-bosque-urbano .field-name-field-lounge .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{
+	bottom: 0px;
+}	
+
+.header{
+	padding-bottom: 0px;
+}	
 .page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
 	width: 100%;
 }	
@@ -23,7 +107,7 @@
     line-height: 42px;
 }	
 section.above-content{
-    top: 194px;
+    top: 183px;
 }	
 #chat{
 	display: none;

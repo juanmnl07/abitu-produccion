@@ -1,6 +1,17 @@
 /* CSS Document */
 
 @media (max-width: 991px) {
+.page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
+    top: 230px;
+	
+    right: 100px;
+}	
+.header nav ul li{
+    margin-left: 4px;	
+}
+.node-type-blog .banner{
+    height: auto;
+}
 
 .panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge{
     margin-top: 0px;
@@ -119,9 +130,11 @@
 	max-width: 100%;	
 }
 
+.header .grid{
+	width: 97% !important;
+}
 .page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
-	
-	width: 97%;
+	width: 100%;
 }
 	
 .footer #block-webform-client-block-1, .footer #block-menu-block-1{
@@ -146,6 +159,52 @@
 
 
 @media (max-width: 767px) {
+
+.page-contactenos .flex-caption p, .flex-caption p{
+    font-size: 16px;
+	
+    line-height: 16px;
+}
+.page-contactenos .flex-caption, .flex-caption{
+    width: 90%;	
+}
+
+.comment-form .group-nombre-correo .form-item-name, .comment-form .group-nombre-correo .field-name-field-correo-electronico{
+    width: 100%;
+}	
+.pane-content .comment p, .pane-node-comment-form .form-item input, .pane-node-comment-form .form-item textarea, #detalle-blog .body p{
+    line-height: 17px;
+}	
+.categorias-fecha-comentario{
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	height: 20px;
+}	
+#detalle-blog .fecha-comentario .fecha, #detalle-blog .fecha-comentario .comentario{
+    padding-left: 24px;
+	
+    background-size: 17px;
+    background-position: 2% center;
+}	
+#detalle-blog .categoria, #detalle-blog .fecha-comentario{
+    width: 47%;
+    font-size: 15px;
+}	
+#detalle-blog .body{
+	padding: 0px 10px;
+}
+#detalle-blog .title{
+    font-size: 20px;
+}
+#block-block-4 .content h2{
+    font-size: 20px;
+    line-height: 39px;
+}
+.bloque-area-d .descripcion{
+    top: 15%;	
+    padding: 20px 16px;
+}
 .view-mode-bosque_sendero_estaciones .group-right .field-name-field-imagen-sendero .even{
 	text-align: center;
 }	
@@ -170,11 +229,37 @@
 	display: none;
 }	
 .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption{
-    top: -125px;
+    top: -123px;
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge{
+    width: 50%;	
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades img,
+.panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge img{
+	width:  100% !important;
+	float: left;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-detalle-lobby{
     width: 100%;
-	
+    clear: both;
+    position: static;
+    visibility: visible;
+    padding-right: 10px;	
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades{
+	float: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0px;
+    clear: both;
+    margin-bottom: 15px;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo{
+	float: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0px;
+    clear: both;	
 }
 
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption h3{
@@ -192,7 +277,7 @@
 }
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .caption-image{
 	width: 100%;
-	top: -55px;
+	top: 0px;
 }
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption{
     top: 0px;
@@ -212,32 +297,45 @@
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina{
 	display: none;
 }	
-.caption-image, .page-vida-bosque-urbano .field-name-field-image .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption, .page-vida-bosque-urbano .field-name-field-lounge .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{
+.caption-image, .page-vida-bosque-urbano .field-name-field-image .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-lounge .field-items .caption,
+.page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{
     position: relative;
     /* top: -125px; */
     /* background-size: initial; */
     background-position: 50% 40%;
-    bottom: 56px;
+    bottom: 0px; /*56*/
+    clear: both;
 }	
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-imagen-yoga{
     position: static;
     overflow: hidden;
-}	
+}
+
+
+
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{
-    clear: both;
-    position: static;
-    height: 310px;
+	width: 235px;
+}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle{
     margin: 0 auto;
+    right: 0px;
+    left: 0px;
 }
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga{
-    width: 100%;
-	
-    left: 0px;
-    text-align: center;
-    top: 30px;
+	left: 70%;
 }
-.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle{
-	margin-top: 130px;}
+
+
+
+
+
+
 .view-mode-bosque_sendero_estaciones .group-left{
     width: 100%;
 }
@@ -256,7 +354,14 @@
 	float: left;
 }
 .view-mode-bosque_sendero_estaciones .group-footer{
-	width: 60%;
+	width: 100%;
+	float: left;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-imagen-lobby img{
+	float: left;
+}
+.page-vida-bosque-urbano .field-name-field-image img{
+	width: 100%;
 	float: left;
 }
 

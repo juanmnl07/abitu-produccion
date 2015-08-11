@@ -1,4 +1,11 @@
 /* CSS Document */
 
 @media (max-width: 1200px) {
+.page-contactenos .flex-caption, .flex-caption{
+    top: 18%;
+   
+    width: 700px;
+    max-height: 100%;
+    padding: 25px 25px;
+}    
 }
