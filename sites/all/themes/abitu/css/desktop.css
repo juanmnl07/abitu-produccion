@@ -14,4 +14,8 @@
 .tabs-content .punto{
     display: none;
 }
+.tabs .tabs-list li.tab a{
+    width: 186px;
+    
+}
 }

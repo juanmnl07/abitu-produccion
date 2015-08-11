@@ -1023,6 +1023,9 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	height: 570px;
 	position:relative !important;
 	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
 }
 .page-hogar-a-su-medida .fondo img{
 	margin: 0 auto;
@@ -1585,7 +1588,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 #apartamentos.edificio-2 .apartamento#apartamento2{
   /*top: 467px;
   left: -592px;*/
-  /* TIENE LA POSICIÓN DE LA HABITACIÓN 6 POR QUE SOLO SE AGREGARON DOS HABITACIONES, LAS DE TIPO C. CUANDO SE AGREGUEN LAS OTRAS SE TIENE QUE COMENTAR LAS POSICIONES TOP, LEFT, Y DESCOMENTAR LAS DE ARRIBA*/
+  /* TIENE LA POSICIÃ“N DE LA HABITACIÃ“N 6 POR QUE SOLO SE AGREGARON DOS HABITACIONES, LAS DE TIPO C. CUANDO SE AGREGUEN LAS OTRAS SE TIENE QUE COMENTAR LAS POSICIONES TOP, LEFT, Y DESCOMENTAR LAS DE ARRIBA*/
   top: 565px;
   left: -709px;  
 }
@@ -1900,7 +1903,7 @@ ul#puntos li a#cama{
 */
 
 
-/*Añadido por Keylor Mora*/
+/*AÃ±adido por Keylor Mora*/
 
 #tab-content3 .rosa-vientos,
 #tab-content3 .encabezado,
@@ -2073,7 +2076,7 @@ background-repeat: no-repeat;
 }
 
 
-/*Añadido por Keylor para formulario de contacto */
+/*AÃ±adido por Keylor para formulario de contacto */
 
 .webform-confirmation p{
   font-family: ProximaNovaRegular,sans-serif;

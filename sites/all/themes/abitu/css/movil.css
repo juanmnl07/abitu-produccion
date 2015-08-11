@@ -1,4 +1,37 @@
 @media (max-width: 479px) {
+#edificios .edificio#edificio1{
+    left: 0%;
+    top: 70px;
+}	
+#edificios .edificio#edificio2{
+    left: 10%;
+	
+    top: 150px;
+}
+.page-hogar-a-su-medida .fondo.fondo-plano{
+    background-position: 23% 50%;
+	
+}
+.tabs .tabs-list li.tab{
+    width: 100%;
+	
+}	
+.tabs{
+    height: auto;
+
+}
+.tabs .tabs-list li.tab a{
+    display: block;
+    width: 100%;
+
+    line-height: 18px;
+    height: auto;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+.page-hogar-a-su-medida section.above-content{
+	top: 180px;
+}	
 .page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
     width: 100%;
     bottom: -6px;
@@ -22,6 +55,9 @@
 .page-contactenos .flex-caption, .flex-caption{
     top: 14%;
 
+}
+.bloque-area-d .descripcion .enlace{
+	margin: 25px 18px;
 }
 .front .flexslider-home .flex-caption h3{
     font-size: 23px;

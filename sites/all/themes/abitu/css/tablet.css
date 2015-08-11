@@ -1,6 +1,59 @@
 /* CSS Document */
 
 @media (max-width: 991px) {
+.page-hogar-a-su-medida .fondo.fondo-plano{
+	
+}
+.tabs-content .container{
+    width: 100%;
+	
+    max-width: 100%;
+}	
+.page-hogar-a-su-medida .fondo{
+    height: 460px;
+	
+}	
+.tabs-content .encabezado{
+	width: 100%;
+	height: auto;
+}
+.tabs-content .encabezado h2{
+    line-height: 15px;
+	
+}
+.rosa-vientos{
+	display: none;
+}	
+#edificios .edificio#edificio1{
+    left: 61%;
+
+    top: 120px;
+}
+#edificios .edificio#edificio2{
+    left: 32%;
+	
+    top: 280px;
+}	
+.tabs .tabs-list{
+    padding: 0px;
+    text-align: center;
+}
+.tabs .tabs-list li.tab{
+	float: none;
+	display: inline-block;
+}	
+.tabs .tabs-list li.tab a{
+    width: 149px;
+    font-size: 15px;
+}	
+.page-hogar-a-su-medida .main-content{
+    margin-top: 54px;
+}	
+.page-hogar-a-su-medida section.above-content{
+	
+    background: none;
+    background-color: #F1F2F2;
+}
 .page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
     top: 230px;
 	
@@ -8,6 +61,10 @@
 }	
 .header nav ul li{
     margin-left: 4px;	
+}
+.header nav ul li a{
+    padding: 8px 12px;
+	
 }
 .node-type-blog .banner{
     height: auto;
@@ -159,6 +216,38 @@
 
 
 @media (max-width: 767px) {
+.page-hogar-a-su-medida .fondo.fondo-plano{
+	background-position: top center;
+}
+#edificios .edificio#edificio2{
+    left: 17%;      
+    top: 163px;
+
+}
+#edificios .edificio#edificio1{
+    left: 16%;      
+    top: 75px;
+	
+    padding-right: 24px;
+    background-image: url('../images/linea_edificio_1.png');      background-repeat: no-repeat;      background-position: 100% 27px;
+}	
+.page-hogar-a-su-medida .fondo{
+    height: 285px;
+}	
+.page-hogar-a-su-medida .main-content{
+    margin-top: 40px;
+}	
+.tabs{
+    height: 55px;
+	
+}	
+.tabs .tabs-list li.tab a{
+    width: 80px;
+	
+    font-size: 13px;
+    line-height: 13px;
+    height: 55px;
+}	
 .page-contactenos .flexslider .flex-control-nav li, .flexslider .flex-control-nav li{
     float: left;
 	
