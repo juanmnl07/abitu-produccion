@@ -84,7 +84,7 @@ function abitu_preprocess_html(&$variables) {
     drupal_add_html_head($html5shim, 'abitu_html5shim');
   }
 
- 
+  drupal_add_js($base_url.'/sites/all/themes/abitu/js/jquery.bxslider.min.js', array('group' => JS_LIBRARY, 'weight' => -100)); 
   drupal_add_js($base_url.'/sites/all/themes/abitu/js/global.js', array('group' => JS_LIBRARY, 'weight' => -100));
   
   // Use Respond.js.

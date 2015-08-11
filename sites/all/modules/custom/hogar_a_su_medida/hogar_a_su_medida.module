@@ -32,6 +32,7 @@ function _plano_maestro_content() {
 
 
 
+
   //$output = t('Hello world');
   global $base_path;
 
@@ -152,7 +153,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                       <div class=\"encabezado\"><h2></h2></div>
                                       <div class=\"tipo_apartamento\">".drupal_render($elements['title_custom'])."
                                       <div class='imagenes-carousel'>
-                                      <ul class='carouselhabitaciones jcarousel-skin-default'>
+                                      <ul class='carouselhabitaciones '>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_plano']['#items'][0]['uri'])."\" width=\"300\" height=\"208\" /></li>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_grande']['#items'][0]['uri'])."\"  width=\"300\" height=\"208\" /></li>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_sala']['#items'][0]['uri'])."\"  width=\"300\" height=\"208\" /></li>
@@ -166,7 +167,10 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                 </div>
                                 ";
 
-        jcarousel_add('carouselhabitaciones', array('center' => TRUE, 'wrap' => 'circular', 'skin' => 'default', 'navigation' => true, 'pager' => true));
+                                
+                              
+
+        /*jcarousel_add('carouselhabitaciones', array('center' => TRUE, 'wrap' => 'circular', 'skin' => 'default', 'navigation' => true, 'pager' => true));
 
          $apartamentos_content .= "<script>(function( $ ){ 
           $('.jcarousel-prev').jcarouselControl({
@@ -177,7 +181,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                    $('.jcarousel-next').jcarouselControl({
                                           target: '+=1'
                                    });
-                                     }); </script>";
+                                     }); </script>";*/
   
       }else{
         $apartamentos_content .= "<div id=\"tab-content".$contador_content."\" class=\"tipo-apartamento-a tab-content\">
@@ -252,7 +256,9 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
   				  </div>        
           </div>".$apartamentos_content."
 			  </div>";
+        /*drupal_add_library('bxslider', 'bxslider');*/
   return $markup;
+
 }
 
 /**

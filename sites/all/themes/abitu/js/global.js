@@ -18,6 +18,14 @@ jQuery( document ).ajaxStop(function() {
 	$(document).ready(function(){
 
 
+      $('.carouselhabitaciones').bxSlider({
+      	adaptiveHeight: true,
+      	controls: false,
+      	slideWidth: 300
+      });
+                                                          
+
+
 <!--Google Analytics Evento Scroll-->
 var times = 0;
 $(window).scroll(function(){
