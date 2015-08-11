@@ -1,5 +1,5 @@
 <?php
-require_once libraries_get_path('Mobile_Detect').'/Mobile_Detect.php';
+
 
 if ($items){
 

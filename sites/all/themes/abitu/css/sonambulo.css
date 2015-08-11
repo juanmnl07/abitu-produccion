@@ -1648,6 +1648,10 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	/*position: static;*/
 }
 
+.tipo_apartamento .field-name-field-imagen-primer-grande {
+  display: none;
+}
+
 #tab-content4 .rosa-vientos,
 #tab-content4 .encabezado{
 	display: none;
