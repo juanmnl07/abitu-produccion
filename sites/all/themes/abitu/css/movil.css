@@ -1,4 +1,33 @@
 @media (max-width: 479px) {
+.page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
+    width: 100%;
+    bottom: -6px;
+}	
+.page-contactenos .flexslider .flex-control-nav li, .flexslider .flex-control-nav li{
+    display: inline-block;
+	
+    float: none;
+}
+.page-contactenos .flex-caption .enlace a, .flex-caption .enlace a{
+    font-size: 15px;
+	
+    line-height: 22px;
+    padding: 5px;
+    background: none;
+}	
+.page-contactenos .flex-caption .enlace, .flex-caption .enlace{
+    margin-top: 20px;
+
+}	
+.page-contactenos .flex-caption, .flex-caption{
+    top: 14%;
+
+}
+.front .flexslider-home .flex-caption h3{
+    font-size: 23px;
+	
+    line-height: 24px;
+}	
 .node-type-blog section.above-content{
     top: 183px;	
 }
