@@ -341,9 +341,12 @@ $("#btncita").on('click',function(){
 					}
 				}
 			}
+
 		})(document.documentElement);
 
 		$(window).on('scroll resize', findMiddleElement);
+
+		 
 
 	});
 })(jQuery);

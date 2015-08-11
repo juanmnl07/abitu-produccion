@@ -152,7 +152,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                       <div class=\"encabezado\"><h2></h2></div>
                                       <div class=\"tipo_apartamento\">".drupal_render($elements['title_custom'])."
                                       <div class='imagenes-carousel'>
-                                      <ul class='carousel-habitaciones'>
+                                      <ul class='carouselhabitaciones jcarousel-skin-default'>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_plano']['#items'][0]['uri'])."\" width=\"300\" height=\"208\" /></li>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_grande']['#items'][0]['uri'])."\"  width=\"300\" height=\"208\" /></li>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_sala']['#items'][0]['uri'])."\"  width=\"300\" height=\"208\" /></li>
@@ -163,9 +163,21 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                       </div>".drupal_render($elements['area_total']).drupal_render($elements['field_habitaciones']).drupal_render($elements['field_banos']).drupal_render($elements['field_parqueo']).drupal_render($elements['volver_a_edificios']).drupal_render($elements['financiamiento_disponible'])."</div>
                                     </div>
                                   </div>      
-                                </div>";
+                                </div>
+                                ";
 
-        jcarousel_add('carousel-habitaciones', array('center' => TRUE, 'wrap' => 'circular'));
+        jcarousel_add('carouselhabitaciones', array('center' => TRUE, 'wrap' => 'circular', 'skin' => 'default', 'navigation' => true, 'pager' => true));
+
+         $apartamentos_content .= "<script>(function( $ ){ 
+          $('.jcarousel-prev').jcarouselControl({
+                                          target: '-=1'
+                                   });
+
+                                   
+                                   $('.jcarousel-next').jcarouselControl({
+                                          target: '+=1'
+                                   });
+                                     }); </script>";
   
       }else{
         $apartamentos_content .= "<div id=\"tab-content".$contador_content."\" class=\"tipo-apartamento-a tab-content\">
@@ -200,8 +212,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
   			</div>
   			<div class=\"tabs-content\"><div class=\"ajaxloader\"></div>
   				<div id=\"tab-content1\" class=\"tab-content active\">
-		  			<div class=\"fondo\">
-              <img src=\"".$url_plano."\">
+		  			<div class=\"fondo fondo-plano\" style=\"background-image: url('".$url_plano."');\">
               <div class=\"container\">
     					  <div class=\"rosa-vientos\"></div>
     					  <div class=\"encabezado\"><h2>Elija un edificio</h2></div>
@@ -217,8 +228,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
 				  </div>
   				<div id=\"tab-content2\" class=\"tab-content\">
             <div id=\"tab-content2-1\" class=\"sub-tab-content active\">
-  					  <div class=\"fondo\">
-                <img src=\"".$url_edificio."\">
+  					  <div class=\"fondo fondo-edificio\" style=\"background-image: url('".$url_edificio."');\">
     					  <div class=\"container\">
       					  <div class=\"rosa-vientos\"></div>
       					  <div class=\"encabezado\"><h2>Elija un piso</h2></div>
@@ -227,8 +237,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
               </div>
             </div>
             <div id=\"tab-content2-2\" class=\"sub-tab-content\">
-              <div class=\"fondo\">
-			    <img src=\"".$url_piso."\">
+              <div class=\"fondo fondo-piso\" style=\"background-image: url('".$url_piso."');\">
                 <div class=\"container\">
                   <div class=\"rosa-vientos\"></div>
                   <div class=\"encabezado\"><h2>Elija Un apartamento</h2></div>
