@@ -2116,3 +2116,11 @@ background-repeat: no-repeat;
     font-size: 16px;
     font-weight: normal;
 }
+
+
+.tipo_apartamento .jcarousel-container-horizontal{
+      width: 320px;
+    height: 220px;
+    padding: 6px 10px;
+    margin: auto;
+}
