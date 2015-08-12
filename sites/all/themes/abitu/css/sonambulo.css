@@ -2147,3 +2147,19 @@ background-repeat: no-repeat;
     margin: 0 4px;
 }
 
+
+
+.imagenes-carousel ul li{
+  float: left;
+  display: block;
+  width: 300px;
+
+}
+
+.imagenes-carousel .bx-wrapper img {
+    margin: 0 auto;
+}
+
+.imagenes-carousel .bx-viewport{
+  height: 208px;
+}
