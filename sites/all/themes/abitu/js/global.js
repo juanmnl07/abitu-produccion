@@ -19,8 +19,10 @@ jQuery( document ).ajaxStop(function() {
 
 
       $('.carouselhabitaciones').bxSlider({
+      	preloadImages: 'all',
+      	adaptiveHeight: true,
       	controls: false,
-      	slideWidth: 320,
+      	slideWidth: 320
       	
       });
                                                           

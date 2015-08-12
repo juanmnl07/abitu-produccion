@@ -45,11 +45,13 @@ function _plano_maestro_content() {
 
       $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro_tablet.jpg";
       $url_edificio = $base_path."sites/default/files/edicicios/edificio2_tablet.jpg";
-      $url_piso = $base_path."sites/default/files/edicicios/apartamentos_tablet.jpg";
+      //$url_piso = $base_path."sites/default/files/edicicios/apartamentos_tablet.jpg";
+      $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
     }else{
       $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro_movil.jpg"; 
       $url_edificio = $base_path."sites/default/files/edicicios/edificio2_movil.jpg";
-      $url_piso = $base_path."sites/default/files/edicicios/apartamentos_movil.jpg";
+      //$url_piso = $base_path."sites/default/files/edicicios/apartamentos_movil.jpg";
+      $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
     }
                         
   }else{
