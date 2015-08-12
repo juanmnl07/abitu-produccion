@@ -17,23 +17,6 @@ jQuery( document ).ajaxStop(function() {
 	
 	$(document).ready(function(){
 
-
-      $('.carouselhabitaciones').bxSlider({
-      	preloadImages: 'all',
-      	adaptiveHeight: true,
-      	infiniteLoop: false,
-      	controls: false,
-      	minSlides: 1,
-      	maxSlides: 1,
-      	moveSlides: 1,
-      	slideWidth: 310,
-
-      	
-      });
-                                                          
-
-
-<!--Google Analytics Evento Scroll-->
 var times = 0;
 $(window).scroll(function(){
     var bottom = $(window).height() + $(window).scrollTop();
@@ -361,6 +344,24 @@ $("#btncita").on('click',function(){
 
 		$(window).on('scroll resize', findMiddleElement);
 
+
+      /*$('.carouselhabitaciones').bxSlider({
+      	preloadImages: 'all',
+      	adaptiveHeight: true,
+      	infiniteLoop: false,
+      	controls: false,
+      	minSlides: 1,
+      	maxSlides: 1,
+      	moveSlides: 1,
+      	slideWidth: 310
+      });*/
+      $('.carouselhabitaciones').bxSlider({
+		preloadImages: 'all',
+		adaptiveHeight: true,
+		infiniteLoop: false,
+		controls: false,
+		minSlides: 1,
+      });    
 		 
 
 	});

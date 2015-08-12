@@ -156,12 +156,12 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                       <div class=\"tipo_apartamento\">".drupal_render($elements['title_custom'])."
                                       <div class='imagenes-carousel'>
                                       <ul class='carouselhabitaciones '>
-                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_plano']['#items'][0]['uri'])."\" width=\"300\" height=\"260\" style=\"width: 300px; height: 260px; \" /></li>
-                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_grande']['#items'][0]['uri'])."\"  width=\"300\" height=\"260\" style=\"width: 300px; height: 260px; \" /></li>
-                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_sala']['#items'][0]['uri'])."\"  width=\"300\" height=\"260\" style=\"width: 300px; height: 260px; \" /></li>
-                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_comedor']['#items'][0]['uri'])."\"  width=\"300\" height=\"260\" style=\"width: 300px; height: 260px; \" /></li>
-                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_cocina']['#items'][0]['uri'])."\"  width=\"300\" height=\"260\" style=\"width: 300px; height: 260px; \" /></li>
-                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_cama']['#items'][0]['uri'])."\"  width=\"300\" height=\"260\" style=\"width: 300px; height: 260px; \" /></li>
+                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_plano']['#items'][0]['uri'])."\" /></li>
+                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_primer_grande']['#items'][0]['uri'])."\" /></li>
+                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_sala']['#items'][0]['uri'])."\" /></li>
+                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_comedor']['#items'][0]['uri'])."\" /></li>
+                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_cocina']['#items'][0]['uri'])."\" /></li>
+                                        <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_cama']['#items'][0]['uri'])."\" /></li>
                                       </ul>
                                       </div>".drupal_render($elements['area_total']).drupal_render($elements['field_habitaciones']).drupal_render($elements['field_banos']).drupal_render($elements['field_parqueo']).drupal_render($elements['volver_a_edificios']).drupal_render($elements['financiamiento_disponible'])."</div>
                                     </div>

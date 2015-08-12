@@ -6,7 +6,7 @@
 	
 }	
 .tipo_apartamento{
-    height: auto;
+    height: 700px;
 	
 }	
 .tipo_apartamento .field-type-list-integer{
@@ -23,8 +23,12 @@
     border-bottom: 1px solid #87868A;
 	
 }
+.imagenes-carousel .bx-wrapper{
+	max-width: 316px !important;
+	margin: 0 auto;
+}
 .imagenes-carousel .bx-wrapper .bx-pager{
-    bottom: -100px;
+    bottom: -45px;
 	
 }
 .imagenes-carousel .bx-wrapper .bx-pager.bx-default-pager a{
@@ -40,6 +44,8 @@
     box-shadow: none;
 	
     border: none;
+    left: 0px;
+    height: 340px !important;
 }	
 .tabs-content .fondo-piso .encabezado{
 	display: none;

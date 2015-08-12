@@ -2152,11 +2152,11 @@ background-repeat: no-repeat;
 .imagenes-carousel ul li{
   float: left;
   display: block;
-  width: 300px  !important;
+  width: 315px  !important;
 
 }
 .imagenes-carousel ul.carouselhabitaciones {
-  padding: 0 !important;
+   padding: 0 !important;
 }
 .imagenes-carousel .bx-wrapper img {
     margin: 0 auto;
@@ -2164,7 +2164,8 @@ background-repeat: no-repeat;
 }
 
 .imagenes-carousel .bx-viewport{
-      height: 300px !important;
+      /* width: 300px !important; */
+      /* height: 335px !important;*/
 }
 
 #financiamiento{
