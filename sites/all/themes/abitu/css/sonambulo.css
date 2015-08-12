@@ -97,6 +97,16 @@ a{
 
 /* Master page */
 
+.page-node-45 .title{
+	display: none;
+}
+.tipo_apartamento .field-name-financiamiento-disponible a.financiamiento-movil{
+	display: none !important;
+}
+.tipo_apartamento .field-name-financiamiento-disponible a.financiamiento-desktop{
+	display: block !important;
+}
+
   #vmobil{
     display: none;
   }
@@ -135,7 +145,7 @@ a{
 
 /* footer */
 .footer .inner{background-image: url('../images/fondo-footer.png'); background-repeat: no-repeat; padding-bottom: 100px; padding-top: 30px; }
-.footer {background-color: #58595B;}
+.footer {background-color: #58595B;clear: both;}
 
 .footer #block-menu-block-1 ul.menu li{list-style-image: none; list-style-type: none; margin-bottom: 17px;}
 .footer #block-menu-block-1 ul.menu li.last a{padding: 11px 7px; border: 3px solid #ddd; display: block; text-align: center;}
@@ -1648,7 +1658,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-hogar-a-su-medida #tab-content4 .container,
 .page-hogar-a-su-medida #tab-content3 .container
 {
-	/*position: static;*/
+	/* position: static; */
 }
 
 .tipo_apartamento .field-name-field-imagen-primer-grande {
@@ -2169,6 +2179,9 @@ background-repeat: no-repeat;
 }
 
 #financiamiento{
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 #btncita{
   display:block;
@@ -2201,6 +2214,7 @@ background-repeat: no-repeat;
 }
 
 #financiamiento .contacto{
+  width: 100%;
   float:left;
   clear:both;
   margin-bottom: 40px;

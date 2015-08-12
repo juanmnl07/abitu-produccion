@@ -1,6 +1,31 @@
 /* CSS Document */
 
 @media (max-width: 991px) {
+
+.tipo_apartamento .field-name-financiamiento-disponible{
+	margin: 12px 0px;
+	background-image: url(../images/financiamiento-disponible-bg.png),url('../images/fondo-cintillo.png');      
+	background-repeat: no-repeat, repeat;
+	background-position: 27% center, 14px center;
+}	
+.tipo_apartamento .field-name-financiamiento-disponible a.financiamiento-movil{
+	display: block !important;
+}
+.tipo_apartamento .field-name-financiamiento-disponible a.financiamiento-desktop{
+	display: none !important;
+}	
+.page-hogar-a-su-medida #tab-content3 .fondo,
+.page-hogar-a-su-medida #tab-content4 .fondo,
+.page-hogar-a-su-medida #tab-content5 .fondo{
+    height: 870px !important;
+	
+}
+.volver-edificios a{
+    position: static;
+	
+    width: 80%;
+    margin: 0 auto;
+}	
 .page-hogar-a-su-medida #tab-content5 .fondo, .page-hogar-a-su-medida #tab-content4 .fondo, .page-hogar-a-su-medida #tab-content3 .fondo{
     height: 630px;
 	
@@ -302,7 +327,14 @@
 
 
 @media (max-width: 767px) {
+.tipo_apartamento .field-name-financiamiento-disponible{
 
+	
+}	
+#financiamiento{
+    max-width: 471px;
+	
+}
 #apartamentos{
     left: 261px;
 	

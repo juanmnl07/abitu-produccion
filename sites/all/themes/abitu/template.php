@@ -184,6 +184,8 @@ function abitu_preprocess_page(&$variables){
       $variables['page']['above_content'] = null;
       $variables['page']['footer'] = null;
       $variables['page']['page_bottom'] = null;
+      $css = ".main h1.title, header, footer{ display: none; }";
+      drupal_add_css($css, 'inline');
     }
   }
   
