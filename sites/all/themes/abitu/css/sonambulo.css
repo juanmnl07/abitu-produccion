@@ -2152,14 +2152,114 @@ background-repeat: no-repeat;
 .imagenes-carousel ul li{
   float: left;
   display: block;
-  width: 300px;
+  width: 300px  !important;
 
 }
-
+.imagenes-carousel ul.carouselhabitaciones {
+  padding: 0 !important;
+}
 .imagenes-carousel .bx-wrapper img {
     margin: 0 auto;
+    max-width: 310px !important;
 }
 
 .imagenes-carousel .bx-viewport{
-  height: 208px;
+      height: 300px !important;
+}
+
+#financiamiento{
+}
+#btncita{
+  display:block;
+  width: 200px;
+  margin: 0 auto;
+  text-align:center;
+  text-decoration: none;
+  font-family: ProximaNovaRegular, sans-serif;
+  font-size: 16px;
+  color: #231F20;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: 3px solid #231F20;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;   
+}
+#btncita:hover{
+  color: #FFF;
+  background-color: #231F20;
+}
+#financiamiento h1{
+  font-family: ProximaNovaBold, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #632C4F;
+  text-transform: uppercase;
+  text-align:center;
+  margin: 15px 0px 30px 0px;
+  font-style:normal;
+}
+
+#financiamiento .contacto{
+  float:left;
+  clear:both;
+  margin-bottom: 40px;
+}
+
+#financiamiento h2{
+  font-family: ProximaNovaBold, sans-serif;
+  font-weight: bold;
+  font-size:18px;
+  line-height: 21px;
+  color: #085C42;
+  text-transform: uppercase;
+  text-align:center;
+  font-style:normal;
+}
+
+.contacto .imagen{
+  float:left;
+  margin-right: 20px;
+}
+.contacto .detalle{
+  float:left;
+}
+.contacto .detalle h4{
+  font-family: ProximaNovaRegular, sans-serif;
+  font-weight: normal;
+  font-size: 20px;  
+  color: #3FAE29;
+  margin: 0px; margin-bottom: 10px;
+  text-align:left;
+}
+.contacto .detalle p{
+  font-family: ProximaNovaRegular, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 19px;
+  margin: 0px;
+  color: #000000;
+  text-align:left;
+}
+.contacto .detalle a{
+  display: block;
+    font-family: ProximaNovaSemibold, sans-serif;
+    font-size: 16px;
+  color: #632C4F;
+  text-decoration: none;
+  text-align: left;
+  margin-top: 10px;
+    font-weight: 600;
+}
+.fcolumna1{
+  width: 50%;
+  float: left;
+  box-sizing:border-box;
+  padding: 10px;
+}
+.fcolumna2{
+  width: 50%;
+  float: left;
+  box-sizing:border-box;
+  padding: 10px;  
 }

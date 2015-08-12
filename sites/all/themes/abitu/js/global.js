@@ -21,8 +21,13 @@ jQuery( document ).ajaxStop(function() {
       $('.carouselhabitaciones').bxSlider({
       	preloadImages: 'all',
       	adaptiveHeight: true,
+      	infiniteLoop: false,
       	controls: false,
-      	slideWidth: 320
+      	minSlides: 1,
+      	maxSlides: 1,
+      	moveSlides: 1,
+      	slideWidth: 310,
+
       	
       });
                                                           
