@@ -11,6 +11,8 @@
 .page-hogar-a-su-medida .fondo.fondo-plano{
     background-position: 23% 50%;
 	
+    width: 320px;
+    margin: 0 auto;
 }
 .tabs .tabs-list li.tab{
     width: 100%;
@@ -47,6 +49,11 @@
     line-height: 22px;
     padding: 5px;
     background: none;
+}
+.front .flex-caption .enlace a{
+    font-size: 12px;
+	
+    line-height: 15px;
 }	
 .page-contactenos .flex-caption .enlace, .flex-caption .enlace{
     margin-top: 20px;
@@ -54,13 +61,17 @@
 }	
 .page-contactenos .flex-caption, .flex-caption{
     top: 14%;
-
+}
+.front .flex-caption{
+    padding: 15px 0px;
+	
+    top: 10%;
 }
 .bloque-area-d .descripcion .enlace{
 	margin: 25px 18px;
 }
 .front .flexslider-home .flex-caption h3{
-    font-size: 23px;
+    font-size: 19px;
 	
     line-height: 24px;
 }	

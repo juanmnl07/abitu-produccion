@@ -1,6 +1,31 @@
 /* CSS Document */
 
 @media (max-width: 991px) {
+.indicadores{
+    width: 100%;
+	
+    height: 30px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+.indicadores .indicador{
+    line-height: 33px;	
+}
+.indicadores .indicador:before{
+    margin-top: 5px;
+	
+    width: 20px;
+    height: 20px;
+}
+#lista_pisos{
+    width: 173px;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0px;
+    left: 0px;
+    top: 70px;
+}	
 .page-hogar-a-su-medida .fondo.fondo-plano{
 	
 }
@@ -216,12 +241,25 @@
 
 
 @media (max-width: 767px) {
+#lista_pisos .piso{
+    margin-bottom: 5px;
+	
+}
+#lista_pisos{
+    width: 130px;
+    background: none;
+	
+    padding-left: 0px;
+    top: 75px;
+}	
 .page-hogar-a-su-medida .fondo.fondo-plano{
 	background-position: top center;
+	width: 470px;
+	margin: 0 auto;
 }
 #edificios .edificio#edificio2{
     left: 17%;      
-    top: 163px;
+    top: 153px;
 
 }
 #edificios .edificio#edificio1{
@@ -233,6 +271,10 @@
 }	
 .page-hogar-a-su-medida .fondo{
     height: 285px;
+}
+.page-hogar-a-su-medida .fondo.fondo-edificio{
+    height: 385px;
+	
 }	
 .page-hogar-a-su-medida .main-content{
     margin-top: 40px;
