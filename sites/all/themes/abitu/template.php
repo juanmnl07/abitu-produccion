@@ -95,7 +95,8 @@ function abitu_preprocess_html(&$variables) {
   // Use normalize.css
   if (theme_get_setting('normalize_css')) {
     drupal_add_css(drupal_get_path('theme', 'abitu') . '/css/normalize.css', array('group' => CSS_SYSTEM, 'weight' => -100));
-  }
+  } 
+
 }
 
 /**
@@ -170,4 +171,21 @@ function abitu_preprocess_field(&$variables) {
       # code...
       break;
   }
+}
+
+function abitu_preprocess_page(&$variables){
+  if(isset($_GET['tipo_acceso'])){
+
+    $bandera = $_GET['tipo_acceso'];
+  
+    if($bandera=='1'){
+      //unset($variables['page']['header']);
+      $variables['page']['header'] = null;
+      $variables['page']['above_content'] = null;
+      $variables['page']['footer'] = null;
+      $variables['page']['page_bottom'] = null;
+    }
+  }
+  
+  
 }
