@@ -1,125 +1,131 @@
 /* CSS Document */
 
 @media (max-width: 991px) {
+.page-historias .main-content{
+    padding-top: 100px;
+}    
 .page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso.edif2{
     background-size: 175%;
-	
+    
     height: 360px;
     background-position: 40% 100%;
 }
 #apartamentos.edificio-2 .apartamento > a{
-	
+    font-size: 25px;
+}    
+#apartamentos.edificio-2 .apartamento#apartamento5 > a{
+    width: 80px;
+    
+    font-size: 20px;
 }
-	
 .page-contactenos .main-content{
     padding-top: 35px;
-	
 }
 
 .tipo_apartamento .field-name-financiamiento-disponible{
-	margin: 0px;
-	margin-top: 10px;
-	background-image: url(../images/financiamiento-disponible-bg.png),url('../images/fondo-cintillo.png');      
-	background-repeat: no-repeat, repeat;
-	background-position: 27% center, 14px center;
-}	
+    margin: 0px;
+    margin-top: 10px;
+    background-image: url(../images/financiamiento-disponible-bg.png),url('../images/fondo-cintillo.png');      
+    background-repeat: no-repeat, repeat;
+    background-position: 27% center, 14px center;
+}   
 .tipo_apartamento .field-name-financiamiento-disponible a.financiamiento-movil{
-	display: block !important;
+    display: block !important;
 }
 .tipo_apartamento .field-name-financiamiento-disponible a.financiamiento-desktop{
-	display: none !important;
-}	
+    display: none !important;
+}   
 .page-hogar-a-su-medida #tab-content3 .fondo,
 .page-hogar-a-su-medida #tab-content4 .fondo,
 .page-hogar-a-su-medida #tab-content5 .fondo{
     height: 895px !important;
-	
+    
 }
 .volver-edificios a{
     position: static;
-	
+    
     width: 80%;
     margin: 0 auto;
-}	
+}   
 .page-hogar-a-su-medida #tab-content5 .fondo, .page-hogar-a-su-medida #tab-content4 .fondo, .page-hogar-a-su-medida #tab-content3 .fondo{
     height: 630px;
-	
-}	
+    
+}   
 .tipo_apartamento{
     height: 700px;
-	
-}	
+    
+}   
 .tipo_apartamento .field-type-list-integer{
     width: 80%;
-	
+    
     margin: 0 auto;
     margin-bottom: 10px;
-}	
+}   
 .tipo_apartamento .field-name-area-total .area-total{
     margin-top: 54px;
-	
-}	
+    
+}   
 .imagenes-carousel{
     border-bottom: 1px solid #87868A;
-	
+    
 }
 .imagenes-carousel .bx-wrapper{
-	max-width: 316px !important;
-	margin: 0 auto;
+    max-width: 316px !important;
+    margin: 0 auto;
 }
 .imagenes-carousel .bx-wrapper .bx-pager{
     bottom: -45px;
-	
+    
 }
 .imagenes-carousel .bx-wrapper .bx-pager.bx-default-pager a{
     background: #C2C3C9;
-	
+    
     margin: 0px 3px;
 }
 .imagenes-carousel .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .imagenes-carousel .bx-wrapper .bx-pager.bx-default-pager a.active{
    background: #87868A;
-}	
+}   
 .imagenes-carousel .bx-wrapper .bx-viewport{
     box-shadow: none;
-	
+    
     border: none;
     left: 0px;
     height: 340px !important;
-}	
+}   
 .tabs-content .fondo-piso .encabezado{
-	display: none;
+    display: none;
 }
 #apartamentos{
     left: 408px;
 }
 .edif2 #apartamentos.edificio-2{
     left: 736px;
-	
+    
     top: -396px;
 }
 .page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso{
     width: 760px;
-	
+    
     height: 570px;
     background-size: 180%;
     background-position: 93% 0%;
     margin: 0 auto;
-}	
+}   
 .indicadores{
     width: 100%;
-	
+    
     height: 30px;
     padding: 0px;
     margin-left: 0px;
     margin-top: 0px;
 }
 .indicadores .indicador{
-    line-height: 33px;	
+    line-height: 33px;  
 }
 .indicadores .indicador:before{
     margin-top: 5px;
-	
+    
     width: 20px;
     height: 20px;
 }
@@ -130,31 +136,31 @@
     right: 0px;
     left: 0px;
     top: 70px;
-}	
+}   
 .page-hogar-a-su-medida .fondo.fondo-plano{
-	
+    
 }
 .tabs-content .container{
     width: 100%;
-	
+    
     max-width: 100%;
-}	
+}   
 .page-hogar-a-su-medida .fondo{
     height: 460px;
     background-size: cover;
-	
-}	
+    
+}   
 .tabs-content .encabezado{
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 .tabs-content .encabezado h2{
     line-height: 15px;
-	
+    
 }
 .rosa-vientos{
-	display: none;
-}	
+    display: none;
+}   
 #edificios .edificio#edificio1{
     left: 61%;
 
@@ -162,40 +168,40 @@
 }
 #edificios .edificio#edificio2{
     left: 32%;
-	
+    
     top: 280px;
-}	
+}   
 .tabs .tabs-list{
     padding: 0px;
     text-align: center;
 }
 .tabs .tabs-list li.tab{
-	float: none;
-	display: inline-block;
-}	
+    float: none;
+    display: inline-block;
+}   
 .tabs .tabs-list li.tab a{
     width: 149px;
     font-size: 15px;
-}	
+}   
 .page-hogar-a-su-medida .main-content{
     margin-top: 54px;
-}	
+}   
 .page-hogar-a-su-medida section.above-content{
-	
+    
     background: none;
     background-color: #F1F2F2;
 }
 .page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
     top: 230px;
-	
+    
     right: 100px;
-}	
+}   
 .header nav ul li{
-    margin-left: 4px;	
+    margin-left: 4px;   
 }
 .header nav ul li a{
     padding: 8px 12px;
-	
+    
 }
 .node-type-blog .banner{
     height: auto;
@@ -219,15 +225,15 @@
     clear: both;
 }
 .group-footer .flexslider.flexslider-home .flex-control-nav{
-    top: 34%;	
+    top: 34%;   
 }
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga h3{
-    margin-bottom: -10px;	
+    margin-bottom: -10px;   
 }
 
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{
     width: 300px;
-}	
+}   
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina{
     left: 70px;
 }
@@ -241,7 +247,7 @@
     width: 280px;
 }
 .panel-pane.pane-node .view-mode-piscina_recreacion_gimnasio{
-    min-height: 500px;	
+    min-height: 500px;  
 }
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption{
     padding-left: 0px;
@@ -253,93 +259,93 @@
 
 .view-mode-bosque_sendero_estaciones .group-left .field-name-field-detalle{
     margin-left: 0px;
-}	
+}   
 .not-front .flex-caption{
-	width: 70%;
-	margin: 0 auto;
-	left: 0px; right: 0px;
-}	
+    width: 70%;
+    margin: 0 auto;
+    left: 0px; right: 0px;
+}   
 .home-encabezado-titulo h2{
-	line-height: 28px
+    line-height: 28px
 }
 .sharethis-wrapper{
-	display: none;
+    display: none;
 }
 #vmobil{
-	display: block;
+    display: block;
 }
 #vweb{
-	display: none;
-}	
+    display: none;
+}   
 .encabezado-contacto .isla#isla2,
 .encabezado-contacto .isla#isla4{
-	margin-right: 0px;
+    margin-right: 0px;
 
 }
 
 #block-block-4 .content h2{
-	text-align: center;
-	font-size: 30px;
-	margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
 }
 #block-easy-breadcrumb-easy-breadcrumb{
-	display: none;
-}	
+    display: none;
+}   
 .pane-webform-client-block-2{
-	width:  52%;
+    width:  52%;
 }
 .page-contactenos .islas{
     width: 475px;
     margin: 0 auto;
 }
 .fila.cintillo{
-	padding-bottom: 0px;
-}	
+    padding-bottom: 0px;
+}   
 .bloque-cintillo-reserva .preventa-reserva ul, .bloque-cintillo-reserva .preventa-reserva{
-	width: 100%;
-	text-align:center;
+    width: 100%;
+    text-align:center;
 }
 .bloque-cintillo-reserva .boton-reserva{
-	width: 100%;
-	padding: 0px;
+    width: 100%;
+    padding: 0px;
 }
 .bloque-cintillo-reserva .boton-reserva a.reservar{
-	background-image: url(../images/icon_btn.png);
-	background-repeat: no-repeat;
-	background-position: 85% 50%;
-	background-color: #632C4F;
-	font-weight: bold;
-	border: none;
+    background-image: url(../images/icon_btn.png);
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    background-color: #632C4F;
+    font-weight: bold;
+    border: none;
 }
 .bloque-cintillo-reserva .boton-reserva span{
-	display: none;
+    display: none;
 }
 .page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
-	max-width: 100%;	
+    max-width: 100%;    
 }
 
 .header .grid{
-	width: 97% !important;
+    width: 97% !important;
 }
 .page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
-	width: 100%;
+    width: 100%;
 }
-	
+    
 .footer #block-webform-client-block-1, .footer #block-menu-block-1{
-	margin-right: 20px;
+    margin-right: 20px;
 }
 .front .islas{
-	width: 670px;
-	overflow: hidden;
-	margin: 0 auto;
+    width: 670px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 .front .islas .isla .box_titulo{
-	display: block;
+    display: block;
 }
 
 .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption{
     background-size: 78%;
-	
+    
     background-position: 50% 67%;
 }
 
@@ -458,26 +464,94 @@
 
 @media (max-width: 767px) {
 
-.page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso.edif2{
-    background-size: 175%;      height: 360px;      background-position: 40% 100%;
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga p{
+    line-height: 14px;
+}
+
+#apartamentos.edificio-2 .apartamento > a{
+    width: 70px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 17px;  
+}
+
+#apartamentos.edificio-2 .apartamento#apartamento11{
+  top: 608px;
+  left: -359px; 
+}
+#apartamentos.edificio-2 .apartamento#apartamento10{
+  top: 607px;
+  left: -432px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento9{
+  top: 607px;
+  left: -504px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento8{
+  top: 607px;
+  left: -576px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento7{
+  top: 607px;
+  left: -648px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento6{
+  top: 607px;
+  left: -720px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento1{
+    top: 550px;
+    left: -720px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento2{
+  /*top: 550px;
+  left: -648px;*/
+  /* TIENE LA POSICIÃ“N DE LA HABITACIÃ“N 6 POR QUE SOLO SE AGREGARON DOS HABITACIONES, LAS DE TIPO C. CUANDO SE AGREGUEN LAS OTRAS SE TIENE QUE COMENTAR LAS POSICIONES TOP, LEFT, Y DESCOMENTAR LAS DE ARRIBA*/
+    top: 608px;
+    left: -719px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento3{
+  top: 549px;
+  left: -576px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento4{
+  top: 549px;
+  left: -504px;
+}
+#apartamentos.edificio-2 .apartamento#apartamento5{
+  top: 548px;
+  left: -432px; 
+}
+
+#apartamentos.edificio-2 .apartamento#apartamento5 > a{
+  width: 57px;
+  font-size: 15px;
+}
+
+
+
+.page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo-piso.edif2{
+    background-size: 175%;      
+    height: 360px;      
+    background-position: 40% 100%;
 
 }
-	
+    
 .tipo_apartamento .field-name-financiamiento-disponible{
 
-	
-}	
+    
+}   
 #financiamiento{
     max-width: 471px;
-	
+    
 }
 #apartamentos{
     left: 261px;
-	
+    
 }
 .page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso{
     width: 478px;
-	
+    
     background-size: 285%;
     background-position: 80% 0%;
 }
@@ -485,19 +559,19 @@
 
 #lista_pisos .piso{
     margin-bottom: 5px;
-	
+    
 }
 #lista_pisos{
     width: 130px;
     background: none;
-	
+    
     padding-left: 0px;
     top: 75px;
-}	
+}   
 .page-hogar-a-su-medida .fondo.fondo-plano{
-	background-position: top center;
-	width: 470px;
-	margin: 0 auto;
+    background-position: top center;
+    width: 470px;
+    margin: 0 auto;
 }
 #edificios .edificio#edificio2{
     left: 17%;      
@@ -507,96 +581,99 @@
 #edificios .edificio#edificio1{
     left: 16%;      
     top: 75px;
-	
+    
     padding-right: 24px;
     background-image: url('../images/linea_edificio_1.png');      background-repeat: no-repeat;      background-position: 100% 27px;
-}	
+}   
 .page-hogar-a-su-medida .fondo{
     height: 285px;
 }
 .page-hogar-a-su-medida .fondo.fondo-edificio{
     height: 385px;
-	
-}	
+    
+}   
 .page-hogar-a-su-medida .main-content{
     margin-top: 40px;
-}	
+}   
 .tabs{
     height: 55px;
-	
-}	
+    
+}   
 .tabs .tabs-list li.tab a{
     width: 80px;
-	
+    
     font-size: 13px;
     line-height: 13px;
     height: 55px;
-}	
+}   
 .page-contactenos .flexslider .flex-control-nav li, .flexslider .flex-control-nav li{
     float: left;
-	
+    
     margin-right: 10px;
-}	
+}   
 .page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
-    top: auto;
-	
-    bottom: 0px;
-    width: 16%;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
+    /* top: auto; */
+    
+    /* bottom: 0px; */
+    /* width: 16%; */
+    /* margin: 0 auto; */
+    /* left: 0px; */
+    /* right: 0px; */
 }
 .front .flexslider-home .flex-caption h3{
     font-size: 27px;
-	
+    
     line-height: 24px;
-}	
+}   
 .page-contactenos .flex-caption .enlace, .flex-caption .enlace{
     width: 83%;
     margin-top: 18px;
-}	
+}   
 .page-contactenos .flex-caption .enlace a, .flex-caption .enlace a{
-	padding: 12px 5px;
-	line-height: 17px;
-	width: 100%;
-	text-align: left;
-	background-position: 97% 50%;
+    padding: 12px 5px;
+    line-height: 17px;
+    width: 100%;
+    text-align: left;
+    background-position: 97% 50%;
 }
 .page-contactenos .flex-caption p, .flex-caption p{
     font-size: 16px;
-	
+    
     line-height: 16px;
+   /* display: none;*/
+}
+.front .flex-caption p{
     display: none;
 }
 .page-contactenos .flex-caption, .flex-caption{
-    width: 90%;	
+    width: 90%; 
     top: 6%;
 }
 
 .comment-form .group-nombre-correo .form-item-name, .comment-form .group-nombre-correo .field-name-field-correo-electronico{
     width: 100%;
-}	
+}   
 .pane-content .comment p, .pane-node-comment-form .form-item input, .pane-node-comment-form .form-item textarea, #detalle-blog .body p{
     line-height: 17px;
-}	
+}   
 .categorias-fecha-comentario{
-	margin: 0 auto;
-	width: 100%;
-	display: block;
-	height: 20px;
-}	
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    height: 20px;
+}   
 #detalle-blog .fecha-comentario .fecha, #detalle-blog .fecha-comentario .comentario{
     padding-left: 24px;
-	
+    
     background-size: 17px;
     background-position: 2% center;
-}	
+}   
 #detalle-blog .categoria, #detalle-blog .fecha-comentario{
     width: 47%;
     font-size: 15px;
-}	
+}   
 #detalle-blog .body{
-	padding: 0px 10px;
+    padding: 0px 10px;
 }
 #detalle-blog .title{
     font-size: 20px;
@@ -606,52 +683,52 @@
     line-height: 39px;
 }
 .bloque-area-d .descripcion{
-    top: 15%;	
+    top: 15%;   
     padding: 20px 16px;
 }
 .view-mode-bosque_sendero_estaciones .group-right .field-name-field-imagen-sendero .even{
-	text-align: center;
-}	
+    text-align: center;
+}   
 .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption{
     background-size: initial;
-	
+    
     bottom: 67px !important;
     background-position: center !important;
 }
 .view-mode-bosque_sendero_estaciones .group-right img{
-	width 326px;
-	float: none;
-	width: 326px;
-	margin: 0 auto;
+    width 326px;
+    float: none;
+    width: 326px;
+    margin: 0 auto;
 
-}	
+}   
 .home-encabezado-titulo .detalle{
     margin-bottom: 10px;
-	
-}	
+    
+}   
 .view-mode-bosque_sendero_estaciones .group-right .field-name-field-detalle-senderos{
-	display: none;
-}	
+    display: none;
+}   
 .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption{
     top: -123px;
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge{
-    width: 50%;	
+    width: 50%; 
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades img,
 .panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge img{
-	width:  100% !important;
-	float: left;
+    width:  100% !important;
+    float: left;
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-detalle-lobby{
     width: 100%;
     clear: both;
     position: static;
     visibility: visible;
-    padding-right: 10px;	
+    padding-right: 10px;    
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades{
-	float: none;
+    float: none;
     width: 80%;
     margin: 0 auto;
     margin-top: 0px;
@@ -659,48 +736,48 @@
     margin-bottom: 15px;
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo{
-	float: none;
+    float: none;
     width: 80%;
     margin: 0 auto;
     margin-top: 0px;
-    clear: both;	
+    clear: both;    
 }
 
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption h3{
-	text-align: center;
+    text-align: center;
 }
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption p{
-	text-align: center;
-}	
+    text-align: center;
+}   
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .slides li{
-	height: auto;
-}	
+    height: auto;
+}   
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .slides li img{
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .caption-image{
-	width: 100%;
-	top: 0px;
+    width: 100%;
+    top: 0px;
 }
 .panels-flexible-region-cuatro_filas-central_abajo .node .flexslider.flexslider-bussines .flex-caption{
     top: 0px;
     width: 100%;
     position: static;
-	
+    
     float: left;
     text-align: center;
     background-position: 37% 50px !important;
-}	
+}   
 .not-front .flex-caption{
     top: 29%;
     padding: 12px;
 }
 .page-contactenos .flex-caption h3, .flex-caption h3{
-	font-size: 21px;}
+    font-size: 21px;}
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle .field-name-field-detalle-piscina{
-	display: none;
-}	
+    display: none;
+}   
 .caption-image, .page-vida-bosque-urbano .field-name-field-image .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption,
 .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption,
@@ -715,7 +792,7 @@
     background-position: 50% 40%;
     bottom: 0px; /*56*/
     clear: both;
-}	
+}   
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-imagen-yoga{
     position: static;
     overflow: hidden;
@@ -724,7 +801,7 @@
 
 
 .view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{
-	width: 235px;
+    width: 235px;
 }
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle{
     margin: 0 auto;
@@ -732,7 +809,7 @@
     left: 0px;
 }
 .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga{
-	left: 70%;
+    left: 70%;
 }
 
 
@@ -744,33 +821,33 @@
     width: 100%;
 }
 .view-mode-bosque_sendero_estaciones .group-left .field-name-field-detalle{
-	width: 100%;
-	position:static;
-	text-align:center;
-	padding-top: 0px;
-	padding-left: 0px;
-	clear: both;
-	overflow: hidden;
+    width: 100%;
+    position:static;
+    text-align:center;
+    padding-top: 0px;
+    padding-left: 0px;
+    clear: both;
+    overflow: hidden;
 }
 .view-mode-bosque_sendero_estaciones .group-right{
-	width: 100%;
-	clear: both;
-	float: left;
+    width: 100%;
+    clear: both;
+    float: left;
 }
 .view-mode-bosque_sendero_estaciones .group-footer{
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 .panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion .field-name-field-imagen-lobby img{
-	float: left;
+    float: left;
 }
 .page-vida-bosque-urbano .field-name-field-image img{
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 
 #block-block-7 #chat{
-	display: none;
+    display: none;
 }
 .pane-webform-client-block-2 {
     width: 95%;
@@ -778,62 +855,62 @@
     float: none;
 }
 .webform-client-form-2 .form-submit{
-	float: none;
-	margin: 0 auto;
+    float: none;
+    margin: 0 auto;
 }
 .page-contactenos .pane-2{
-	float: none;
-	margin: 0 auto;
-	margin-top: 40px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 .webform-client-form-2 fieldset label{
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 .page-contactenos #chat{
-	display: none;
+    display: none;
 }
 .bloque-cintillo-reserva .preventa-reserva ul li span{
-	font-size: 40px;
+    font-size: 40px;
 }
 .bloque-cintillo-reserva .boton-reserva{
-	margin-top: 0px;
+    margin-top: 0px;
 }
 .front .islas .isla .box_titulo{
-	font-size: 24px; letter-spacing: -1px;
+    font-size: 24px; letter-spacing: -1px;
 }
 .front .islas{
-	width: 100%;
-}	
+    width: 100%;
+}   
 .front .islas .isla{
-	width: 50%;
-	height: auto;
+    width: 50%;
+    height: auto;
 }
 .front .islas .isla .descripcion{
-    padding: 20px 20px 0px 20px;	
+    padding: 20px 20px 0px 20px;    
 }
 .front .islas .isla .descripcion h4{
-	font-size: 18px;
-	margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 .front .islas .isla .descripcion p,
 .front .islas .isla .descripcion p span{
-	line-height: 15px !important;
-	margin-bottom: 0px !important;
+    line-height: 15px !important;
+    margin-bottom: 0px !important;
 }
-	
-	
-	
+    
+    
+    
 .header .inner{
-	background: none;
+    background: none;
 }
 .footer .inner{
-	background: none;
-	padding-bottom: 0px;
+    background: none;
+    padding-bottom: 0px;
 }
 
 
 
-	
-	
+    
+    
 }
