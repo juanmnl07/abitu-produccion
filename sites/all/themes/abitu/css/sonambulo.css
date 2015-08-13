@@ -1035,7 +1035,6 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 	text-align: center;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-size: cover;
 }
 .page-hogar-a-su-medida .fondo img{
 	margin: 0 auto;

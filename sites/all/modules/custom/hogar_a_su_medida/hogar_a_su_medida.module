@@ -216,7 +216,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
   					<li class=\"tab\" id=\"tab-modelo3\"><a id=\"habitacion3_\" href=\"#habitacion3\" content-target=\"5\">Modelo: <br>3 habitaciones</a></li>
   				</ul>
   			</div>
-  			<div class=\"tabs-content\"><div class=\"ajaxloader\"></div>
+  			<div class=\"tabs-content\" id=\"plano\"><div class=\"ajaxloader\"></div>
   				<div id=\"tab-content1\" class=\"tab-content active\">
 		  			<div class=\"fondo fondo-plano\" style=\"background-image: url('".$url_plano."');\">
               <div class=\"container\">

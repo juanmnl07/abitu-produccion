@@ -1,4 +1,8 @@
 @media (max-width: 479px) {
+.page-contactenos .main-content{
+    padding-top: 38px;
+	
+}	
 .contacto .imagen{
 	float: none;
 	text-align: center;
@@ -25,10 +29,10 @@
 	
 }	
 .page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso{
-    width: 320px;
+    width: 303px;
 	
-    background-size: 426%;
-    background-position: 77% 0%;
+    background-size: 449%;
+    background-position: 76% 0%;
 }	
 #edificios .edificio#edificio1{
     left: 0%;
@@ -193,8 +197,9 @@
 .page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
 	width: 100%;
 	clear: both;
-	margin-top: 13px;
-}	
+}
+.panels-flexible-row.fila .region.cintillo{
+}
 .header nav#block-system-main-menu{
     float: none;
     margin-top: 10px;

@@ -171,9 +171,10 @@ $("#btncita").on('click',function(){
 			  var apartamentos ="";
 
 			  if(num_edificio == 1){
-				  var e = 'var i = 0; i < data.length; i++';
+				 // var e = 'var i = 0; i < data.length; i++';
 			  }else if(num_edificio == 2){
-				  var e = 'var i = data.length - 1; i >= 0; i--';
+				  $(".fondo-piso").addClass("edif2");
+				 // var e = 'var i = data.length - 1; i >= 0; i--';
 			  }
 			  
 			  //for (var i = data.length - 1; i >= 0; i--) { // E2
@@ -201,8 +202,15 @@ $("#btncita").on('click',function(){
 				  	}else if (data[i].name == "C"){
 				  		type_apartment = "type-c";
 				  	}
-
-			  	apartamentos = apartamentos + "<div class=\"apartamento estado-"+data[i].estado+"\" id=\"apartamento"+(i+1)+"\"><a class=\"openinfo\" href=\"#\">"+num_edificio+"-"+piso+""+0+""+(data[i].numero)+data[i].name+"</a><div class=\"info-piso\"><a class=\"closeinfo\" href=\"javascript:void(0);\">X</a><h4>APARTAMENTO "+piso+""+0+""+(data[i].numero)+data[i].name+"</h4><div class=\"estado\">"+estado+"</div><div class=\"habitaciones\">habitaciones "+data[i].habitaciones+"</div><!--<div class=\"precio\">precio: $"+data[i].precio+"</div>--><div class=\"enlaces\"><a href=\"#\" class=\"detalle\" type-apartment=\""+type_apartment+"\">+ DETALLE</a>"+solicitar_cita+"</div><div class=\"flecha\"></div></div></div>";
+					var infop = "<div class=\"info-piso\"><a class=\"closeinfo\" href=\"javascript:void(0);\">X</a><h4>APARTAMENTO "+piso+""+0+""+(data[i].numero)+data[i].name+"</h4><div class=\"estado\">"+estado+"</div><div class=\"habitaciones\">habitaciones "+data[i].habitaciones+"</div><!--<div class=\"precio\">precio: $"+data[i].precio+"</div>--><div class=\"enlaces\"><a href=\"#\" class=\"detalle\" type-apartment=\""+type_apartment+"\">+ DETALLE</a>"+solicitar_cita+"</div><div class=\"flecha\"></div></div>";
+					var adetalle = "class=\"openinfo\"";	
+					if($(window).width() < 991){
+						infop = '';
+						adetalle = "class=\"detalle\" type-apartment=\""+type_apartment+"\"";
+					}	
+	
+					apartamentos = apartamentos + "<div class=\"apartamento estado-"+data[i].estado+"\" id=\"apartamento"+(i+1)+"\"><a "+adetalle+" href=\"#\">"+num_edificio+"-"+piso+""+0+""+(data[i].numero)+data[i].name+"</a>  "+infop+"  </div>";
+				
 			  };
 			  $("#apartamentos").attr("class","");
 			  $("#apartamentos").addClass("edificio-"+num_edificio);
@@ -283,7 +291,7 @@ $("#btncita").on('click',function(){
 			$(".info-piso").css("display","none");
 		});		
 
-		$(document).on("click", ".info-piso .enlaces .detalle", function(){
+		$(document).on("click", ".info-piso .enlaces .detalle, .detalle", function(){
 			var type_apartment = $(this).attr("type-apartment");
 
 			switch(type_apartment){
@@ -301,7 +309,7 @@ $("#btncita").on('click',function(){
 		})
 
 		$(document).on("click", ".volver-edificios a", function(){
-			$("#tab-plan-maestro a").trigger("click");
+			$("#tab-plano-maestro a").trigger("click");
 		});
 		
 		/* detect position of elements to animate */
