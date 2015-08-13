@@ -346,48 +346,90 @@
     left: 0;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport ul{
+.blog-responsivo ul{
     padding:0;
     list-style-type: none;
     margin: 0;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport ul li{
+.blog-responsivo  ul li{
     list-style: none;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport .group-fecha-comment {
+.blog-responsivo  .group-fecha-comment {
     clear: both;
     height: 30px;
+    margin: 0;
+    padding:0;
+    border: 0;
     border-bottom: 1px solid #919395;
+    width: 100%;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport .group-fecha-comment h3{
+.blog-responsivo  .group-fecha-comment h3{
     display: none;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport .group-detalle h3{
+.blog-responsivo .group-detalle h3{
     display: none;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport .group-detalle{
+.blog-responsivo  .group-detalle{
     clear: both;
+    padding: 10px;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport .field-name-post-date{
-    width: 110px;
-    float: right; 
-    height: 100%;  
+.blog-responsivo .field-name-post-date{
+    width: 130px;
+    float: left;
+    height: 100%;
+    display: block;
     line-height: 30px;
+    background-position: left center;
+    padding-left: 34px;
+    font-family: ProximaNova, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #59595B;
+    margin-left: 92px;
 }
 
-.blog-responsivo .bx-wrapper .bx-viewport .field-name-conteo-comentarios{
+.blog-responsivo  .field-name-conteo-comentarios{
     width: 57px;
-    float: right;   
+    float: left;   
     height: 100%; 
     line-height: 30px;
 }
 
+.blog-responsivo  .field-name-conteo-comentarios .coment-count .logo{
+        background-position: left center;
+    padding: 15px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+.blog-responsivo  .field-name-conteo-comentarios .coment-count{
+    float: left
+}
+
+.blog-responsivo  .field-name-conteo-comentarios .coment-count p{
+    float: left;
+    margin: 0;
+    line-height: 30px;
+    font-size: 11px;
+    font-family: ProximaNova, sans-serif;
+}
+
+.blog-responsivo .field-name-title h3{
+    display: block;
+    font-family: ProximaNovaBold, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #59595B;
+    margin: 0;
+}
 
 
 
