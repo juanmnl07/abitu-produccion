@@ -220,6 +220,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 10px;
+        padding-top: 10px;
 }	
 section.above-content{
     top: 183px;
@@ -314,7 +315,7 @@ section.above-content{
 }
 
 .page-historias section.above-content{
-    top: 196px !important;
+    top: 184px !important;
 }
 
 .page-historias .header .grid {
