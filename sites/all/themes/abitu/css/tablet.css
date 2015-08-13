@@ -407,31 +407,34 @@
 
 .blog-responsivo .field-name-post-date{
     width: 130px;
-    float: left;
+    float: right;
     height: 100%;
     display: block;
     line-height: 30px;
     background-position: left center;
-    padding-left: 34px;
+    padding-left: 25px;
     font-family: ProximaNova, sans-serif;
     font-weight: 400;
     font-size: 11px;
     color: #59595B;
-    margin-left: 92px;
+    background-image: url('../images/reloj-movil.png');
 }
 
 .blog-responsivo  .field-name-conteo-comentarios{
-    width: 57px;
-    float: left;   
-    height: 100%; 
+    width: 38px;
+    float: right;
+    height: 100%;
     line-height: 30px;
+        margin-right: 15px;
 }
 
 .blog-responsivo  .field-name-conteo-comentarios .coment-count .logo{
-        background-position: left center;
-    padding: 15px;
+    background-position: left center;
+    background-image: url('../images/chat-movil.png');
+    padding: 15px 12px;
     float: left;
     margin-right: 5px;
+
 }
 
 
@@ -455,9 +458,70 @@
     font-size: 14px;
     color: #59595B;
     margin: 0;
+    line-height: 18px;
+    background-image: url(../images/bg-h3-blog-movil.jpg);
+    background-repeat: no-repeat;
+    background-position: 5% bottom;
+    padding-bottom: 8px;
+}
+
+.blog-responsivo .field-name-body p{
+    line-height: 13px;
+    font-size: 10px;
+    font-family: ProximaNova, sans-serif;
+    color: #444242;
+}
+
+.blog-responsivo .bx-wrapper .bx-pager{
+    bottom: -45px;
+}
+
+.blog-responsivo .bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: #C2C3C9 !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background-color: #87868A !important;
+}
+
+.blog-responsivo .view-footer .pie a{
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 16px;
+    color: #632C4F;
+    border: 2px solid #632C4F;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+
+.page-historias section.above-content{
+    background: none !important;
+    background-color: #f1f2f2 !important;
+}
+
+.page-historias .main-content {
+    padding-top: 100px;
 }
 
 
+.page-historias .blog-responsivo .views-row{
+    border: 1px solid #919395;
+    margin: 0 10px 15px;
+    width: 294px;
+    float: left;
+    height: 315px;
+    min-height: 315px;
+    overflow: hidden;
+    max-height: 315px;
+}
+
+.page-historias .blog-responsivo .views-row .field-name-field-image a{
+    display: block;
+    height: 158px;
+}
+
+.page-historias .blog-responsivo{
+    width: 628px;
+}
 
 }
 
@@ -910,7 +974,19 @@
 }
 
 
+.page-historias .main-content {
+    padding-top: 80px;
+}
 
-    
-    
+.page-historias .blog-responsivo{
+    width: 294px;
+}	
+	
+.page-historias .blog-responsivo .views-row{
+    border: 1px solid #919395;
+    margin: 0px 0px 15px;
+    width: 294px;
+    float: none;
+}
+
 }

@@ -232,8 +232,11 @@
 }   
 #block-block-4 .content h2{
     font-size: 20px;
-    line-height: 42px;
-}   
+    line-height: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}	
+
 section.above-content{
     top: 183px;
 }   
@@ -326,4 +329,45 @@ section.above-content{
     display: none;
 }
 
+.page-historias section.above-content{
+    top: 184px !important;
+}
+
+.page-historias .header .grid {
+     width: 100% !important; 
+}
+
+.home-encabezado-titulo {
+    margin-top: 25px;
+    width: 100%;
+    padding: 0 2%;
+}
+
+
+}
+
+@media (max-width: 300px) {
+
+.page-historias .blog-responsivo{
+    width: 98%;
+    margin: 0 auto;
+}   
+    
+.page-historias .blog-responsivo .views-row{
+    border: 1px solid #919395;
+    margin: 0px 0px 15px;
+    width: 100%;
+    float: none;
+}
+
+.front .islas {
+    width: 100%;
+    padding: 0 2%;
+}
+
+.blog-responsivo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
 }
