@@ -196,10 +196,10 @@
     
     right: 100px;
 }   
-.header nav ul li{
+.header .menu-block-wrapper ul li{
     margin-left: 4px;   
 }
-.header nav ul li a{
+.header .menu-block-wrapper ul li a{
     padding: 8px 12px;
     
 }
@@ -675,14 +675,14 @@
     
     margin-right: 10px;
 }   
-.page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav{
-    /* top: auto; */
+.page-contactenos .flexslider .front .flex-control-nav, .front .flexslider .flex-control-nav{
+    top: auto;
     
-    /* bottom: 0px; */
-    /* width: 16%; */
-    /* margin: 0 auto; */
-    /* left: 0px; */
-    /* right: 0px; */
+    bottom: 0px;
+    width: 16%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
 }
 .front .flexslider-home .flex-caption h3{
     font-size: 27px;

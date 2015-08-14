@@ -115,12 +115,12 @@ a{
   } 
 
 /* header */
-.header nav ul li a {font-size:14px; font-weight: bold; font-family: ProximaNovaBold, sans-serif;}
+.header .menu-block-wrapper ul li a {font-size:14px; font-weight: bold; font-family: ProximaNovaBold, sans-serif;}
 .header .inner{background-image: url('../images/fondo-header.png'); background-repeat: no-repeat; background-position: right;}
-.header #logo, .header nav#block-system-main-menu, .header nav ul li{float: left;}
-.header nav ul li a{text-align: center; border-bottom: none; line-height: 20px; color: #fff; display: block; padding:8px 16px;}
-.header nav ul li a:hover{color: #ddd;}
-.header nav ul li {list-style: none; margin: 0 0 0 25px; padding: 0;
+.header #logo, .header #block-menu-block-2, .header .menu-block-wrapper ul li{float: left;}
+.header .menu-block-wrapper ul li a{text-align: center; border-bottom: none; line-height: 20px; color: #fff; display: block; padding:8px 16px;}
+.header .menu-block-wrapper ul li a:hover{color: #ddd;}
+.header .menu-block-wrapper ul li {list-style: none; margin: 0 0 0 25px; padding: 0;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease; 
 }
@@ -133,15 +133,15 @@ a{
     font-size:  12px;
 }
 
-.header nav ul li:hover,
-.header nav ul li.active-trail{
+.header .menu-block-wrapper ul li:hover,
+.header .menu-block-wrapper ul li.active-trail{
   border-bottom: 2px solid #FFF;
 }
-.header nav ul li.last {border: 2px solid #ddd;}
-.header nav ul li.last:hover a{
+.header .menu-block-wrapper ul li.last {border: 2px solid #ddd;}
+.header .menu-block-wrapper ul li.last:hover a{
   background-color: #401C33;
 }
-.header nav#block-system-main-menu{margin:40px 0 0 0px; float: right;}
+.header #block-menu-block-2{margin:40px 0 0 0px; float: right;}
 
 /* footer */
 .footer .inner{background-image: url('../images/fondo-footer.png'); background-repeat: no-repeat; padding-bottom: 100px; padding-top: 30px; }

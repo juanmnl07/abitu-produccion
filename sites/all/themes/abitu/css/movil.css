@@ -1,4 +1,10 @@
 @media (max-width: 479px) {
+.page-vida-bosque-urbano section.above-content{
+    top: 183px;
+}   
+.webform-client-form-2 .webform-component--encabezado---contacto h3{
+    font-size: 28px;
+}    
 .edif2 #apartamentos.edificio-2{
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
@@ -214,7 +220,7 @@
 }
 .panels-flexible-row.fila .region.cintillo{
 }
-.header nav#block-system-main-menu{
+.header #block-menu-block-2{
     float: none;
     margin-top: 10px;
 }   
@@ -237,7 +243,10 @@
     padding-top: 10px;
 }	
 
-section.above-content{
+/*section.above-content*/
+.page-contactenos section.above-content{
+    background: none;
+    background-color: #F1F2F2;
     top: 183px;
 }   
 #chat{
@@ -333,7 +342,7 @@ section.above-content{
     top: 184px !important;
 }
 
-.page-historias .header .grid {
+.header .grid {
      width: 100% !important; 
 }
 
