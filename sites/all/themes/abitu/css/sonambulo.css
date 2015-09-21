@@ -2278,3 +2278,176 @@ background-repeat: no-repeat;
   padding: 10px;  
 }
 
+
+
+
+
+
+
+
+
+.blog-responsivo .encabezado h2 {
+    font-family: ProximaNovaBold, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #632C4F;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.blog-responsivo {
+    width: 294px;
+    margin: 0 auto;
+}
+
+.blog-responsivo .bx-wrapper .bx-viewport{
+    border: none;
+    border: 1px solid #919395;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0;
+}
+
+.blog-responsivo ul{
+    padding:0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.blog-responsivo  ul li{
+    list-style: none;
+}
+
+.blog-responsivo  .group-fecha-comment {
+    clear: both;
+    height: 30px;
+    margin: 0;
+    padding:0;
+    border: 0;
+    border-bottom: 1px solid #919395;
+    width: 100%;
+}
+
+.blog-responsivo  .group-fecha-comment h3{
+    display: none;
+}
+
+.blog-responsivo .group-detalle h3{
+    display: none;
+}
+
+.blog-responsivo  .group-detalle{
+    clear: both;
+    padding: 10px;
+}
+
+.blog-responsivo .field-name-post-date{
+    width: 130px;
+    float: right;
+    height: 100%;
+    display: block;
+    line-height: 30px;
+    background-position: left center;
+    padding-left: 25px;
+    font-family: ProximaNova, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #59595B;
+    background-image: url('../images/reloj-movil.png');
+}
+
+.blog-responsivo  .field-name-conteo-comentarios{
+    width: 38px;
+    float: right;
+    height: 100%;
+    line-height: 30px;
+        margin-right: 15px;
+}
+
+.blog-responsivo  .field-name-conteo-comentarios .coment-count .logo{
+    background-position: left center;
+    background-image: url('../images/chat-movil.png');
+    padding: 15px 12px;
+    float: left;
+    margin-right: 5px;
+
+}
+
+
+.blog-responsivo  .field-name-conteo-comentarios .coment-count{
+    float: left
+}
+
+.blog-responsivo  .field-name-conteo-comentarios .coment-count p{
+    float: left;
+    margin: 0;
+    line-height: 30px;
+    font-size: 11px;
+    font-family: ProximaNova, sans-serif;
+}
+
+.blog-responsivo .field-name-title h3{
+    display: block;
+    font-family: ProximaNovaBold, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #59595B;
+    margin: 0;
+    line-height: 18px;
+    background-image: url(../images/bg-h3-blog-movil.jpg);
+    background-repeat: no-repeat;
+    background-position: 5% bottom;
+    padding-bottom: 8px;
+}
+
+.blog-responsivo .field-name-body p{
+    line-height: 13px;
+    font-size: 10px;
+    font-family: ProximaNova, sans-serif;
+    color: #444242;
+}
+
+.blog-responsivo .bx-wrapper .bx-pager{
+    bottom: -45px;
+}
+
+.blog-responsivo .bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: #C2C3C9 !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background-color: #87868A !important;
+}
+
+.blog-responsivo .view-footer .pie a{
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 16px;
+    color: #632C4F;
+    border: 2px solid #632C4F;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+
+
+
+
+.page-historias .blog-responsivo .views-row{
+    border: 1px solid #919395;
+    margin: 0 10px 15px;
+    width: 294px;
+    float: left;
+    height: 315px;
+    min-height: 315px;
+    overflow: hidden;
+    max-height: 315px;
+}
+
+.page-historias .blog-responsivo .views-row .field-name-field-image a{
+    display: block;
+    height: 158px;
+}
+
+.page-historias .blog-responsivo{
+    width: 628px;
+}

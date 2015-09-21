@@ -350,7 +350,9 @@ $("#btncita").on('click',function(){
 
 		})(document.documentElement);
 
-		$(window).on('scroll resize', findMiddleElement);
+		if($(window).width() > 991){
+			$(window).on('scroll resize', findMiddleElement);
+		}
 
 
       /*$('.carouselhabitaciones').bxSlider({
