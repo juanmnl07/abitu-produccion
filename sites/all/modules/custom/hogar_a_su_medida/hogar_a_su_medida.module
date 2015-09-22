@@ -1,9 +1,12 @@
 <?php
 
 function hogar_a_su_medida_url_inbound_alter(&$path, $original_path, $path_language) {
-  if($original_path == current_path()){
-    if (!preg_match('/^[a-zA-Z0-9-_\/]+$/i', $original_path)){
-      drupal_goto(removeAccents($original_path, array(), 301));
+  $object = menu_get_object();
+  if($object == null){
+    if($original_path == current_path()){
+      if (!preg_match('/^[a-zA-Z0-9-_\/]+$/i', $original_path)){
+        drupal_goto(removeAccents($original_path, array(), 301));
+      }
     }
   }
 }

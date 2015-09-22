@@ -228,7 +228,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 /* end chat */
 
 /* home */
-.not-front .flex-caption {/*top: 270px; left: 420px;*/   top: 50%; left: 32%; background-image: url('../images/fondo-caption-not-front.png');}
+.not-front .flex-caption {/*top: 270px; left: 420px;*/   top: 50%; /*left: 32%;*/ background-image: url('../images/fondo-caption-not-front.png');}
 .not-front .flex-caption h3 {color: #414042;}
 .flexslider {border: none; max-width: 1374px; margin: 0 auto; }
 .page-contactenos .flexslider .flex-control-nav, .flexslider .flex-control-nav { width: 13px; position: absolute; top: 253px; text-align: center; z-index: 2; right: 136px; }
@@ -236,7 +236,7 @@ section.above-content{ position: absolute; top: 133px; width: 100%; z-index: 3; 
 .page-contactenos .flexslider .flex-control-paging li a, .flexslider .flex-control-paging li a {background-color: rgba(255,255,255,0.5); width: 15px; height: 15px;}
 .node-type-blog .flexslider .flex-control-paging li a {background-color: rgba(0,0,0,0.5);}
 .node-type-blog .flex-control-paging li a.flex-active, .page-contactenos .flex-control-paging li a.flex-active, .flex-control-paging li a.flex-active {background-color: rgba(63,174,41,0.5);}
-.page-contactenos .flex-caption, .flex-caption {position: absolute; top: 27%; width: 800px;margin: 0 auto;/*left: 320px;*/ left: 0px; right: 0px;background-image: url('../images/fondo-flex-caption.png'); padding: 25px 45px; max-height: 55%}
+.page-contactenos .flex-caption, .flex-caption {position: absolute; top: 27%; width: 800px;margin: 0 auto; left: 0px; right: 0px;background-image: url('../images/fondo-flex-caption.png'); padding: 25px 45px; max-height: 55%}
 .page-contactenos .flex-caption h3, .flex-caption h3 {margin: 0; color: #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 29.85px; text-transform: uppercase; text-align: center;}
 .page-contactenos .flex-caption p, .flex-caption p {text-align: center; color: #fff; font-family: ProximaNovaRegular, sans-serif; font-size: 19px; margin-top: 10px; line-height: 27px; letter-spacing: -0.4px;}
 .page-contactenos .flex-caption .enlace, .flex-caption .enlace {  margin: 0 auto; border: 2px solid #fff; width: 55%;  text-align: center; line-height: 25px;}
