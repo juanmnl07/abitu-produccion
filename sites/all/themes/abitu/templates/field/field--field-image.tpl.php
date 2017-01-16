@@ -61,7 +61,7 @@ HTML comment.
     <?php foreach ($items as $delta => $item): ?>
       <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
       	<?php if (arg(0) == "vida-bosque-urbano"): ?>
-      		<div class="caption"><h4>Bosque Urbano</h4></div>
+      		<div class="caption"><h3>Bosque Urbano</h3></div>
   	  	<?php endif; ?>
     <?php endforeach; ?>
   </div>

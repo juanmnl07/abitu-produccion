@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="MobileOptimized" content="width" />
+  <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<link rel="prefetch" href="//stats.g.doubleclick.net/robots.txt" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="shortlink" href="https://www.drupal.org/node/88008" />
+<meta name="description" content="What? GlobalRedirect is a simple module which… Checks the current URL for an alias and does a 301 redirect to it if it is not being used. Checks the current URL for a trailing slash, removes it if present and repeats check 1 with the new request. Checks if the current URL is the same as the site_frontpage and redirects to the frontpage if there is a match. Checks if the Clean URLs feature is enabled and then checks the current URL is being accessed using the clean method rather than the &#039;unclean&#039; method. Checks access to the URL. If the user does not have access to the path, then no redirects are done. This helps avoid exposing private aliased node&#039;s. Make sure the case of the URL being accessed is the same as the one set by the author/administrator. For example, if you set the alias &quot;articles/cake-making&quot; to node/123, then the user can access the alias with any combination of case. Most of the above options are configurable in the settings page. In Drupal 5 you can access this after enabling the globalredirect_admin module. In Drupal 6, the settings page is bundled into the module." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.drupal.org/project/globalredirect" />
+  <title>Global Redirect | Drupal.org</title>
+  <link type="text/css" rel="stylesheet" href="//www.drupal.org/files/advagg_css/css__AVcEcTVLBLX8vW4CyfA90b53b4fE0NaYtvcPwowjREk__BTnu98PCe61qizCcD6wWemE_JSPA6B5xt9Bk84RTPzA__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//www.drupal.org/files/advagg_css/css__r0ClRWzIwnEC84eDeVhoQPgCgIUVH7k3rgoKaD2qXIA__Qu_BSBdwWI2_Czoc8MOmH_EuL85RxkBMuR1yUXtpBvo__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.css" media="all" />
+  </head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-88008 node-type-project-module drupalorg-site-main" >
+  <div id="skip-link">
+    <a class="element-invisible element-focusable" href="#content">Skip to main content</a>
+    <a class="element-invisible element-focusable" href="#search-block-form">Skip to search</a>
+  </div>
+        <div id="header" class="clearfix">
+    <div id="header-screen" class="clearfix">
+      <div id="header-inner" class="container-12 clearfix">
+        <div id="nav-header" role="navigation">
+            <div class="region region-navigation">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/start" title="Getting Started with Drupal">Get Started</a></li>
+<li class="leaf"><a href="/community" title="Drupal Community">Community</a></li>
+<li class="leaf"><a href="/documentation" title="Drupal Documentation">Documentation</a></li>
+<li class="leaf"><a href="/support" title="Support for using Drupal">Support</a></li>
+<li class="leaf"><a href="/download" title="Download and Extend Drupal">Download &amp; Extend</a></li>
+<li class="leaf"><a href="https://jobs.drupal.org/" title="Drupal Jobs">Jobs</a></li>
+<li class="leaf"><a href="/drupal-services" title="Buy Drupal Products and Services">Marketplace</a></li>
+<li class="last leaf"><a href="/about" title="About Drupal">About</a></li>
+</ul>  </div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#nav-header -->
+
+        <div id="header-content">
+          <div id="header-left">
+            <div id="header-left-inner">
+              <div id="site-name"><a href="/" title="Drupal">Drupal</a></div>
+                          </div> <!-- /#header-left-inner -->
+          </div> <!-- /#header-left -->
+
+          <div id="header-right">
+            <div id="header-right-inner" role="search">
+                <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+<div class="block-inner">
+    
+  <div class="content">
+    <form action="/project/globalredirect" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input placeholder="Search Drupal.org" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><div id="search-theme-form-advanced"><fieldset class="collapsible collapsed form-wrapper" id="edit-advanced"><legend><span class="fieldset-legend">Refine your search</span></legend><div class="fieldset-wrapper"><div id="edit-meta-type" class="form-radios"><div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-" name="meta_type" value="" checked="checked" class="form-radio" />  <label class="option" for="edit-meta-type-">All </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-module" name="meta_type" value="module" class="form-radio" />  <label class="option" for="edit-meta-type-module">Modules </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-theme" name="meta_type" value="theme" class="form-radio" />  <label class="option" for="edit-meta-type-theme">Themes </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-documentation" name="meta_type" value="documentation" class="form-radio" />  <label class="option" for="edit-meta-type-documentation">Documentation </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-forum-issues" name="meta_type" value="forum-issues" class="form-radio" />  <label class="option" for="edit-meta-type-forum-issues">Forums &amp; Issues </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-group" name="meta_type" value="group" class="form-radio" />  <label class="option" for="edit-meta-type-group">Groups </label>
+
+</div>
+</div></div></fieldset>
+</div><input type="hidden" name="form_build_id" value="form-TKieNQ3bgDVRp93GOXshoe5Oc4f8d3HoVSmAiBvlNFI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  </div>
+</div>
+  </div>
+            </div> <!-- /#header-right-inner -->
+          </div> <!-- /#header-right -->
+        </div> <!-- /#header-content -->
+
+        <div id="nav-masthead" role="navigation">
+          <ul><li class="homepage first"><a href="/home">Drupal Homepage</a></li>
+<li class="login-register last"><a href="/user?destination=node/88008">Log in / Register</a></li>
+</ul>        </div> <!-- /#nav-masthead -->
+      </div> <!-- /#header-inner -->
+    </div>
+  </div> <!-- /#header -->
+
+  <div id="page" class="container-12 clearfix">
+    <div id="page-inner">
+
+      <div id="page-heading">
+
+                  <div id="page-title-tools" class="clearfix" role="navigation">
+
+            <div class="page-title-wrapper">
+                                                <div id="page-title" class="h2">Download &amp; Extend</div>
+                                          </div>
+
+                          <div id="page-tools"></div>
+                      </div> <!-- /#page-title-tools -->
+
+                      <div id="nav-content">
+              <ul class="links"><li class="home first"><a href="/download">Download &amp; Extend Home</a></li>
+<li class="core"><a href="/project/drupal">Drupal Core</a></li>
+<li class="distributions"><a href="/project/project_distribution">Distributions</a></li>
+<li class="modules active"><a href="/project/project_module" class="active">Modules</a></li>
+<li class="themes last"><a href="/project/project_theme">Themes</a></li>
+</ul>            </div> <!-- /#nav-content -->
+          
+          
+                      <h1 id="page-subtitle">Global Redirect</h1>
+          
+        
+      </div> <!-- /#page-heading -->
+
+              <div id="tabs" class="clearfix">
+          <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary clearfix"><li class="active"><a href="/project/globalredirect" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/project/globalredirect/git-instructions">Version control</a></li>
+<li><a href="/node/88008/qa">Automated Testing</a></li>
+</ul>        </div> <!-- /#tabs -->
+      
+              <div id="sidebar-first" role="complementary" >
+          <div id="sidebar-first-region">
+                      </div> <!-- /#column-right-region-first -->
+        </div> <!-- /#column-right-first -->
+      
+      <div id="main" role="main">
+        
+        <div id="content" class="clearfix">
+                                        <div id="content-inner" class="clearfix">  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+<div class="block-inner">
+    
+  <div class="content">
+    <div id="node-88008" class="node node-project-module node-content-88008 clearfix">
+
+  
+      
+      <div class="submitted">
+      Posted by <a href="/u/nicholasthompson" title="View user profile." data-uid="59351" class="username">nicholasThompson</a> on <time pubdate datetime="1160264260">October 7, 2006 at 11:37pm</time>    </div>
+  
+  <div class="content">
+    <div class="field field-name-field-project-images field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.drupal.org/files/images/GlobalRedirect.png"><img src="https://www.drupal.org/files/styles/grid-3/public/images/GlobalRedirect.png?itok=Q6m_Truz" width="220" height="170" alt="Global Redirect" /></a></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3>What?</h3>
+<p><em>GlobalRedirect</em> is a simple module which…</p>
+<ol><li>Checks the current URL for an alias and does a 301 redirect to it if it is not being used.</li>
+<li>Checks the current URL for a trailing slash, removes it if present and repeats check 1 with the new request.</li>
+<li>Checks if the current URL is the same as the <code>site_frontpage</code> and redirects to the frontpage if there is a match.</li>
+<li>Checks if the <em>Clean URLs</em> feature is enabled and then checks the current URL is being accessed using the clean method rather than the '<em>unclean</em>' method.</li>
+<li>Checks access to the URL. If the user does not have access to the path, then no redirects are done. This helps avoid exposing private aliased node's.</li>
+<li>Make sure the case of the URL being accessed is the same as the one set by the author/administrator. For example, if you set the alias "articles/cake-making" to node/123, then the user can access the alias with any combination of case.</li>
+<li>Most of the above options are configurable in the settings page. In Drupal 5 you can access this after enabling the <code>globalredirect_admin</code> module. In Drupal 6, the settings page is bundled into the module.</li>
+</ol><!--break--><h3>Why?</h3>
+<p>Once enabled, an alias provides a nice clean URL for a path on a site. However Drupal does not remove the old path (eg node/1234). The problem is that you now have two URLs representing the same content. This is dangerous territory for duplicate pages which can get you <em><a href="http://en.wikipedia.org/wiki/Sandbox_Effect" title="Google Sandbox Effect" rel="nofollow">sandboxed</a></em> by the search engines!</p>
+<h3>How?</h3>
+<p>This module uses <a href="http://api.drupal.org/api/function/hook_init/6" title="Drupal hook_init API Page" rel="nofollow">hook_init</a> to interrupt the page load and action the alias lookups. If any of the above rules apply then the appropriate action is taken. If no rules apply then the page load continues uninterrupted. An example of this in use is on the site it was developed for. <a href="http://www.sportbusiness.com/node/160559" rel="nofollow">http://www.sportbusiness.com/node/160559</a> will redirect to <a href="http://www.sportbusiness.com/news/160559/lagardere-sets-up-sports-division" rel="nofollow">http://www.sportbusiness.com/news/160559/lagardere-sets-up-sports-division</a> due to the alias setup on this site.</p>
+<h3>Anything I Should Know?</h3>
+<p>As with most modules - there are often a few things you should be aware of before going ahead.</p>
+<ul><li>I recommend using the 6.x-1.5 or 7.x-1.5 release, depending on your Drupal install version.</li>
+<li>It is important to know that if your site is in <strong>maintenance mode</strong> then Global Redirect does not function. This is intentional behaviour.</li>
+<li><strong>Known Bugs</strong>:
+<ul><li>The 7.x-1.4 release has known issues with multilingual sites. See <span class="project-issue-issue-link project-issue-status-info project-issue-status-7"><a href="/node/1378690" title="Status: Closed (fixed)">#1378690: Update to 7.x-1.4 adds duplicate language prefixes, causing a redirection loop</a></span>. This is fixed in 7.x-1.5.</li>
+<li>Issues with Windows IIS Server. There is a known issue with <a href="/node/166095" rel="nofollow">Clean URL's in IIS</a> and there is also a known issue with certain versions of PHP running on IIS where a <em>Permanent Redirect</em> (301) is incorrectly sent as <em>Object Moved</em> (302).</li>
+<li>Multilingual sites should thoroughly check their site after enabling this module. There have previously been known issues with i18n causing redirect-loops and such. I believe these have been fixed, but please take care.</li>
+<li>Drupal For Facebook. The main problem with this is similar to i18n. Both modules use Custom URL Rewriting which appears to confuse GlobalRedirect.</li>
+</ul></li>
+</ul></div></div></div><div class="project-info item-list">
+  <h3>Project Information</h3>
+  <ul>
+          <li>Maintenance status: <span class=""><a href="/taxonomy/term/9990" class="warning">Seeking co-maintainer(s)</a></span></li>
+          <li>Development status: <span class=""><a href="/taxonomy/term/9988">Under active development</a></span></li>
+          <li>Module categories: <span class="terms"><a href="/project/project_module?f[2]=im_vid_3%3A53">Administration</a>, <a href="/project/project_module?f[2]=im_vid_3%3A57">Content</a>, <a href="/project/project_module?f[2]=im_vid_3%3A8818">Path Management</a>, <a href="/project/project_module?f[2]=im_vid_3%3A105">Search</a>, <a href="/project/project_module?f[2]=im_vid_3%3A124">Site Navigation</a>, <a href="/project/project_module?f[2]=im_vid_3%3A75">Utility</a></span></li>
+          <li>Reported installs: <strong>190,234</strong> sites currently report using this module. <a href="/project/usage/globalredirect">View usage statistics</a>.</li>
+          <li>Downloads: 712,112</li>
+          <li>Automated tests: Enabled</li>
+              <li class="modified">Last modified: December 2, 2014</li>
+      </ul>
+</div>
+<h3>Downloads</h3><div class="view view-project-release-download-table view-id-project_release_download_table view-display-id-recommended view-dom-id-a406f39957332395b578730b82b2b264">
+            <div class="view-header">
+      <h4>Recommended releases</h4>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      <table class="views-table cols-4" >
+         <thead>
+      <tr>
+                  <th class="views-field views-field-field-release-version" >
+            Version          </th>
+                  <th class="views-field views-field-extension" >
+            Download          </th>
+                  <th class="views-field views-field-timestamp" >
+            Date          </th>
+                  <th class="views-field views-field-view-node" >
+            Links          </th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr class="odd views-row-first">
+                  <td class="views-field views-field-field-release-version"  data-th="Version">
+            <a href="https://www.drupal.org/node/1636084">7.x-1.5</a>          </td>
+                  <td class="views-field views-field-extension"  data-th="Download">
+            <a href="http://ftp.drupal.org/files/projects/globalredirect-7.x-1.5.tar.gz">tar.gz <span class="filesize">(19.22 KB)</span></a> | <a href="http://ftp.drupal.org/files/projects/globalredirect-7.x-1.5.zip">zip <span class="filesize">(21.45 KB)</span></a>          </td>
+                  <td class="views-field views-field-timestamp"  data-th="Date">
+            2012-Jun-15          </td>
+                  <td class="views-field views-field-view-node"  data-th="Links">
+            <a href="/node/1636084">Notes</a>          </td>
+              </tr>
+          <tr class="even views-row-last">
+                  <td class="views-field views-field-field-release-version"  data-th="Version">
+            <a href="https://www.drupal.org/node/1636134">6.x-1.5</a>          </td>
+                  <td class="views-field views-field-extension"  data-th="Download">
+            <a href="http://ftp.drupal.org/files/projects/globalredirect-6.x-1.5.tar.gz">tar.gz <span class="filesize">(16.65 KB)</span></a> | <a href="http://ftp.drupal.org/files/projects/globalredirect-6.x-1.5.zip">zip <span class="filesize">(18.8 KB)</span></a>          </td>
+                  <td class="views-field views-field-timestamp"  data-th="Date">
+            2012-Jun-15          </td>
+                  <td class="views-field views-field-view-node"  data-th="Links">
+            <a href="/node/1636134">Notes</a>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="view view-project-release-download-table view-id-project_release_download_table view-display-id-security">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="view view-project-release-download-table view-id-project_release_download_table view-display-id-other">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="view view-project-release-download-table view-id-project_release_download_table view-display-id-development">
+            <div class="view-header">
+      <h4>Development releases</h4>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      <table class="views-table cols-4" >
+         <thead>
+      <tr>
+                  <th class="views-field views-field-field-release-version" >
+            Version          </th>
+                  <th class="views-field views-field-extension" >
+            Download          </th>
+                  <th class="views-field views-field-timestamp" >
+            Date          </th>
+                  <th class="views-field views-field-view-node" >
+            Links          </th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr class="odd views-row-first">
+                  <td class="views-field views-field-field-release-version"  data-th="Version">
+            <a href="https://www.drupal.org/node/2283645">8.x-1.x-dev</a>          </td>
+                  <td class="views-field views-field-extension"  data-th="Download">
+            <a href="http://ftp.drupal.org/files/projects/globalredirect-8.x-1.x-dev.tar.gz">tar.gz <span class="filesize">(16.49 KB)</span></a> | <a href="http://ftp.drupal.org/files/projects/globalredirect-8.x-1.x-dev.zip">zip <span class="filesize">(22.79 KB)</span></a>          </td>
+                  <td class="views-field views-field-timestamp"  data-th="Date">
+            2015-Apr-22          </td>
+                  <td class="views-field views-field-view-node"  data-th="Links">
+            <a href="/node/2283645">Notes</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-field-release-version"  data-th="Version">
+            <a href="https://www.drupal.org/node/96798">7.x-1.x-dev</a>          </td>
+                  <td class="views-field views-field-extension"  data-th="Download">
+            <a href="http://ftp.drupal.org/files/projects/globalredirect-7.x-1.x-dev.tar.gz">tar.gz <span class="filesize">(19.45 KB)</span></a> | <a href="http://ftp.drupal.org/files/projects/globalredirect-7.x-1.x-dev.zip">zip <span class="filesize">(21.69 KB)</span></a>          </td>
+                  <td class="views-field views-field-timestamp"  data-th="Date">
+            2013-Sep-30          </td>
+                  <td class="views-field views-field-view-node"  data-th="Links">
+            <a href="/node/96798">Notes</a>          </td>
+              </tr>
+          <tr class="odd views-row-last">
+                  <td class="views-field views-field-field-release-version"  data-th="Version">
+            <a href="https://www.drupal.org/node/202035">6.x-1.x-dev</a>          </td>
+                  <td class="views-field views-field-extension"  data-th="Download">
+            <a href="http://ftp.drupal.org/files/projects/globalredirect-6.x-1.x-dev.tar.gz">tar.gz <span class="filesize">(16.66 KB)</span></a> | <a href="http://ftp.drupal.org/files/projects/globalredirect-6.x-1.x-dev.zip">zip <span class="filesize">(18.81 KB)</span></a>          </td>
+                  <td class="views-field views-field-timestamp"  data-th="Date">
+            2013-Sep-30          </td>
+                  <td class="views-field views-field-view-node"  data-th="Links">
+            <a href="/node/202035">Notes</a>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  
+  
+  
+</div><ul class="links"><li class="view_all_releases first last"><a href="/node/88008/release">View all releases</a></li>
+</ul>  </div>
+
+  <div class="node-footer"></div>
+
+</div>
+
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+                  </div> <!-- /#content -->
+
+      </div> <!-- /#column-left -->
+
+              <div id="aside" role="complementary" >
+          <div id="aside-region">
+              <div class="region region-sidebar-second">
+    <div id="block-versioncontrol-project-project-maintainers" class="block block-versioncontrol-project">
+<div class="block-inner">
+    <h2 class="">Maintainers for Global Redirect</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><li><div class="vc-user"><a href="/u/blueminds" title="View user profile." data-uid="128652" class="username">blueminds</a> - <span class="vc-commits">6 commits</span></div><div class="vc-commit-times">last: 1 year ago, first: 1 year ago</div></li></li>
+<li><li><div class="vc-user"><a href="/u/nicholasthompson" title="View user profile." data-uid="59351" class="username">nicholasThompson</a> - <span class="vc-commits">102 commits</span></div><div class="vc-commit-times">last: 1 year ago, first: 8 years ago</div></li></li>
+<li><li><div class="vc-user"><a href="/u/lirantal" title="View user profile." data-uid="1315712" class="username">lirantal</a> - <span class="vc-commits">12 commits</span></div><div class="vc-commit-times">last: 1 year ago, first: 2 years ago</div></li></li>
+<li><li><div class="vc-user"><a href="/u/grisendo" title="View user profile." data-uid="848238" class="username">grisendo</a> - <span class="vc-commits">3 commits</span></div><div class="vc-commit-times">last: 2 years ago, first: 2 years ago</div></li></li>
+<li class="last"><li><div class="vc-user"><a href="/u/dave-reid" title="View user profile." data-uid="53892" class="username">Dave Reid</a> - <span class="vc-commits">30 commits</span></div><div class="vc-commit-times">last: 3 years ago, first: 5 years ago</div></li></li>
+</ul></div><div id="project-committers"><a href="/node/88008/committers">View all committers</a></div><div id="project-commits"><a href="/node/88008/commits">View commits</a></div>  </div>
+  </div>
+</div>
+<div id="block-project-issue-issue-cockpit" class="block block-project-issue">
+<div class="block-inner">
+    <h2 class="">Issues for Global Redirect</h2>
+  
+  <div class="content">
+    To avoid duplicates, please search before submitting a new issue.
+  <form action="/project/issues/globalredirect" method="get" id="project-issue-issue-cockpit-searchbox" accept-charset="UTF-8"><div><input type="hidden" name="status" value="All" />
+<a href="/project/issues/search/globalredirect">Advanced search</a></div></form>  <div class="issue-cockpit-categories">
+          <div class="issue-cockpit-All">
+        <h3>All issues</h3>
+        <div class="issue-cockpit-totals">
+          <a href="/project/issues/globalredirect?categories=All">173 open</a>,
+          <a href="/project/issues/globalredirect?status=All&amp;categories=All">469 total</a>        </div>
+      </div>
+          <div class="issue-cockpit-1">
+        <h3>Bug report</h3>
+        <div class="issue-cockpit-totals">
+          <a href="/project/issues/globalredirect?categories=1">98 open</a>,
+          <a href="/project/issues/globalredirect?status=All&amp;categories=1">265 total</a>        </div>
+      </div>
+      </div>
+
+  <div class="issue-cockpit-subscribe">
+    <a href="/project/issues/subscribe-mail/globalredirect?destination=node/88008">Subscribe via e-mail</a>  </div>
+
+      <div class="issue-cockpit-metrics">
+      <h3>Statistics</h3>
+      <div class="metric-container"><span class="metric-label">New issues</span><div class="view view-project-issue-metrics-new-issues view-id-project_issue_metrics_new_issues view-display-id-default project-issue-sparkline view-dom-id-bdf11293040bfdd235b3f18c1feb6523">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-bdf11293040bfdd235b3f18c1feb6523" class="d3 sparkline"></div>
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">Response rate</span><div class="view view-project-issue-metrics-response-rate view-id-project_issue_metrics_response_rate view-display-id-default project-issue-sparkline view-dom-id-64a7931d2398b53aaa65ad10d5d6bcab">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-64a7931d2398b53aaa65ad10d5d6bcab" class="d3 sparkline"></div>
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      %    </div>
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">1st response</span><div class="view view-project-issue-metrics-first-response view-id-project_issue_metrics_first_response view-display-id-default project-issue-sparkline view-dom-id-b13db97b5a269d0250c3986fa07b5bfe">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-b13db97b5a269d0250c3986fa07b5bfe" class="d3 sparkline"></div>
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <small>hours</small>    </div>
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">Open bugs</span><div class="view view-project-issue-metrics-open-bugs view-id-project_issue_metrics_open_bugs view-display-id-default project-issue-sparkline view-dom-id-1f6a16bfb4bff39454900e3cf0f8561e">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-1f6a16bfb4bff39454900e3cf0f8561e" class="d3 sparkline"></div>
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">Participants</span><div class="view view-project-issue-metrics-participants view-id-project_issue_metrics_participants view-display-id-default project-issue-sparkline view-dom-id-68af9a79b139404de30f96ea989264e7">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-68af9a79b139404de30f96ea989264e7" class="d3 sparkline"></div>
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>      <div><small>2 year graph, updates weekly</small></div>
+    </div>
+    </div>
+  </div>
+</div>
+<div id="block-drupalorg-project-resources" class="block block-drupalorg-project">
+<div class="block-inner">
+    <h2 class="">Resources</h2>
+  
+  <div class="content">
+    <ul class="links"><li class="0 first last"><a href="http://localize.drupal.org/translate/projects/globalredirect">View project translations</a></li>
+</ul>  </div>
+  </div>
+</div>
+<div id="block-drupalorg-project-development" class="block block-drupalorg-project">
+<div class="block-inner">
+    <h2 class="">Development</h2>
+  
+  <div class="content">
+    <ul class="links"><li class="0 first"><a href="/project/issues/search/globalredirect?status[0]=8&amp;status[1]=13&amp;status[2]=14">View pending patches</a></li>
+<li class="1"><a href="http://drupalcode.org/project/globalredirect.git">Browse code repository</a></li>
+<li class="2"><a href="/node/88008/commits">View commits</a></li>
+<li class="3"><a href="https://security.drupal.org/node/add/project-issue/globalredirect">Report a security vulnerability</a></li>
+<li class="4 last"><a href="/list-changes/globalredirect">View change records</a></li>
+</ul>  </div>
+  </div>
+</div>
+  </div>
+          </div> <!-- /#column-right-region -->
+        </div> <!-- /#column-right -->
+      
+          </div> <!-- /#page-inner -->
+  </div> <!-- /#page -->
+
+  <div id="footer" role="contentinfo">
+    <div id="footer-inner" class="container-12 clearfix">
+              <div id="footer-region">
+          <div id="footer-region-inner" class="clearfix">
+              <div class="region region-footer">
+    <div class="doormat clearfix"><h4 class="element-invisible">News Items</h4><ul class="drupal-news"><li class="0 first"><a href="https://www.drupal.org/news">Drupal News</a></li>
+<li class="1"><a href="https://www.drupal.org/planet" title="News from Drupal community members">Planet Drupal</a></li>
+<li class="2"><a href="https://association.drupal.org/news" title="News from association.drupal.org">Association News</a></li>
+<li class="3"><a href="https://www.drupal.org/social-media" title="Drupal on social media">Social Media Directory</a></li>
+<li class="4"><a href="https://www.drupal.org/security" title="Advisories from the security team">Security Announcements</a></li>
+<li class="5 last"><a href="https://jobs.drupal.org/" title="Drupal Jobs">Jobs</a></li>
+</ul><h4 class="element-invisible">Our Community</h4><ul class="community"><li class="0 first"><a href="https://drupal.org/community">Community</a></li>
+<li class="1"><a href="https://drupal.org/getting-involved" title="Learn how to contribute to the Drupal project">Getting Involved</a></li>
+<li class="2"><span><a href="https://drupal.org/drupal-services" title="People and organizations offering Drupal services">Services</a>, <a href="https://drupal.org/training" title="People and organizations offering Drupal training">Training</a> & <a href="https://drupal.org/hosting" title="Organizations offering Drupal hosting">Hosting</a></span></li>
+<li class="3"><a href="https://groups.drupal.org/groups" title="groups.drupal.org">Groups &amp; Meetups</a></li>
+<li class="4"><a href="https://drupal.org/drupalcon" title="Upcoming and past DrupalCons">DrupalCon</a></li>
+<li class="5 last"><a href="https://drupal.org/dcoc" title="Drupal Code of Conduct">Code of Conduct</a></li>
+</ul><h4 class="element-invisible">Online Documentation</h4><ul class="get-started"><li class="0 first"><a href="https://drupal.org/start">Get Started</a></li>
+<li class="1"><a href="https://drupal.org/documentation" title="Guidebooks and documentation for working with Drupal">Documentation Home</a></li>
+<li class="2"><a href="https://drupal.org/documentation/install" title="Guide for installing Drupal">Installation Guide</a></li>
+<li class="3"><a href="https://drupal.org/documentation/build" title="Guide for building and extending Drupal sites">Site Building Guide</a></li>
+<li class="4"><a href="https://drupal.org/support" title="Drupal support options">Support</a></li>
+<li class="5 last"><a href="https://api.drupal.org/" title="Drupal API Reference">api.drupal.org</a></li>
+</ul><h4 class="element-invisible">Drupal Code Base</h4><ul class="download-extend"><li class="0 first"><a href="https://drupal.org/download">Download &amp; Extend</a></li>
+<li class="1"><a href="https://drupal.org/project/drupal" title="Download the latest version of the Drupal software">Drupal Core</a></li>
+<li class="2"><a href="https://drupal.org/project/project_module" title="Download add-on features and functionality">Modules</a></li>
+<li class="3"><a href="https://drupal.org/project/project_theme" title="Download pre-designed styles for Drupal">Themes</a></li>
+<li class="4 last"><a href="https://drupal.org/project/project_distribution" title="Download a pre-packaged Drupal site">Distributions</a></li>
+</ul><h4 class="element-invisible">Governance of Community</h4><ul class="about"><li class="0 first"><a href="https://drupal.org/about">About</a></li>
+<li class="1"><a href="https://drupal.org/about/accessibility" title="Our committment to accessibility">Web accessibility</a></li>
+<li class="2"><a href="https://association.drupal.org/about" title="About the Drupal Association">The Drupal Association</a></li>
+<li class="3"><a href="https://drupal.org/about-drupalorg" title="About Drupal.org">About Drupal.org</a></li>
+<li class="4"><a href="https://drupal.org/terms" title="Drupal.org Terms of Service">Terms of Service</a></li>
+<li class="5 last"><a href="https://drupal.org/privacy" title="Drupal.org Privacy Policy">Privacy Policy</a></li>
+</ul></div><div id="block-block-77" class="block block-block">
+<div class="block-inner">
+    
+  <div class="content">
+    <p>Drupal is a <a href="http://drupal.com/trademark" rel="nofollow">registered trademark</a> of <a href="http://buytaert.net" rel="nofollow">Dries Buytaert</a>.</p>
+  </div>
+  </div>
+</div>
+  </div>
+          </div> <!-- /#footer-region-inner -->
+        </div> <!-- /#footer-region -->
+          </div> <!-- /#footer-inner -->
+  </div> <!-- /#footer -->
+  
+<!--[if lte IE 9]>
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__UiO29A8qiU-liB_96gCC8E9JKDzRn317nHrd6s0stps__JjoPzCkzYa71IxBF0sXb6yVSB5ojjxYZ6gppRP-xCds__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);};
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__UiO29A8qiU-liB_96gCC8E9JKDzRn317nHrd6s0stps__JjoPzCkzYa71IxBF0sXb6yVSB5ojjxYZ6gppRP-xCds__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);};
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__UiO29A8qiU-liB_96gCC8E9JKDzRn317nHrd6s0stps__JjoPzCkzYa71IxBF0sXb6yVSB5ojjxYZ6gppRP-xCds__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);};
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__ylcODMPWo_13MLom5ZqWGQsJNZKFh4uV-YcKFVTNVmY__udl9eol5cfcZrwikn8Dwm7QH7SvVG2cLtO8U9MwiAl0__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js" defer="defer"></script>
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__F-D1Wr4s7lvQ_5eZ1uikRth42rCUHezP7S--qIwe4BE__BENqbZRxUBWhW4xtQpgAaYXNTGo08uOCQ9RnS4xs6mE__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js" defer="defer"></script>
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__0uvHxxkmaep5Pby4IIMdpAM6K9cSDMM_wdDCcQnlIRA__oupIpI5WzR5Ei-OeEcReIj8SLXeZkRQOzd6XRML7mZA__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js" defer="defer"></script>
+<script type="text/javascript" defer="defer" async="async" src="//www.google-analytics.com/analytics.js?nuty3q"></script>
+<script type="text/javascript" src="//www.drupal.org/files/advagg_js/js__qxLk7WISljtUarDMo5R8boQ7gOV9qH-Rr1l2ZBolzDw__G4Od52HgrQ6NT9MY0vIamLhazmEKlEIhMTqL4PJRBaY__YnARITFFciBSl3CVzI-UH0Ia2zJaJD5zrWNkdXgi_JU.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+function advagg_mod_defer_1() {
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-2360451-1", {"cookieDomain":"auto"});ga("set", "dimension2", "downloads");ga("send", "pageview");;
+}
+window.setTimeout(advagg_mod_defer_1, 0);
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bluecheese","theme_token":"yi_ChHCfdwq1d734rgJIJGXyXGeWDbOEAkS4j61c6aQ"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/project\/globalredirect":true},"d3":{"inventory":{"view-d3-vis-bdf11293040bfdd235b3f18c1feb6523":{"id":"view-d3-vis-bdf11293040bfdd235b3f18c1feb6523","type":"sparkline","legend":["value_new_issues"],"rows":[["2013-09-22T00:00:00+00:00","1"],["2013-09-29T00:00:00+00:00","0"],["2013-10-06T00:00:00+00:00","0"],["2013-10-13T00:00:00+00:00","0"],["2013-10-20T00:00:00+00:00","0"],["2013-10-27T00:00:00+00:00","0"],["2013-11-03T00:00:00+00:00","0"],["2013-11-10T00:00:00+00:00","1"],["2013-11-17T00:00:00+00:00","0"],["2013-11-24T00:00:00+00:00","0"],["2013-12-01T00:00:00+00:00","0"],["2013-12-08T00:00:00+00:00","1"],["2013-12-15T00:00:00+00:00","1"],["2013-12-22T00:00:00+00:00","0"],["2013-12-29T00:00:00+00:00","0"],["2014-01-05T00:00:00+00:00","1"],["2014-01-12T00:00:00+00:00","0"],["2014-01-19T00:00:00+00:00","1"],["2014-01-26T00:00:00+00:00","0"],["2014-02-02T00:00:00+00:00","1"],["2014-02-09T00:00:00+00:00","0"],["2014-02-16T00:00:00+00:00","0"],["2014-02-23T00:00:00+00:00","0"],["2014-03-02T00:00:00+00:00","2"],["2014-03-09T00:00:00+00:00","1"],["2014-03-16T00:00:00+00:00","0"],["2014-03-23T00:00:00+00:00","2"],["2014-03-30T00:00:00+00:00","2"],["2014-04-06T00:00:00+00:00","0"],["2014-04-13T00:00:00+00:00","1"],["2014-04-20T00:00:00+00:00","0"],["2014-04-27T00:00:00+00:00","1"],["2014-05-04T00:00:00+00:00","1"],["2014-05-11T00:00:00+00:00","0"],["2014-05-18T00:00:00+00:00","0"],["2014-05-25T00:00:00+00:00","1"],["2014-06-01T00:00:00+00:00","0"],["2014-06-08T00:00:00+00:00","0"],["2014-06-15T00:00:00+00:00","1"],["2014-06-22T00:00:00+00:00","2"],["2014-06-29T00:00:00+00:00","1"],["2014-07-06T00:00:00+00:00","2"],["2014-07-13T00:00:00+00:00","0"],["2014-07-20T00:00:00+00:00","0"],["2014-07-27T00:00:00+00:00","1"],["2014-08-03T00:00:00+00:00","1"],["2014-08-10T00:00:00+00:00","0"],["2014-08-17T00:00:00+00:00","1"],["2014-08-24T00:00:00+00:00","1"],["2014-08-31T00:00:00+00:00","0"],["2014-09-07T00:00:00+00:00","3"],["2014-09-14T00:00:00+00:00","0"],["2014-09-21T00:00:00+00:00","0"],["2014-09-28T00:00:00+00:00","0"],["2014-10-05T00:00:00+00:00","1"],["2014-10-12T00:00:00+00:00","1"],["2014-10-19T00:00:00+00:00","0"],["2014-10-26T00:00:00+00:00","1"],["2014-11-02T00:00:00+00:00","0"],["2014-11-09T00:00:00+00:00","1"],["2014-11-16T00:00:00+00:00","1"],["2014-11-23T00:00:00+00:00","0"],["2014-11-30T00:00:00+00:00","0"],["2014-12-07T00:00:00+00:00","1"],["2014-12-14T00:00:00+00:00","0"],["2014-12-21T00:00:00+00:00","1"],["2014-12-28T00:00:00+00:00","0"],["2015-01-04T00:00:00+00:00","0"],["2015-01-11T00:00:00+00:00","3"],["2015-01-18T00:00:00+00:00","0"],["2015-01-25T00:00:00+00:00","0"],["2015-02-01T00:00:00+00:00","0"],["2015-02-08T00:00:00+00:00","1"],["2015-02-15T00:00:00+00:00","0"],["2015-02-22T00:00:00+00:00","0"],["2015-03-01T00:00:00+00:00","1"],["2015-03-08T00:00:00+00:00","0"],["2015-03-15T00:00:00+00:00","0"],["2015-03-22T00:00:00+00:00","0"],["2015-03-29T00:00:00+00:00","0"],["2015-04-05T00:00:00+00:00","1"],["2015-04-12T00:00:00+00:00","0"],["2015-04-19T00:00:00+00:00","0"],["2015-04-26T00:00:00+00:00","1"],["2015-05-03T00:00:00+00:00","0"],["2015-05-10T00:00:00+00:00","0"],["2015-05-17T00:00:00+00:00","0"],["2015-05-24T00:00:00+00:00","0"],["2015-05-31T00:00:00+00:00","0"],["2015-06-07T00:00:00+00:00","0"],["2015-06-14T00:00:00+00:00","0"],["2015-06-21T00:00:00+00:00","1"],["2015-06-28T00:00:00+00:00","1"],["2015-07-05T00:00:00+00:00","1"],["2015-07-12T00:00:00+00:00","1"],["2015-07-19T00:00:00+00:00","1"],["2015-07-26T00:00:00+00:00","2"],["2015-08-02T00:00:00+00:00","1"],["2015-08-09T00:00:00+00:00","1"],["2015-08-16T00:00:00+00:00","0"],["2015-08-23T00:00:00+00:00","1"],["2015-08-30T00:00:00+00:00","0"],["2015-09-06T00:00:00+00:00","0"],["2015-09-13T00:00:00+00:00","0"]],"library":{"name":"Sparkline","files":{"js":{"sparkline.js":[]},"css":{"sparkline.css":[]}},"version":"7.x-1.x-dev","dependencies":["d3","d3.drupal","d3.extend","d3.drupal"],"views":"3.0","core":"7.x","project":"d3_sparkline","datestamp":"1442503925","info file":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline\/d3.sparkline.libraries.info","machine name":"d3.sparkline","vendor url":"","download url":"","path":"","library path":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline","version callback":"libraries_get_version","version arguments":[],"versions":[],"integration files":[],"callbacks":{"info":["libraries_prepare_files"],"pre-detect":[],"post-detect":["libraries_detect_dependencies"],"pre-dependencies-load":[],"pre-load":[],"post-load":[]},"installed":true,"loaded":2,"library name":"d3_sparkline"},"vis_id":"view-d3-vis-bdf11293040bfdd235b3f18c1feb6523"},"view-d3-vis-64a7931d2398b53aaa65ad10d5d6bcab":{"id":"view-d3-vis-64a7931d2398b53aaa65ad10d5d6bcab","type":"sparkline","legend":["value_response_rate"],"rows":[["2013-09-22T00:00:00+00:00","0"],["2013-09-29T00:00:00+00:00","0"],["2013-10-06T00:00:00+00:00","0"],["2013-10-13T00:00:00+00:00","0"],["2013-10-20T00:00:00+00:00","0"],["2013-10-27T00:00:00+00:00","0"],["2013-11-03T00:00:00+00:00","0"],["2013-11-10T00:00:00+00:00","0"],["2013-11-17T00:00:00+00:00","0"],["2013-11-24T00:00:00+00:00","0"],["2013-12-01T00:00:00+00:00","0"],["2013-12-08T00:00:00+00:00","0"],["2013-12-15T00:00:00+00:00","0"],["2013-12-22T00:00:00+00:00","100"],["2013-12-29T00:00:00+00:00","0"],["2014-01-05T00:00:00+00:00","0"],["2014-01-12T00:00:00+00:00","0"],["2014-01-19T00:00:00+00:00","0"],["2014-01-26T00:00:00+00:00","0"],["2014-02-02T00:00:00+00:00","0"],["2014-02-09T00:00:00+00:00","0"],["2014-02-16T00:00:00+00:00","0"],["2014-02-23T00:00:00+00:00","0"],["2014-03-02T00:00:00+00:00","0"],["2014-03-09T00:00:00+00:00","0"],["2014-03-16T00:00:00+00:00","0"],["2014-03-23T00:00:00+00:00","0"],["2014-03-30T00:00:00+00:00","0"],["2014-04-06T00:00:00+00:00","50"],["2014-04-13T00:00:00+00:00","0"],["2014-04-20T00:00:00+00:00","0"],["2014-04-27T00:00:00+00:00","0"],["2014-05-04T00:00:00+00:00","0"],["2014-05-11T00:00:00+00:00","0"],["2014-05-18T00:00:00+00:00","0"],["2014-05-25T00:00:00+00:00","0"],["2014-06-01T00:00:00+00:00","0"],["2014-06-08T00:00:00+00:00","0"],["2014-06-15T00:00:00+00:00","0"],["2014-06-22T00:00:00+00:00","0"],["2014-06-29T00:00:00+00:00","0"],["2014-07-06T00:00:00+00:00","0"],["2014-07-13T00:00:00+00:00","100"],["2014-07-20T00:00:00+00:00","0"],["2014-07-27T00:00:00+00:00","0"],["2014-08-03T00:00:00+00:00","0"],["2014-08-10T00:00:00+00:00","100"],["2014-08-17T00:00:00+00:00","0"],["2014-08-24T00:00:00+00:00","100"],["2014-08-31T00:00:00+00:00","0"],["2014-09-07T00:00:00+00:00","0"],["2014-09-14T00:00:00+00:00","33"],["2014-09-21T00:00:00+00:00","0"],["2014-09-28T00:00:00+00:00","0"],["2014-10-05T00:00:00+00:00","0"],["2014-10-12T00:00:00+00:00","0"],["2014-10-19T00:00:00+00:00","0"],["2014-10-26T00:00:00+00:00","0"],["2014-11-02T00:00:00+00:00","0"],["2014-11-09T00:00:00+00:00","0"],["2014-11-16T00:00:00+00:00","100"],["2014-11-23T00:00:00+00:00","100"],["2014-11-30T00:00:00+00:00","0"],["2014-12-07T00:00:00+00:00","0"],["2014-12-14T00:00:00+00:00","0"],["2014-12-21T00:00:00+00:00","0"],["2014-12-28T00:00:00+00:00","0"],["2015-01-04T00:00:00+00:00","0"],["2015-01-11T00:00:00+00:00","0"],["2015-01-18T00:00:00+00:00","0"],["2015-01-25T00:00:00+00:00","0"],["2015-02-01T00:00:00+00:00","0"],["2015-02-08T00:00:00+00:00","0"],["2015-02-15T00:00:00+00:00","100"],["2015-02-22T00:00:00+00:00","0"],["2015-03-01T00:00:00+00:00","0"],["2015-03-08T00:00:00+00:00","100"],["2015-03-15T00:00:00+00:00","0"],["2015-03-22T00:00:00+00:00","0"],["2015-03-29T00:00:00+00:00","0"],["2015-04-05T00:00:00+00:00","0"],["2015-04-12T00:00:00+00:00","0"],["2015-04-19T00:00:00+00:00","0"],["2015-04-26T00:00:00+00:00","0"],["2015-05-03T00:00:00+00:00","0"],["2015-05-10T00:00:00+00:00","0"],["2015-05-17T00:00:00+00:00","0"],["2015-05-24T00:00:00+00:00","0"],["2015-05-31T00:00:00+00:00","0"],["2015-06-07T00:00:00+00:00","0"],["2015-06-14T00:00:00+00:00","0"],["2015-06-21T00:00:00+00:00","0"],["2015-06-28T00:00:00+00:00","0"],["2015-07-05T00:00:00+00:00","0"],["2015-07-12T00:00:00+00:00","0"],["2015-07-19T00:00:00+00:00","100"],["2015-07-26T00:00:00+00:00","100"],["2015-08-02T00:00:00+00:00","50"],["2015-08-09T00:00:00+00:00","0"],["2015-08-16T00:00:00+00:00","0"],["2015-08-23T00:00:00+00:00","0"],["2015-08-30T00:00:00+00:00","100"],["2015-09-06T00:00:00+00:00","0"],["2015-09-13T00:00:00+00:00","0"]],"library":{"name":"Sparkline","files":{"js":{"sparkline.js":[]},"css":{"sparkline.css":[]}},"version":"7.x-1.x-dev","dependencies":["d3","d3.drupal","d3.extend","d3.drupal"],"views":"3.0","core":"7.x","project":"d3_sparkline","datestamp":"1442503925","info file":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline\/d3.sparkline.libraries.info","machine name":"d3.sparkline","vendor url":"","download url":"","path":"","library path":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline","version callback":"libraries_get_version","version arguments":[],"versions":[],"integration files":[],"callbacks":{"info":["libraries_prepare_files"],"pre-detect":[],"post-detect":["libraries_detect_dependencies"],"pre-dependencies-load":[],"pre-load":[],"post-load":[]},"installed":true,"loaded":2,"library name":"d3_sparkline"},"vis_id":"view-d3-vis-64a7931d2398b53aaa65ad10d5d6bcab"},"view-d3-vis-b13db97b5a269d0250c3986fa07b5bfe":{"id":"view-d3-vis-b13db97b5a269d0250c3986fa07b5bfe","type":"sparkline","legend":["Math expression"],"rows":[["2013-09-22T00:00:00+00:00","0"],["2013-09-29T00:00:00+00:00","0"],["2013-10-06T00:00:00+00:00","0"],["2013-10-13T00:00:00+00:00","0"],["2013-10-20T00:00:00+00:00","0"],["2013-10-27T00:00:00+00:00","0"],["2013-11-03T00:00:00+00:00","0"],["2013-11-10T00:00:00+00:00","0"],["2013-11-17T00:00:00+00:00","0"],["2013-11-24T00:00:00+00:00","0"],["2013-12-01T00:00:00+00:00","0"],["2013-12-08T00:00:00+00:00","0"],["2013-12-15T00:00:00+00:00","0"],["2013-12-22T00:00:00+00:00","105"],["2013-12-29T00:00:00+00:00","0"],["2014-01-05T00:00:00+00:00","0"],["2014-01-12T00:00:00+00:00","0"],["2014-01-19T00:00:00+00:00","0"],["2014-01-26T00:00:00+00:00","0"],["2014-02-02T00:00:00+00:00","0"],["2014-02-09T00:00:00+00:00","0"],["2014-02-16T00:00:00+00:00","0"],["2014-02-23T00:00:00+00:00","0"],["2014-03-02T00:00:00+00:00","0"],["2014-03-09T00:00:00+00:00","0"],["2014-03-16T00:00:00+00:00","0"],["2014-03-23T00:00:00+00:00","0"],["2014-03-30T00:00:00+00:00","0"],["2014-04-06T00:00:00+00:00","47"],["2014-04-13T00:00:00+00:00","0"],["2014-04-20T00:00:00+00:00","0"],["2014-04-27T00:00:00+00:00","0"],["2014-05-04T00:00:00+00:00","0"],["2014-05-11T00:00:00+00:00","0"],["2014-05-18T00:00:00+00:00","0"],["2014-05-25T00:00:00+00:00","0"],["2014-06-01T00:00:00+00:00","0"],["2014-06-08T00:00:00+00:00","0"],["2014-06-15T00:00:00+00:00","0"],["2014-06-22T00:00:00+00:00","0"],["2014-06-29T00:00:00+00:00","0"],["2014-07-06T00:00:00+00:00","0"],["2014-07-13T00:00:00+00:00","11"],["2014-07-20T00:00:00+00:00","0"],["2014-07-27T00:00:00+00:00","0"],["2014-08-03T00:00:00+00:00","0"],["2014-08-10T00:00:00+00:00","1"],["2014-08-17T00:00:00+00:00","0"],["2014-08-24T00:00:00+00:00","0"],["2014-08-31T00:00:00+00:00","0"],["2014-09-07T00:00:00+00:00","0"],["2014-09-14T00:00:00+00:00","0"],["2014-09-21T00:00:00+00:00","0"],["2014-09-28T00:00:00+00:00","0"],["2014-10-05T00:00:00+00:00","0"],["2014-10-12T00:00:00+00:00","0"],["2014-10-19T00:00:00+00:00","0"],["2014-10-26T00:00:00+00:00","0"],["2014-11-02T00:00:00+00:00","0"],["2014-11-09T00:00:00+00:00","0"],["2014-11-16T00:00:00+00:00","141"],["2014-11-23T00:00:00+00:00","0"],["2014-11-30T00:00:00+00:00","0"],["2014-12-07T00:00:00+00:00","0"],["2014-12-14T00:00:00+00:00","0"],["2014-12-21T00:00:00+00:00","0"],["2014-12-28T00:00:00+00:00","0"],["2015-01-04T00:00:00+00:00","0"],["2015-01-11T00:00:00+00:00","0"],["2015-01-18T00:00:00+00:00","0"],["2015-01-25T00:00:00+00:00","0"],["2015-02-01T00:00:00+00:00","0"],["2015-02-08T00:00:00+00:00","0"],["2015-02-15T00:00:00+00:00","0"],["2015-02-22T00:00:00+00:00","0"],["2015-03-01T00:00:00+00:00","0"],["2015-03-08T00:00:00+00:00","21"],["2015-03-15T00:00:00+00:00","0"],["2015-03-22T00:00:00+00:00","0"],["2015-03-29T00:00:00+00:00","0"],["2015-04-05T00:00:00+00:00","0"],["2015-04-12T00:00:00+00:00","0"],["2015-04-19T00:00:00+00:00","0"],["2015-04-26T00:00:00+00:00","0"],["2015-05-03T00:00:00+00:00","0"],["2015-05-10T00:00:00+00:00","0"],["2015-05-17T00:00:00+00:00","0"],["2015-05-24T00:00:00+00:00","0"],["2015-05-31T00:00:00+00:00","0"],["2015-06-07T00:00:00+00:00","0"],["2015-06-14T00:00:00+00:00","0"],["2015-06-21T00:00:00+00:00","0"],["2015-06-28T00:00:00+00:00","0"],["2015-07-05T00:00:00+00:00","0"],["2015-07-12T00:00:00+00:00","0"],["2015-07-19T00:00:00+00:00","99"],["2015-07-26T00:00:00+00:00","0"],["2015-08-02T00:00:00+00:00","21"],["2015-08-09T00:00:00+00:00","0"],["2015-08-16T00:00:00+00:00","0"],["2015-08-23T00:00:00+00:00","0"],["2015-08-30T00:00:00+00:00","0"],["2015-09-06T00:00:00+00:00","0"],["2015-09-13T00:00:00+00:00","0"]],"library":{"name":"Sparkline","files":{"js":{"sparkline.js":[]},"css":{"sparkline.css":[]}},"version":"7.x-1.x-dev","dependencies":["d3","d3.drupal","d3.extend","d3.drupal"],"views":"3.0","core":"7.x","project":"d3_sparkline","datestamp":"1442503925","info file":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline\/d3.sparkline.libraries.info","machine name":"d3.sparkline","vendor url":"","download url":"","path":"","library path":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline","version callback":"libraries_get_version","version arguments":[],"versions":[],"integration files":[],"callbacks":{"info":["libraries_prepare_files"],"pre-detect":[],"post-detect":["libraries_detect_dependencies"],"pre-dependencies-load":[],"pre-load":[],"post-load":[]},"installed":true,"loaded":2,"library name":"d3_sparkline"},"vis_id":"view-d3-vis-b13db97b5a269d0250c3986fa07b5bfe"},"view-d3-vis-1f6a16bfb4bff39454900e3cf0f8561e":{"id":"view-d3-vis-1f6a16bfb4bff39454900e3cf0f8561e","type":"sparkline","legend":["value_bug_open"],"rows":[["2013-09-22T00:00:00+00:00","87"],["2013-09-29T00:00:00+00:00","87"],["2013-10-06T00:00:00+00:00","87"],["2013-10-13T00:00:00+00:00","87"],["2013-10-20T00:00:00+00:00","87"],["2013-10-27T00:00:00+00:00","86"],["2013-11-03T00:00:00+00:00","86"],["2013-11-10T00:00:00+00:00","87"],["2013-11-17T00:00:00+00:00","87"],["2013-11-24T00:00:00+00:00","87"],["2013-12-01T00:00:00+00:00","87"],["2013-12-08T00:00:00+00:00","87"],["2013-12-15T00:00:00+00:00","87"],["2013-12-22T00:00:00+00:00","87"],["2013-12-29T00:00:00+00:00","87"],["2014-01-05T00:00:00+00:00","88"],["2014-01-12T00:00:00+00:00","88"],["2014-01-19T00:00:00+00:00","88"],["2014-01-26T00:00:00+00:00","87"],["2014-02-02T00:00:00+00:00","87"],["2014-02-09T00:00:00+00:00","87"],["2014-02-16T00:00:00+00:00","87"],["2014-02-23T00:00:00+00:00","87"],["2014-03-02T00:00:00+00:00","87"],["2014-03-09T00:00:00+00:00","88"],["2014-03-16T00:00:00+00:00","89"],["2014-03-23T00:00:00+00:00","89"],["2014-03-30T00:00:00+00:00","90"],["2014-04-06T00:00:00+00:00","90"],["2014-04-13T00:00:00+00:00","91"],["2014-04-20T00:00:00+00:00","91"],["2014-04-27T00:00:00+00:00","91"],["2014-05-04T00:00:00+00:00","92"],["2014-05-11T00:00:00+00:00","92"],["2014-05-18T00:00:00+00:00","92"],["2014-05-25T00:00:00+00:00","92"],["2014-06-01T00:00:00+00:00","92"],["2014-06-08T00:00:00+00:00","92"],["2014-06-15T00:00:00+00:00","93"],["2014-06-22T00:00:00+00:00","94"],["2014-06-29T00:00:00+00:00","94"],["2014-07-06T00:00:00+00:00","96"],["2014-07-13T00:00:00+00:00","96"],["2014-07-20T00:00:00+00:00","94"],["2014-07-27T00:00:00+00:00","94"],["2014-08-03T00:00:00+00:00","95"],["2014-08-10T00:00:00+00:00","94"],["2014-08-17T00:00:00+00:00","94"],["2014-08-24T00:00:00+00:00","95"],["2014-08-31T00:00:00+00:00","95"],["2014-09-07T00:00:00+00:00","96"],["2014-09-14T00:00:00+00:00","96"],["2014-09-21T00:00:00+00:00","96"],["2014-09-28T00:00:00+00:00","96"],["2014-10-05T00:00:00+00:00","96"],["2014-10-12T00:00:00+00:00","96"],["2014-10-19T00:00:00+00:00","96"],["2014-10-26T00:00:00+00:00","96"],["2014-11-02T00:00:00+00:00","96"],["2014-11-09T00:00:00+00:00","97"],["2014-11-16T00:00:00+00:00","98"],["2014-11-23T00:00:00+00:00","97"],["2014-11-30T00:00:00+00:00","97"],["2014-12-07T00:00:00+00:00","98"],["2014-12-14T00:00:00+00:00","98"],["2014-12-21T00:00:00+00:00","98"],["2014-12-28T00:00:00+00:00","98"],["2015-01-04T00:00:00+00:00","92"],["2015-01-11T00:00:00+00:00","93"],["2015-01-18T00:00:00+00:00","93"],["2015-01-25T00:00:00+00:00","93"],["2015-02-01T00:00:00+00:00","93"],["2015-02-08T00:00:00+00:00","93"],["2015-02-15T00:00:00+00:00","92"],["2015-02-22T00:00:00+00:00","92"],["2015-03-01T00:00:00+00:00","93"],["2015-03-08T00:00:00+00:00","93"],["2015-03-15T00:00:00+00:00","93"],["2015-03-22T00:00:00+00:00","93"],["2015-03-29T00:00:00+00:00","93"],["2015-04-05T00:00:00+00:00","93"],["2015-04-12T00:00:00+00:00","93"],["2015-04-19T00:00:00+00:00","93"],["2015-04-26T00:00:00+00:00","92"],["2015-05-03T00:00:00+00:00","92"],["2015-05-10T00:00:00+00:00","92"],["2015-05-17T00:00:00+00:00","92"],["2015-05-24T00:00:00+00:00","92"],["2015-05-31T00:00:00+00:00","92"],["2015-06-07T00:00:00+00:00","92"],["2015-06-14T00:00:00+00:00","92"],["2015-06-21T00:00:00+00:00","93"],["2015-06-28T00:00:00+00:00","94"],["2015-07-05T00:00:00+00:00","94"],["2015-07-12T00:00:00+00:00","95"],["2015-07-19T00:00:00+00:00","94"],["2015-07-26T00:00:00+00:00","96"],["2015-08-02T00:00:00+00:00","97"],["2015-08-09T00:00:00+00:00","97"],["2015-08-16T00:00:00+00:00","97"],["2015-08-23T00:00:00+00:00","98"],["2015-08-30T00:00:00+00:00","98"],["2015-09-06T00:00:00+00:00","98"],["2015-09-13T00:00:00+00:00","98"]],"library":{"name":"Sparkline","files":{"js":{"sparkline.js":[]},"css":{"sparkline.css":[]}},"version":"7.x-1.x-dev","dependencies":["d3","d3.drupal","d3.extend","d3.drupal"],"views":"3.0","core":"7.x","project":"d3_sparkline","datestamp":"1442503925","info file":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline\/d3.sparkline.libraries.info","machine name":"d3.sparkline","vendor url":"","download url":"","path":"","library path":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline","version callback":"libraries_get_version","version arguments":[],"versions":[],"integration files":[],"callbacks":{"info":["libraries_prepare_files"],"pre-detect":[],"post-detect":["libraries_detect_dependencies"],"pre-dependencies-load":[],"pre-load":[],"post-load":[]},"installed":true,"loaded":2,"library name":"d3_sparkline"},"vis_id":"view-d3-vis-1f6a16bfb4bff39454900e3cf0f8561e"},"view-d3-vis-68af9a79b139404de30f96ea989264e7":{"id":"view-d3-vis-68af9a79b139404de30f96ea989264e7","type":"sparkline","legend":["value_participants"],"rows":[["2013-09-22T00:00:00+00:00","3"],["2013-09-29T00:00:00+00:00","3"],["2013-10-06T00:00:00+00:00","1"],["2013-10-13T00:00:00+00:00","2"],["2013-10-20T00:00:00+00:00","2"],["2013-10-27T00:00:00+00:00","1"],["2013-11-03T00:00:00+00:00","2"],["2013-11-10T00:00:00+00:00","2"],["2013-11-17T00:00:00+00:00","1"],["2013-11-24T00:00:00+00:00","1"],["2013-12-01T00:00:00+00:00","0"],["2013-12-08T00:00:00+00:00","2"],["2013-12-15T00:00:00+00:00","1"],["2013-12-22T00:00:00+00:00","1"],["2013-12-29T00:00:00+00:00","0"],["2014-01-05T00:00:00+00:00","4"],["2014-01-12T00:00:00+00:00","2"],["2014-01-19T00:00:00+00:00","3"],["2014-01-26T00:00:00+00:00","2"],["2014-02-02T00:00:00+00:00","4"],["2014-02-09T00:00:00+00:00","1"],["2014-02-16T00:00:00+00:00","0"],["2014-02-23T00:00:00+00:00","2"],["2014-03-02T00:00:00+00:00","2"],["2014-03-09T00:00:00+00:00","2"],["2014-03-16T00:00:00+00:00","3"],["2014-03-23T00:00:00+00:00","2"],["2014-03-30T00:00:00+00:00","3"],["2014-04-06T00:00:00+00:00","4"],["2014-04-13T00:00:00+00:00","1"],["2014-04-20T00:00:00+00:00","0"],["2014-04-27T00:00:00+00:00","2"],["2014-05-04T00:00:00+00:00","2"],["2014-05-11T00:00:00+00:00","2"],["2014-05-18T00:00:00+00:00","2"],["2014-05-25T00:00:00+00:00","5"],["2014-06-01T00:00:00+00:00","1"],["2014-06-08T00:00:00+00:00","1"],["2014-06-15T00:00:00+00:00","9"],["2014-06-22T00:00:00+00:00","10"],["2014-06-29T00:00:00+00:00","2"],["2014-07-06T00:00:00+00:00","4"],["2014-07-13T00:00:00+00:00","2"],["2014-07-20T00:00:00+00:00","5"],["2014-07-27T00:00:00+00:00","5"],["2014-08-03T00:00:00+00:00","5"],["2014-08-10T00:00:00+00:00","6"],["2014-08-17T00:00:00+00:00","4"],["2014-08-24T00:00:00+00:00","3"],["2014-08-31T00:00:00+00:00","5"],["2014-09-07T00:00:00+00:00","4"],["2014-09-14T00:00:00+00:00","3"],["2014-09-21T00:00:00+00:00","4"],["2014-09-28T00:00:00+00:00","3"],["2014-10-05T00:00:00+00:00","4"],["2014-10-12T00:00:00+00:00","2"],["2014-10-19T00:00:00+00:00","1"],["2014-10-26T00:00:00+00:00","3"],["2014-11-02T00:00:00+00:00","2"],["2014-11-09T00:00:00+00:00","3"],["2014-11-16T00:00:00+00:00","6"],["2014-11-23T00:00:00+00:00","3"],["2014-11-30T00:00:00+00:00","1"],["2014-12-07T00:00:00+00:00","2"],["2014-12-14T00:00:00+00:00","0"],["2014-12-21T00:00:00+00:00","3"],["2014-12-28T00:00:00+00:00","2"],["2015-01-04T00:00:00+00:00","7"],["2015-01-11T00:00:00+00:00","6"],["2015-01-18T00:00:00+00:00","2"],["2015-01-25T00:00:00+00:00","3"],["2015-02-01T00:00:00+00:00","6"],["2015-02-08T00:00:00+00:00","3"],["2015-02-15T00:00:00+00:00","2"],["2015-02-22T00:00:00+00:00","3"],["2015-03-01T00:00:00+00:00","4"],["2015-03-08T00:00:00+00:00","3"],["2015-03-15T00:00:00+00:00","0"],["2015-03-22T00:00:00+00:00","0"],["2015-03-29T00:00:00+00:00","4"],["2015-04-05T00:00:00+00:00","1"],["2015-04-12T00:00:00+00:00","0"],["2015-04-19T00:00:00+00:00","1"],["2015-04-26T00:00:00+00:00","8"],["2015-05-03T00:00:00+00:00","1"],["2015-05-10T00:00:00+00:00","5"],["2015-05-17T00:00:00+00:00","1"],["2015-05-24T00:00:00+00:00","0"],["2015-05-31T00:00:00+00:00","1"],["2015-06-07T00:00:00+00:00","2"],["2015-06-14T00:00:00+00:00","1"],["2015-06-21T00:00:00+00:00","3"],["2015-06-28T00:00:00+00:00","2"],["2015-07-05T00:00:00+00:00","2"],["2015-07-12T00:00:00+00:00","7"],["2015-07-19T00:00:00+00:00","7"],["2015-07-26T00:00:00+00:00","6"],["2015-08-02T00:00:00+00:00","7"],["2015-08-09T00:00:00+00:00","1"],["2015-08-16T00:00:00+00:00","1"],["2015-08-23T00:00:00+00:00","4"],["2015-08-30T00:00:00+00:00","2"],["2015-09-06T00:00:00+00:00","0"],["2015-09-13T00:00:00+00:00","0"]],"library":{"name":"Sparkline","files":{"js":{"sparkline.js":[]},"css":{"sparkline.css":[]}},"version":"7.x-1.x-dev","dependencies":["d3","d3.drupal","d3.extend","d3.drupal"],"views":"3.0","core":"7.x","project":"d3_sparkline","datestamp":"1442503925","info file":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline\/d3.sparkline.libraries.info","machine name":"d3.sparkline","vendor url":"","download url":"","path":"","library path":"sites\/all\/modules\/d3_sparkline\/libraries\/d3.sparkline","version callback":"libraries_get_version","version arguments":[],"versions":[],"integration files":[],"callbacks":{"info":["libraries_prepare_files"],"pre-detect":[],"post-detect":["libraries_detect_dependencies"],"pre-dependencies-load":[],"pre-load":[],"post-load":[]},"installed":true,"loaded":2,"library name":"d3_sparkline"},"vis_id":"view-d3-vis-68af9a79b139404de30f96ea989264e7"}}}});
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+</body>
+</html>

@@ -1,5 +1,21 @@
 <?php
 
+/*function hogar_a_su_medida_url_inbound_alter(&$path, $original_path, $path_language) {
+  $object = menu_get_object();
+  if($object == null){
+    if($original_path == current_path()){
+      if (!preg_match('/^[a-zA-Z0-9-_\/]+$/i', $original_path)){
+        drupal_goto(removeAccents($original_path, array(), 301));
+      }
+    }
+  }
+}*/
+
+function removeAccents($str){
+  $a = array('À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'ÿ', 'Ā', 'ā', 'Ă', 'ă', 'Ą', 'ą', 'Ć', 'ć', 'Ĉ', 'ĉ', 'Ċ', 'ċ', 'Č', 'č', 'Ď', 'ď', 'Đ', 'đ', 'Ē', 'ē', 'Ĕ', 'ĕ', 'Ė', 'ė', 'Ę', 'ę', 'Ě', 'ě', 'Ĝ', 'ĝ', 'Ğ', 'ğ', 'Ġ', 'ġ', 'Ģ', 'ģ', 'Ĥ', 'ĥ', 'Ħ', 'ħ', 'Ĩ', 'ĩ', 'Ī', 'ī', 'Ĭ', 'ĭ', 'Į', 'į', 'İ', 'ı', 'Ĳ', 'ĳ', 'Ĵ', 'ĵ', 'Ķ', 'ķ', 'Ĺ', 'ĺ', 'Ļ', 'ļ', 'Ľ', 'ľ', 'Ŀ', 'ŀ', 'Ł', 'ł', 'Ń', 'ń', 'Ņ', 'ņ', 'Ň', 'ň', 'ŉ', 'Ō', 'ō', 'Ŏ', 'ŏ', 'Ő', 'ő', 'Œ', 'œ', 'Ŕ', 'ŕ', 'Ŗ', 'ŗ', 'Ř', 'ř', 'Ś', 'ś', 'Ŝ', 'ŝ', 'Ş', 'ş', 'Š', 'š', 'Ţ', 'ţ', 'Ť', 'ť', 'Ŧ', 'ŧ', 'Ũ', 'ũ', 'Ū', 'ū', 'Ŭ', 'ŭ', 'Ů', 'ů', 'Ű', 'ű', 'Ų', 'ų', 'Ŵ', 'ŵ', 'Ŷ', 'ŷ', 'Ÿ', 'Ź', 'ź', 'Ż', 'ż', 'Ž', 'ž', 'ſ', 'ƒ', 'Ơ', 'ơ', 'Ư', 'ư', 'Ǎ', 'ǎ', 'Ǐ', 'ǐ', 'Ǒ', 'ǒ', 'Ǔ', 'ǔ', 'Ǖ', 'ǖ', 'Ǘ', 'ǘ', 'Ǚ', 'ǚ', 'Ǜ', 'ǜ', 'Ǻ', 'ǻ', 'Ǽ', 'ǽ', 'Ǿ', 'ǿ');
+  $b = array('A', 'A', 'A', 'A', 'A', 'A', 'AE', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'D', 'N', 'O', 'O', 'O', 'O', 'O', 'O', 'U', 'U', 'U', 'U', 'Y', 's', 'a', 'a', 'a', 'a', 'a', 'a', 'ae', 'c', 'e', 'e', 'e', 'e', 'i', 'i', 'i', 'i', 'n', 'o', 'o', 'o', 'o', 'o', 'o', 'u', 'u', 'u', 'u', 'y', 'y', 'A', 'a', 'A', 'a', 'A', 'a', 'C', 'c', 'C', 'c', 'C', 'c', 'C', 'c', 'D', 'd', 'D', 'd', 'E', 'e', 'E', 'e', 'E', 'e', 'E', 'e', 'E', 'e', 'G', 'g', 'G', 'g', 'G', 'g', 'G', 'g', 'H', 'h', 'H', 'h', 'I', 'i', 'I', 'i', 'I', 'i', 'I', 'i', 'I', 'i', 'IJ', 'ij', 'J', 'j', 'K', 'k', 'L', 'l', 'L', 'l', 'L', 'l', 'L', 'l', 'l', 'l', 'N', 'n', 'N', 'n', 'N', 'n', 'n', 'O', 'o', 'O', 'o', 'O', 'o', 'OE', 'oe', 'R', 'r', 'R', 'r', 'R', 'r', 'S', 's', 'S', 's', 'S', 's', 'S', 's', 'T', 't', 'T', 't', 'T', 't', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'W', 'w', 'Y', 'y', 'Y', 'Z', 'z', 'Z', 'z', 'Z', 'z', 's', 'f', 'O', 'o', 'U', 'u', 'A', 'a', 'I', 'i', 'O', 'o', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'A', 'a', 'AE', 'ae', 'O', 'o');
+  return str_replace($a, $b, $str);
+}
 
 /**
 * Implements hook_block_info().
@@ -8,6 +24,7 @@ function hogar_a_su_medida_block_info() {
   $blocks = array();
   $blocks['plano_maestro'] = array(
     'info' => t('Select a building'),
+    'cache' => DRUPAL_NO_CACHE,
   );
   return $blocks;
 }
@@ -38,27 +55,27 @@ function _plano_maestro_content() {
 
   /*Código para obtener la imagen según el dispositivo*/
 
-   $detect = new Mobile_Detect();
+   //$detect = new Mobile_Detect();
+  $detect = mobile_detect_get_object();
+  $is_mobile = $detect->isMobile();
+  $is_tablet = $detect->isTablet();
   
-  if($detect->isMobile()){
-    if($detect->isTablet()){
+  $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro.jpg";
+  $url_edificio = $base_path."sites/default/files/edicicios/edificio2.jpg";
+  $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
 
+  if($is_mobile){
+    $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro_movil.jpg"; 
+    $url_edificio = $base_path."sites/default/files/edicicios/edificio2_movil.jpg";
+    //$url_piso = $base_path."sites/default/files/edicicios/apartamentos_movil.jpg";
+    $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
+    if($detect->isTablet()){
       $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro_tablet.jpg";
       $url_edificio = $base_path."sites/default/files/edicicios/edificio2_tablet.jpg";
       //$url_piso = $base_path."sites/default/files/edicicios/apartamentos_tablet.jpg";
       $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
-    }else{
-      $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro_movil.jpg"; 
-      $url_edificio = $base_path."sites/default/files/edicicios/edificio2_movil.jpg";
-      //$url_piso = $base_path."sites/default/files/edicicios/apartamentos_movil.jpg";
-      $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
-    }
-                        
-  }else{
-      $url_plano = $base_path."sites/default/files/edicicios/fondo_plano_maestro.jpg";
-      $url_edificio = $base_path."sites/default/files/edicicios/edificio2.jpg";
-      $url_piso = $base_path."sites/default/files/edicicios/apartamentos.jpg";
-  } 
+    }                     
+  }
 
 
 
@@ -91,7 +108,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
     $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"#\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
    
 }*/
-$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"javascript:voiud(0);\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
+$edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_numero_edificio['und'][0]['value']."\"><a num_dificio=\"".$edificio->field_numero_edificio['und'][0]['value']."\" href=\"javascript:void(0);\" build-edit-path=\"/edificios/".$edificio->vid."\">".$edificio->title."</a></div>";
 
     /*foreach ($edificio->field_pisos['und'] as $key => $value) {
      
@@ -147,7 +164,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
     foreach ($apartamentos as $apartamento) {
       $elements = taxonomy_term_view($apartamento);
       
-      if($detect->isMobile()){
+      if($is_mobile){
         $apartamentos_content .= "<div id=\"tab-content".$contador_content."\" class=\"tipo-apartamento-a tab-content\">
                                   <div class=\"fondo\">
                                     <div class=\"container\">
@@ -163,7 +180,8 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_cocina']['#items'][0]['uri'])."\" /></li>
                                         <li><img src=\"/sites/default/files/".str_replace('public://', '', $elements['field_imagen_cama']['#items'][0]['uri'])."\" /></li>
                                       </ul>
-                                      </div>".drupal_render($elements['area_total']).drupal_render($elements['field_habitaciones']).drupal_render($elements['field_banos']).drupal_render($elements['field_parqueo']).drupal_render($elements['volver_a_edificios']).drupal_render($elements['financiamiento_disponible'])."</div>
+                                      </div>".drupal_render($elements['area_total']).drupal_render($elements['field_habitaciones']).drupal_render($elements['field_banos']).drupal_render($elements['field_parqueo']).drupal_render($elements['volver_a_edificios']).drupal_render($elements['financiamiento_disponible']).drupal_render($elements['ver_video'])."</div>
+                                      <p class=\"nota-peque\">*Estacionamientos diseñados a la media, puede consultar por opción de 1 estacionamiento.</p>
                                     </div>
                                   </div>      
                                 </div>
@@ -192,6 +210,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                                       <div class=\"rosa-vientos\"></div>
                                       <div class=\"encabezado\"><h2></h2></div>
                                       <div class=\"tipo_apartamento\">".drupal_render($elements)."</div>
+                                      <p class=\"nota-peque\">*Estacionamientos diseñados a la media, puede consultar por opción de 1 estacionamiento.</p>
                                     </div>
                                   </div>      
                                 </div>";
@@ -229,6 +248,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
     				  	<div class=\"punto\" id=\"punto-estacionamiento\"><span></span><label>Estacionamiento</label></div>
     				  	<div class=\"punto\" id=\"punto-acceso\"><span></span><label>Acceso</label></div>
     					  <div id=\"edificios\">".$edificios_markup."</div>
+                
               </div>
 				 	  </div>
 				  </div>
@@ -239,6 +259,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
       					  <div class=\"rosa-vientos\"></div>
       					  <div class=\"encabezado\"><h2>Elija un piso</h2></div>
       					  <div id=\"lista_pisos\"></div>
+                  
                 </div>
               </div>
             </div>
@@ -253,6 +274,7 @@ $edificios_markup .= "<div class=\"edificio\" id=\"edificio".$edificio->field_nu
                     <div class=\"indicador\" id=\"disponible\">Disponible</div>
                   </div>
                   <div id=\"apartamentos\"></div>
+                  <div class=\"nota-pequena\">Imágenes, platas, especificaciones y detalles generales en proceso de diseño y sujetos a variaciones.</div>
                 </div>
               </div>
   				  </div>        
@@ -369,4 +391,3 @@ function hogar_a_su_medida_menu() {
     }
     return $floor_info;
   }
-

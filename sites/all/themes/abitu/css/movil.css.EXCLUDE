@@ -1,0 +1,385 @@
+@media (max-width: 479px) {
+.page-vida-bosque-urbano section.above-content{
+    top: 183px;
+}   
+.webform-client-form-2 .webform-component--encabezado---contacto h3{
+    font-size: 28px;
+}    
+.edif2 #apartamentos.edificio-2{
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(85deg);
+    left: 802px;
+    top: 628px;
+}    
+ .page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso.edif2{
+    background-image: url('/sites/default/files/edicicios/edificio2movil.jpg') !important;
+
+ 
+    background-size: 108%;
+    height: 466px;
+    background-position: 0% 0%;
+}   
+.page-contactenos .main-content{
+    padding-top: 38px;
+    
+}   
+.contacto .imagen{
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.contacto .detalle{
+    width: 100%
+    
+}   
+.contacto .detalle h4,
+.contacto .detalle p,
+.contacto .detalle a{
+    text-align: center;
+}
+#financiamiento{
+    max-width: 320px;   
+}
+.fcolumna1, .fcolumna2{
+    width: 100%;
+    
+}   
+#apartamentos{
+    left: 166px;
+    
+}   
+.page-hogar-a-su-medida #tab-content2 #tab-content2-2 .fondo.fondo-piso{
+    width: 303px;
+    background-size: 449%;
+    background-position: 76% 0%;
+}   
+#edificios .edificio#edificio1{
+    left: 0%;
+    top: 70px;
+}   
+#edificios .edificio#edificio2{
+    left: 10%;
+    
+    top: 150px;
+}
+.page-hogar-a-su-medida .fondo.fondo-plano{
+    background-position: 23% 50%;
+    
+    width: 320px;
+    margin: 0 auto;
+}
+.tabs .tabs-list li.tab{
+    width: 100%;
+    
+}   
+.tabs{
+    height: auto;
+
+}
+.tabs .tabs-list li.tab a{
+    display: block;
+    width: 100%;
+
+    line-height: 18px;
+    height: auto;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+.page-hogar-a-su-medida section.above-content{
+    top: 180px;
+}   
+.page-contactenos .flexslider .flex-control-nav, .front .flexslider .flex-control-nav{
+    width: 100%;
+    bottom: -6px;
+}   
+.page-contactenos .flexslider .flex-control-nav li, .front .flexslider .flex-control-nav li{
+    display: inline-block;
+    
+    float: none;
+}
+.page-contactenos .flex-caption .enlace a, .front .flex-caption .enlace a{
+    font-size: 15px;
+    
+    line-height: 22px;
+    padding: 5px;
+    background: none;
+}
+.front .flex-caption .enlace a{
+    font-size: 12px;
+    
+    line-height: 15px;
+}   
+.page-contactenos .flex-caption .enlace, .flex-caption .enlace{
+    margin-top: 20px;
+
+}   
+.page-contactenos .flex-caption, .flex-caption{
+    top: 14%;
+}
+.front .flex-caption{
+    padding: 15px 0px;
+    
+    top: 10%;
+}
+.bloque-area-d .descripcion .enlace{
+    margin: 25px 18px;
+}
+.front .flexslider-home .flex-caption h2{
+    font-size: 19px;
+    
+    line-height: 24px;
+}   
+.node-type-blog section.above-content{
+    top: 183px; 
+}
+.node-type-blog section.above-content #block-block-4 h2{
+    font-size: 16px;
+    
+    line-height: 21px;
+    font-family: ProximaNovaRegular, sans-serif;
+}
+#detalle-blog .categoria, #detalle-blog .fecha-comentario{
+    width: 45%;
+    
+}   
+#detalle-blog .body h2{
+    line-height: 22px;
+}   
+.pane-block-8 .bloque-cintillo-reserva .preventa-reserva h3{
+    margin-top: 22px;
+    
+    font-size: 19px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}   
+.bloque-area-d .descripcion{
+    max-width: 80%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    top: 17%;
+    padding: 17px 10px;
+}
+.bloque-area-d .descripcion .detalle p{
+    font-size: 15px;
+    line-height: 20px;
+}
+.bloque-area-d .descripcion .enlace a{
+    padding: 10px 7px;
+    
+    font-size: 14px;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-facilidades{
+    width: 100%;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .flexslider-asoleo{
+    width: 100%;    
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .field-name-field-lounge{
+    width:  100%;
+    margin-bottom: 15px;
+}
+.panels-flexible-row-cuatro_filas-3 .pane-node .group-diversion{
+    width: 100%;
+}
+
+
+
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle, .view-mode-piscina_recreacion_gimnasio .group-yoga-detalle, .view-mode-piscina_recreacion_gimnasio .field-name-field-imagen-gimnasio{
+    clear: both;
+    position: static;
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+}
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga{
+    width: 100%;
+    
+    left: 0px;
+    text-align: center;
+    top: 30px;
+}
+.view-mode-piscina_recreacion_gimnasio .group-piscina-detalle{
+    margin-top: 130px;
+}
+
+
+
+
+.caption-image, .page-vida-bosque-urbano .field-name-field-image .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-piscina .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-sendero .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-yoga .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-gimnasio .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-lobby .field-items .caption, .page-vida-bosque-urbano .field-name-field-lounge .field-items .caption, .page-vida-bosque-urbano .field-name-field-imagen-parque-mascotas .field-items .caption{
+    bottom: 0px;
+}   
+
+.header{
+    padding-bottom: 0px;
+}   
+.page-vida-bosque-urbano .panels-flexible-row.fila .region, .panels-flexible-row.fila .encabezado.region, .panels-flexible-row.fila .region.cintillo, .above-content .inner, .header .grid, .page-contactenos .panels-flexible-row.fila .region{
+    width: 100%;
+    clear: both;
+}
+.panels-flexible-row.fila .region.cintillo{
+}
+.header #block-menu-block-2{
+    float: none;
+    margin-top: 10px;
+}   
+.tinynav-wrapper{
+    width: 100%;
+    text-align: center;
+    background-color: #311627;
+    padding: 10px 0px;
+}   
+.not-front .flex-caption{
+    top: 44%;   
+}
+.page-contactenos .flex-caption h3, .flex-caption h3,
+.page-contactenos .flex-caption h2, .flex-caption h2{
+    font-size: 13px;
+}   
+#block-block-4 .content h2,
+#block-block-12 .content h1{
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}	
+
+/*section.above-content*/
+.page-contactenos section.above-content{
+    background: none;
+    background-color: #F1F2F2;
+    top: 183px;
+}   
+#chat{
+    display: none;
+}   
+.page-contactenos .mapa h2,
+.page-contactenos .mapa h3 {
+    line-height: 25px
+}
+.encabezado-contacto .detalle{
+    padding: 0px;
+    padding-bottom: 25px;
+}
+.page-contactenos .islas{
+    width: 100%;
+    text-align: center;
+}
+.encabezado-contacto .isla{
+    margin: 0 auto;
+}
+.bloque-cintillo-reserva .preventa-reserva ul li label{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 15px;
+}
+.bloque-cintillo-reserva .preventa-reserva ul li span{
+    font-size: 27px;
+    margin-top: 0px;
+}   
+.bloque-cintillo-reserva .preventa-reserva ul li{
+    padding: 0px;
+}   
+.front .islas{
+    width: 318px;
+}
+.front .islas .isla{
+    width: 100%;
+    height: 250px;
+}
+
+
+.header #logo{
+    margin: 0 auto;
+    float: none;
+    width: 145px;
+    display: block;
+}
+
+.gu-1-4,
+.gu-1-5{
+    width: 100%;
+    padding: 0px;
+}
+
+.footer #block-menu-block-1 ul.menu li{
+    margin-bottom: 12px; padding: 0px;
+}
+.footer #block-menu-block-1 ul.menu li.first{
+    margin-left: 0px;
+}
+.footer #block-menu-block-1 ul.menu li a{
+    font-size: 11px;
+}
+
+.footer #block-block-1 .social-media{
+    width: 100%;
+    height: 60px;
+    text-align:center;
+    background-color: #414042;
+    margin: 0px;
+    padding-top: 15px;
+}
+.footer #block-block-1 .social-media li{
+    display: inline-block;
+    float:none;
+}
+
+.footer #block-menu-block-1 ul{
+    text-align:center;
+}
+.footer #block-menu-block-1 ul li{
+    display:inline-block;
+}
+
+
+.footer #block-block-2,
+.footer #block-webform-client-block-1,
+.footer #block-block-1 .bloque-contacto-footer,
+.footer #block-menu-block-1 ul.menu li.last a{
+    display: none;
+}
+
+.page-historias section.above-content{
+    top: 184px !important;
+}
+
+.header .grid {
+     width: 100% !important; 
+}
+
+.home-encabezado-titulo {
+    margin-top: 25px;
+    width: 100%;
+    padding: 0 2%;
+}
+
+
+}
+
+@media (max-width: 300px) {
+
+.page-historias .blog-responsivo{
+    width: 98%;
+    margin: 0 auto;
+}   
+    
+.page-historias .blog-responsivo .views-row{
+    border: 1px solid #919395;
+    margin: 0px 0px 15px;
+    width: 100%;
+    float: none;
+}
+
+.front .islas {
+    width: 100%;
+    padding: 0 2%;
+}
+
+.blog-responsivo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+}

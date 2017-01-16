@@ -57,7 +57,7 @@ HTML comment.
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
       <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
-      <div class="caption"><h4>Casa Club</h4></div>
+      <div class="caption"><h3 title="Condominio a la venta con Casa Club  al Este de San José">Casa Club</h3></div>
     <?php endforeach; ?>
   </div>
 </div>

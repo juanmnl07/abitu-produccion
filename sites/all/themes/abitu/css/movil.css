@@ -1,4 +1,30 @@
 @media (max-width: 479px) {
+
+.contador_info h3 {
+    margin-top: -28px;
+    line-height: 16px;
+    margin-bottom: 0px;
+}
+.contador_info strong{
+    font-size: 20px;
+}
+.flexslider.flexslider-home .slides li iframe{
+    height: 150px !important;
+}
+.timing{
+    top: 218px;
+    height: 65px;
+width: 70%;
+}
+.time_circles{
+    height: 65px;
+width: 100%;
+}
+
+.contador_info{
+height: 85px;
+}
+
 .page-vida-bosque-urbano section.above-content{
     top: 183px;
 }   
@@ -111,7 +137,7 @@
     line-height: 15px;
 }   
 .page-contactenos .flex-caption .enlace, .flex-caption .enlace{
-    margin-top: 20px;
+    margin-top: 7px;
 
 }   
 .page-contactenos .flex-caption, .flex-caption{
@@ -119,16 +145,16 @@
 }
 .front .flex-caption{
     padding: 15px 0px;
-    
+     height: 125px;
+
     top: 10%;
 }
 .bloque-area-d .descripcion .enlace{
     margin: 25px 18px;
 }
-.front .flexslider-home .flex-caption h3{
+.front .flexslider-home .flex-caption h2{
     font-size: 19px;
-    
-    line-height: 24px;
+    line-height: 19px;
 }   
 .node-type-blog section.above-content{
     top: 183px; 
@@ -233,10 +259,12 @@
 .not-front .flex-caption{
     top: 44%;   
 }
-.page-contactenos .flex-caption h3, .flex-caption h3{
+.page-contactenos .flex-caption h3, .flex-caption h3,
+.page-contactenos .flex-caption h2, .flex-caption h2{
     font-size: 13px;
 }   
-#block-block-4 .content h2{
+#block-block-4 .content h2,
+#block-block-12 .content h2{
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 10px;
@@ -252,6 +280,7 @@
 #chat{
     display: none;
 }   
+.page-contactenos .mapa h2,
 .page-contactenos .mapa h3 {
     line-height: 25px
 }
@@ -352,6 +381,37 @@
     padding: 0 2%;
 }
 
+.images-estilo-vida-container ,
+.images-deportes-container ,
+.images-social-container ,
+.images-seguridad-container {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+}
+
+.images-estilo-vida-container img,
+.images-deportes-container img,
+.images-social-container img,
+.images-seguridad-container img{
+      width: auto;
+    max-width: none;
+}
+
+
+a.video-apartamento-movil{display: block;}
+a.video-apartamento-desktop{display: none;}
+
+ .movil-360,
+  .boton-recorrido-360 a.movil-360
+{
+    display: block;
+  }
+
+  .desktop-360,
+  .boton-recorrido-360 a.desktop-360{
+    display: none;
+  }
 
 }
 
@@ -379,4 +439,9 @@
     margin: 0 auto;
     padding: 0 2%;
 }
+
+
+
+
+
 }

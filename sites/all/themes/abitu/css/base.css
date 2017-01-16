@@ -22,7 +22,7 @@ a:link,
 a:visited {
   /*border-bottom: 1px solid rgb(200,200,200);*/
   text-decoration: none;
-  color: rgb(80,80,80);
+  color: #34AF49;
   outline: none;
 }
 
@@ -188,3 +188,24 @@ img, embed, object, video {
   height: inherit;
   _width: 100%;
   }
+
+.h3tit {
+    font-family: ProximaNovaRegular,sans-serif !important;
+    font-size: 25px !important;
+    color: #3FAE29 !important;
+}
+
+.view-mode-piscina_recreacion_gimnasio .group-yoga-detalle .field-name-field-detalle-yoga h3 {
+    margin-top: 0px !important;
+}
+
+
+#block-block-12 .content h2 {
+    font-size: 34px;
+    font-family: ProximaNovaBold,sans-serif;
+    color: #632C4F;
+    text-transform: uppercase;
+    margin: 0 0 13px 0;
+    line-height: 1.77777em;
+    font-style: normal;
+}

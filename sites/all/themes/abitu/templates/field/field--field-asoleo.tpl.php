@@ -1,4 +1,3 @@
-
 <?php
 if ($items){
 
@@ -18,7 +17,7 @@ $slides ="";
 		if (isset($items[$i]['field_detalle']['#items'][0]['value'])){
 			$titulo_slide = $items[$i]['field_detalle']['#items'][0]['value'];
 		}
-		$slides .= "<li><img src='".$url."' /><div class='caption-image'>Área para asoleo</div></li>";
+		$slides .= "<li><img src='".$url."' /><h3 title='Condominio a la venta piscina y área de asolearse al Este de San José' class='caption-image'>Área para asoleo</h3></li>";
 		//$slides .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide."</div></li>";
 
 } ?>

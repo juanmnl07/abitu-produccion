@@ -193,3 +193,22 @@ function abitu_preprocess_page(&$variables){
   
   
 }
+
+/**
+ * Implements hook_js_alter(). 
+ */
+ function abitu_js_alter(&$javascript) {
+
+  // change js scope for the flexslider script to ensure it loads in correct sequence relative to other js (especially jQuery)
+  if(isset($javascript['sites/all/modules/contrib/flexslider/assets/js/flexslider.load.js'])){
+    $javascript['sites/all/modules/contrib/flexslider/assets/js/flexslider.load.js']['scope'] = 'header';
+  }
+
+  if(isset($javascript['sites/all/modules/contrib/wysiwyg/wysiwyg.js'])){
+    $javascript['sites/all/modules/contrib/wysiwyg/wysiwyg.js']['scope'] = 'header';    
+  }
+
+  
+  
+          
+ }

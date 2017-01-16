@@ -7,7 +7,9 @@
     width: 700px;
     max-height: 100%;
     padding: 25px 25px;
-}    
+}
+
+
 }
 
 @media (max-width: 1024px) {
@@ -18,4 +20,14 @@
     width: 186px;
     
 }
+
+
+
+
+
+
+
+
+
+
 }

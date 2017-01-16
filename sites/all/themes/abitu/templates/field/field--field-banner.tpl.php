@@ -14,31 +14,27 @@ $slides ="";
 	$titulo_slide="";
 	$enlace = "";
 
-		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
-			$detect = new Mobile_Detect();
-            
+		/*if (isset($items[$i]['field_image']['#items'][0]['uri'])){
+			$detect = new Mobile_Detect();            
             if($detect->isMobile()){
             	if($detect->isTablet()){
-
 	            	$style_movil = "slider_tablet";
 	            }else{
 	            	$style_movil = "slider_movil";
-	            }
-				
+	            }				
             	$url_movil = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
-
 				if (file_exists($url_movil)){
 					$url = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
 				}else{
 					image_style_create_derivative($style_movil, $items[$i]['field_image']['#items'][0]['uri'], $url_movil);
 					$url = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
-				}	
-	                        	
+				}		                        	
             }else{
             	$url = '/sites/default/files/slider/'.str_replace("public://slider/","",$items[$i]['field_image']['#items'][0]['uri']);
-            }					
-			
-		}
+            }
+		}*/
+
+		$url = '/sites/default/files/slider/'.str_replace("public://slider/","",$items[$i]['field_image']['#items'][0]['uri']);
 
 		if (isset($items[$i]['field_detalle']['#items'][0]['value'])){
 			$titulo_slide = $items[$i]['field_detalle']['#items'][0]['value'];
@@ -57,7 +53,7 @@ $slides ="";
 				$slides .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide.$enlace."</div></li>";
 			}
 		} else {
-			$slides .= "<li><img src='".$url."' /><div class='caption-image'>Parque para mascotas</div></li>";
+			$slides .= "<li><img src='".$url."' /><h3 class='caption-image' title='Condominios pet friendly de venta al Este de San José'>Parque para mascotas</h3></li>";
 		}
 
 		

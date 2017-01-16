@@ -1,0 +1,84 @@
+<?php
+
+
+if ($items){
+
+$slides ="";
+?>
+<!-- Place somewhere in the <body> of your page -->
+<?php for ($i=0; $i < count($items); $i++) {
+	
+	$url = "";
+	$link="";
+	$link_title="";
+	$titulo_slide="";
+	$enlace = "";
+
+		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
+			$detect = new Mobile_Detect();
+            
+            if($detect->isMobile()){
+            	if($detect->isTablet()){
+
+	            	$style_movil = "slider_tablet";
+	            }else{
+	            	$style_movil = "slider_movil";
+	            }
+				
+            	$url_movil = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
+
+				if (file_exists($url_movil)){
+					$url = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
+				}else{
+					image_style_create_derivative($style_movil, $items[$i]['field_image']['#items'][0]['uri'], $url_movil);
+					$url = image_style_url($style_movil, $items[$i]['field_image']['#items'][0]['uri']);
+				}	
+	                        	
+            }else{
+            	$url = '/sites/default/files/slider/'.str_replace("public://slider/","",$items[$i]['field_image']['#items'][0]['uri']);
+            }					
+			
+		}
+
+		if (isset($items[$i]['field_detalle']['#items'][0]['value'])){
+			$titulo_slide = $items[$i]['field_detalle']['#items'][0]['value'];
+		}
+
+		if($element['#object']->type == "slider"){
+
+			if (isset($items[$i]['field_enlace']['#items'][0]['url'])){
+				$link_title = $items[$i]['field_enlace']['#items'][0]['title'];
+				$link = $items[$i]['field_enlace']['#items'][0]['url'];
+			}
+			if ($link == "" && $link_title == ""){
+				$slides .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide."</div></li>";	
+			} else {
+				$enlace = "<div class='enlace-wrapper'><div class='enlace'><a href='".$link."' target='_blank'>".$link_title."</a></div></div>";
+				$slides .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide.$enlace."</div></li>";
+			}
+		} else {
+			$slides .= "<li><img src='".$url."' /><h3 class='caption-image' title='Condominios pet friendly de venta al Este de San José'>Parque para mascotas</h3></li>";
+		}
+
+		
+
+} ?>
+<div class="flexslider flexslider-home">
+  	<ul class="slides">
+		<?php print $slides ?>
+	</ul>
+</div>
+<?php 	flexslider_add(); } ?>
+<script type="text/javascript">
+(function( $ ){
+	$(document).ready(function(){
+		$('.flexslider.flexslider-home').flexslider({
+		    animation: "fade",
+		    animationLoop: true,
+		    pauseOnHover: false,
+		    controlsContainer: ".container-nav",
+		    directionNav: false
+	  	});
+	});
+})(jQuery);
+</script>
