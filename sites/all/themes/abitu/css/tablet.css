@@ -392,11 +392,6 @@
 
 
 
-
-
-
-
-
 .page-historias section.above-content{
     background: none !important;
     background-color: #f1f2f2 !important;
@@ -434,6 +429,7 @@
 
 .page-vida-bosque-urbano .flex-caption{
     height: auto;
+
 }
 }
 
@@ -445,6 +441,7 @@
    width: 65%;
 }
 }
+
 
 @media (max-width: 767px) {
 
